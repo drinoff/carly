@@ -4,52 +4,7 @@
             "id": 1,
             "logo": "https://img.classistatic.de/api/v1/mo-prod/images/99/999a4498-efa4-46f2-b9dc-d2cf1b5986a3?rule=cf-150q.png",
             "brand": "Audi",
-            "models": [
-                {
-                    "model": "A4",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/240cf5442f808e96ecc44ffd84c77613faf61253_a155138_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/62306cc930fc6302e1c54af77ca181b46750cc66_a159908_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/c1b2a28ff4e1a66d709c2df2fc64b02585c996e1_a155162_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/5dac15f65bd29132bd17209fa74fe1e704408144_a155134_large.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 15950,
-                    "description": "Eight years is an eternity in the car world. But that's how long it took for Audi to bring a successor to the mid-range series offered up to and including 2015. In all these years, Audi was repeatedly criticized for despondent unit design. Although the new Audi A4 Avant continues to appear in its typical guise, its proportions and details such as the front represent a partial new beginning. Although the Audi A4 Avant still looks familiar, there are also many innovations under the sheet metal. The interior has been completely redesigned, and aluminum is used to reduce the weight of the body. However, the desire for less weight and the associated reduction in consumption also had strange consequences for the Audi A4 B9 Avant: the four-cylinder diesel models now only have a tank with a capacity of 40 liters ex works – 20 liters less than before."
-                },
-                {
-                    "model": "A6",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/9a473359e55065d2529949b6d620565c827530ef_a1510771_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/9bdf51a1c361653996d058404f79f91061946f37_a1510772_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/c1b2a28ff4e1a66d709c2df2fc64b02585c996e1_a155162_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/e609099709824df8b81f0f996e7f1dccf9e44461_a1510783_large.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 40400,
-                    "description": "Audi no longer wanted to be considered a climber in the premium segment, but instead wanted to be mentioned in the same breath as BMW and Mercedes. The RS6 should contribute to this and put the competitors in their place in terms of performance. This is how an arms race began in a niche market, which Audi has won over and over again to this day. But the Ingolstadt-based company has a structural disadvantage: in an Audi, the front wheels are usually driven, while in the case of the competitors BMW and Mercedes, the rear wheels, which can better bring the power to the road. Audi's solution is all-wheel drive, which, however, increases consumption due to the increased weight and greater rolling resistance. Meanwhile, Mercedes also offers its competitor model with all-wheel drive, and Audi has quenched the thirst of its V8 thanks to cylinder deactivation. So the race for upgraded mid-range cars remains open. Due to a lack of material possibilities, most car fans will only follow it from the position of the amazed observer."
-                },
-                {
-                    "model": "A8",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/50ccd5fa39c91e4f91a156ad877e359ad665e44f_a178296_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/90c31eff613d185eb482874c9cf29522016018b8_a178292_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/b80cb0ecf0e7d5a117c5701c438f1073d441fd7d_a178305_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/bb3129fcab4d93a4cde8fdcce407b774d904cc4a_a1712072_large.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 83700,
-                    "description": "When it premiered in 2017, the Audi A8 received mixed reviews. The testers were impressed by the interior and the new operating concept with extremely few switches and many touch elements, but correspondingly disappointed by the evolutionary body design. The technological innovations were also criticized in places. The 48-volt technology for the drive and chassis, on the other hand, was appreciated and that the traffic jam pilot, which was already very impressive in the test, still lacks official approval, nobody blames Audi. But the fact that the pioneers of lightweight aluminum construction, of all people, are returning to a mixed construction and thus accepting more weight was unanimously criticized. "
-                },
-                {
-                    "model": "Q7",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/f938200bebd02fa63934c6e1db70fea5b440c8ae_q7150155_medium.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/c3282c865c1328ac455f5ce003b75276183de478_q7150014_medium.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/fd0c2009711f4381537e94e0507e1d252957a7ad_q7150016_medium.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/bd4311742cc35c5a03dc7f85722adf063619eea2_q7150208_medium.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 83375,
-                    "description": "Visually, the change to the second generation 4M was relatively subtle - the Audi Q7 no longer looks quite as bulky as its predecessor. Technically, much more has happened. For example, the virtual cockpit with a central display that can be individually configured is spectacular. There is also a large touchpad and a very modern navigation system that also forwards topography data and speed limits to the cruise control. In tests, the Audi Q7 received a lot of praise for its driving characteristics, especially in combination with all-wheel steering and air suspension: the car leveled out bumps as smoothly as previously only found in luxury sedans – without feeling rocking or imprecise."
-                }
-            ],
+            "models": [4, 5, 6, 7],
             "brandHistory": "Audi is one of the sporty brands that produces reliable cars. But even the most beautiful car from the brand from Ingolstadt may eventually no longer fit the current life situation. Then comes the question of all questions: just keep driving or sell the Audi?"
         },
 
@@ -57,41 +12,7 @@
             "id": 2,
             "logo": "https://img.classistatic.de/api/v1/mo-prod/images/93/93626a1c-b9b9-4f75-beb3-9910555d366c?rule=cf-150q.png",
             "brand": "BMW",
-            "models": [
-                {
-                    "model": "1 Series",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/0ae17ab7cec3d33348b137b06bedb9221c751ead_p90093261_highres.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/1ddca14fa4498ab623cb327d3a76680cfd23a426_p90093256_highres.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/c85a8389651b01892a2c5a07a149a5d5f869ddca_p90171618_highres.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/b5113fa55f7331cd0f99b42920dd1cd0a223d0ea_p90171315_highres.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 6450,
-                    "description": "The BMW 1 Series F21 three-door is basically a unique car - because today rear-wheel drive is the absolute exception in the compact class. In the meantime, the small BMW is even the only compact model that relies on the combination of a front-mounted engine and driven rear wheels. This drive system guarantees more driving pleasure, especially on winding country roads, and better traction in dry road conditions. The three-door BMW 1 Series is primarily a car for singles or couples who prefer driving fun to practical history."
-                },
-                {
-                    "model": "2 Series",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/1d9e0c2791101512c15ef014615abd91d253c733_p90173833_highres.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/fa8976fd66d3550d6f4786011ef0bc1121540345_p90171434_highres.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/adfc09f42ebe15157137fed25751ed725f5419da_p90171830_highres.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/d5fd9c0a9bfd75722dfd71d71a50154597061cfa_p90171412_highres.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 17200,
-                    "description": "When the BMW 2 Series Gran Tourer was presented, die-hard BMW fans worried. A family van with front-wheel drive from Munich - that could damage the sporty core of the brand. The wishes of this clientele should at least partially be taken into account. And so BMW was forced to make a compromise with the BMW 2 Series Gran Tourer. On the one hand it should be the functional van, on the other hand it should offer the advantages of a family-friendly travel companion and also those of a cheeky sports car. Ultimately, this led to the fact that he mastered everything a little, but nothing really perfectly. The BMW 2 Series Gran Tourer should iron out the faults of the Active Tourer: Mainly by really offering the interior space that is expected of such a car. The fact that the engineers openly admitted that they were based on the VW Touran should have scared the cast-iron supporters of the brand once again - but the pragmatists were happy."
-                },
-                {
-                    "model": "3 Series",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/f55044398d3985a274ff3ab5cf94a0e70e08d4a8_p90220383_highres.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/a7a1a67b17d9799c6f248df74bd297fff08d3695_p90220394_highres.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/f9efbe6e0a7d211a583b9b136f23640f121208a3_p90220413_highres.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/5ca667f11d1fcbad6a5aea0e8f4e0163f338104b_p90228553_highres.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 30758,
-                    "description": "All too often the BMW 3 Series Gran Turismo (abbreviated: GT) is not seen on the local streets. Apparently, German buyers are reluctant to leave familiar paths and prefer to choose the 3 Series sedan or the 3 Series Touring. The GT lies somewhere between these two models and thus also sits a bit between the chairs.  It is certainly worthwhile for those interested in BMW to take a closer look at the GT. Thanks to its larger format, it offers significantly more legroom than its two brothers, and even a little more trunk space than the station wagon. In addition, due to the higher seating position, it allows for more comfortable entry. He combines these practical virtues with the roof line of a coupé, a type of vehicle that usually brings less rather than more utility. In addition, the GT is much less common on the streets than the other 3s. At the same time, BMW doesn't even charge too much for the exclusive exterior. So what speaks against the GT at all? Objectively surprisingly little. The question of whether you consider pumped-up pseudo coupes an aesthetic enrichment of the car market, everyone has to decide for themselves."
-                }
-            ],
+            "models": [1, 2, 3],
             "brandHistory": "The BMW company was founded in 1916 by Karl Rapp and Gustav Otto under the name Bayerische Flugzeugwerke and later renamed Bayerische Motoren Werke GmbH. Today the company is called BMW AG and the automobile manufacturer operates under the name BMW Group.The car history of BMW begins with the acquisition of the Eisenach vehicle factory in 1928. The small car Dixi had previously been built there. BMW put its first car on wheels in March 1929: the 3/15 PS, built under license by the British manufacturer Austin Seven."
         },
 
@@ -99,41 +20,7 @@
             "id": 3,
             "logo": "https://img.classistatic.de/api/v1/mo-prod/images/e4/e4c3224d-ef97-4f94-a460-550dc23e9471?rule=cf-150q.png",
             "brand": "Ford",
-            "models": [
-                {
-                    "model": "C-MAX",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/f58f810c0ba192b41291d94854d9200f0cfabcaa_fordc-max_exterior20.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/3aeb6267d6a0797f3639a45923676dfc72ea371a_c-max_03.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/b19ab50ab1527e844500df7ab40ffabcabfe1207_fordc-max_exterior13.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/2c6d5410ea3749ba5ac7367d8fd20563f03425e1_fordc-max_2015_015.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 9490,
-                    "description": "Grand or not grand – that is not the question here. Yes, with the bold grille, the C-Max makes a bit of a family sports car. But deep down in his heart, this man from Cologne doesn't want to be a rebel at all. Since the 2015 facelift, the mid-size van has even become more relaxed and calm in some respects. Its engines run quieter and more efficiently, insulation and windows keep the hustle and bustle of everyday life away better, the chassis is softer and more comfortable. What is paramount in this car is safety for its passengers."
-                },
-                {
-                    "model": "Focus",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/32d2367987576099d7fc359642806b9659a291a6_ford2016_focusrs_01.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/e58e78bac22ad136971fd0c19a25461a1a32480c_ford2016_focusrs_06.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/74c64d51b40d8c44199cb94898cb748774e517be_fordfocusrs_lommel_37.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/d95794d5496ebc7e88d70cbfbe257f0f0f7675db_ford2016_focusrs_07.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 27980,
-                    "description": "At the latest after the first courageous step on the gas pedal, the heart of a sports driver will smile. The way this €40,000 car gets down to business is second to none. And the next smile comes at the latest in the first corner. But this also makes the basic design of the Focus RS very quickly clear. A really species-appropriate attitude of the sporty Cologne native is only possible on the racetrack because of the high dynamic potential."
-                },
-                {
-                    "model": "Mondeo",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/2407efdb9257b8c90c976d9c6f0cffb4368635b7_fordmondeo_5door_07.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/683f2a4ef55710f985486a903fb1ad18b0d14092_fordmondeo-5door_16.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/907d407b830720aefedb79d44485cdd3f6faef3c_fordmondeo-5door_29.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/6311f856c4fe0815bfbe534f6c54ab79f2d3ec01_fordmondeo-5door_07.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 15990,
-                    "description": "The Ford Mondeo is traditionally one of the underestimated sizes in the middle class. This also applies to the current fifth series, which now comes with a voracious maw in Aston Martin style. The Mondeo is also an impressive car overall and surpasses the certainly not small VW Passat by a whole ten centimeters. Starting at 25,750 euros, the Mondeo, like its predecessors, offers a lot of car for the money, but it also has good inner values: an agile but above all comfortable chassis and modern engines. The Mondeo sedan is overshadowed by the better-selling station wagon. It also offers a large tailgate, which hides an above-average loading volume."
-                }
-            ],
+            "models": [8, 9, 10],
             "brandHistory": "The first model on the American market was the Tin Lizzy, which was also known as the T-Model and mutated into a coveted used car. Henry Ford's pioneering spirit resulted above all in the introduction of assembly line production of automobiles, which was introduced at the Detroit plant from 1913 and revolutionized automobile manufacture worldwide. As early as 1925, the company expanded to Germany and the Ford Motor Company as a public limited company in Berlin, which shortly afterwards moved the company headquarters to Cologne, which is still based there today and, in addition to production, manages the sale of new and used Ford cars."
         },
 
@@ -141,52 +28,7 @@
             "id": 4,
             "logo": "https://img.classistatic.de/api/v1/mo-prod/images/4b/4bfdde33-84c5-47c7-b950-f5df285dbc55?rule=cf-150q.png",
             "brand": "Mercedes-Benz",
-            "models": [
-                {
-                    "model": "C-Class",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/f2d2d5202c5e62030175c287ae23055afbdde05c_13c1006_171.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/b25cf148636fdd26c83061ba7efbf7c2a3a42c3d_14c1134_14.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/f8a6f2c32dce28b8a01a50ee8d32469b0ac73875_13c1152_45.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/6bfbd2bc907fe7a2d21c63460ff2990bb9499804_13c1152_60.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 31430,
-                    "description": "With a length of 4.70 meters, the C-Class ranks at the upper end of the middle class. Mercedes also places the model high up in terms of pricing - after all, a C-Class can cost 85,000 euros (AMG 63S). In terms of design, the C-Class uses the S-Class so uninhibitedly that not only laypeople have to look twice to see the difference. For the first time, the W205 series C-Class is also available with air suspension, which increases comfort for all occupants. No wonder, then, that even very long journeys can be comfortably endured in the C-Class. To save weight, however, the tank capacity has been reduced by 18 liters to 41 liters compared to the predecessor - a larger tank with a capacity of 66 liters is only available on request and at an additional cost (60 euros)."
-                },
-                {
-                    "model": "E-Class",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/218c9aaf195165a107ae47374173da2c54fee503_16c998_01.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/7a2c413e833d3cd65b28468bb3a96a1e64063007_16c949_010.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/545455b76672f1e08f1befcc25972bc1704e06a9_16c949_133.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/b8ad46da517a88c211156d5d8012eaf9f564e988_16c947_16.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 41990,
-                    "description": "The Mercedes E-Class can be assigned to the so-called business class - these are cars from the upper middle class, which are often used as company cars and are very popular with fleet operators. Regardless of whether they are used for business or pleasure, customers can't do much wrong with the E-Class, which has been one of the model students in the main vehicle inspection for a number of years. Nothing will change with the new model. But with the new Mercedes E-Class there are also a few contradictions. On the one hand, like its predecessors, it has to satisfy managers and fathers alike - and probably also taxi drivers, although the taxi package is still pending. And since their clientele ticks rather conservatively, it remains to be seen whether regular customers will learn to appreciate the technically upgraded sedan. On the other hand, when it comes to assistance systems, it competes with the significantly higher positioned Mercedes S-Class."
-                },
-                {
-                    "model": "S-Class",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/45a8bfcd760048d5c1df5fbbe8a457e5116d8458_13c440_022.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/b6c7be847ed9ab6dd4fba1adf808895607ae11dd_13c882_05.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/4a718a4a0c2788aade4ff37f5a76e1a97075339d_13c704_004.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/210b33762dc471294686ecb1bbe96ae6037a0f1b_13c440_050.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 53490,
-                    "description": "With the most recent facelift - as the people of Stuttgart lovingly describe their facelifts - the S-Class has again presented a mighty one to the eternal competition from Munich and Ingolstadt. Not that the BMW 7 Series and Audi A8 have nothing to offer in terms of driving dynamics, comfort and safety, because over the years they have come dangerously close to the Stuttgart status symbol - and in various comparison tests they have even been able to push it off the throne. So why buy an S-Class? You simply have to drive them to feel the special mixture of power, elegance and grace. Many ask themselves: is a car like the S-Class really needed? The clear answer is: No! And yet: It would be a shame if they didn't exist!."
-                },
-                {
-                    "model": "GLS-Class",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/735cbf34c20b94a2bc0a43d0b950cc21e55bf3c6_12c178_214.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/2a7af3554b3ef156ff26da4709bbd51a85f03ff9_15c1116_059.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/b352dd61fb33b30000ea6a64e1039c14e320901c_15c986_19.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/f60d4626a153f38c393d706e39965ab6669ced23_15c1115_060.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 119990,
-                    "description": "Actually, the Mercedes GLS is a bit on the search for its identity, which is also reflected in the sales figures. As the largest representative of the Stuttgart-based SUV range, it cannot keep up with the cult potential of the G-Class. Compared to the smaller GLE, the optical and technical differentiation for a top model is not large enough. For those Mercedes customers who are looking for a comfortable SUV with plenty of space for up to seven people, it is still a very good, if not cheap, choice."
-                }
-            ],
+            "models": [11, 12, 13, 14],
             "brandHistory": "The great moment of the automobile was the year 1886. Carl Benz and Gottlieb Daimler each developed their own first car independently of one another. Benz built the patent motor car in Mannheim, Daimler the motor carriage in Stuttgart. Both founded their own companies with their patents, which were to merge into the Mercedes-Benz brand only after the First World War, the global economic crisis and long after Gottlieb Daimler's death.After the founding of Mercedes-Benz, this name was also one of the leading teams in international motorsport from the very beginning. Speed ​​records were broken, well-known endurance races were won and driver legends were born. At the beginning of the 1950s, the brand with the legendary Silver Arrow dominated the world's racetracks. In addition to Formula 1 – with the W 196 racing car – Mercedes was also on course for victory in 1955 with the 300 SL and 300 SLR touring cars. To this day, the gullwings are among the most expensive classics on the market."
         },
 
@@ -194,40 +36,7 @@
             "id": 5,
             "logo": "https://img.classistatic.de/api/v1/mo-prod/images/48/48a66462-f725-4ba6-be97-91bf21e82dfb?rule=cf-150q.png",
             "brand": "Peugeot",
-            "models": [
-                {
-                    "model": "308",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/52b9d41fcc3c4890a112094966c3d41e23c5b79f_1434605472_peugeot_308gti_1506js017.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/05b076e435bb4e2c00259b6fe12e90fe89d6e7a4_1434605705_peugeot_308gti_1506js021.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/47697b413a0ee41af55019a8c3a42ed16cdf0397_1434607076_peugeot_308gti_1506js070.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/589c62f0ccaf8fe4777e9fd34a9846c458930d57_1434605778_peugeot_308gti_1506js023.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 44490,
-                    "description": "The 308 GTi is a hot hatch of the best grain and grain. The driving performance keep what the optics promise. It goes from zero to 100 km/h in six seconds, the top speed is 250 km/h – what more could you want in this class? Peugeot has given the model everything inside and out that would please fans of such models, from red calipers on the front brakes to beautiful rims, red contrast stitching on the seats and raised 308 GTi badges on the stainless steel door sills.The 308 GTi doesn't look as rowdy as, for example, a Honda Civic Type-R. Intended for people with a desire for horsepower, but without the urge to splurge. Particularly spectacular: the optional two-tone paintwork, which Peugeot intends to extend to other models in the future."
-                },
-                {
-                    "model": "3008",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/a6cf249199a21eb3be1890324dbfdb4fc10d76f4_322221-2wjkd6df0g-whr.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/1f14d488f34872f59f3d7ab2b2ee5feca11a02b0_790914-pdjsqqu64p-whr.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/54940b3e53861615569e58344adbf67736364dd1_790911-npyluq50ln-whr.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 27490,
-                    "description": "Of the four equipment versions for the Peugeot 3008, the basic equipment Access for the model with the 130 hp three-cylinder engine and the top equipment GT for the most powerful diesel are only available with the corresponding engines. Most versions are therefore only available in the two equipment lines Active. The standard equipment is quite extensive, including the basic air conditioning and audio system as well as several assistance systems. In the higher equipment lines there are numerous comfort accessories and several assistance systems such as a blind spot and lane departure warning system with steering intervention, fatigue warning and a parking aid at the front and rear."
-                },
-                {
-                    "model": "5008",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/4cef2ecb024d5b65488b6c97e4e2729e5060c902_1215936-p8uf0ipkne.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/54e3cc40b5d97f4fde4c77af9aa409dacfa2c015_1213518-31r0hxk19t.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/73196f9de42c446a9e1fe432174c78325b1e2340_1216302-falsidhb3c.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/9d3eab1caf33c8143d86859441825c880b58f0d3_1213536-fn0m9mor4f.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 32280,
-                    "description": "If the old Peugeot 5008 was a more well-behaved, practical van, the 5008 from 2017 appears much more self-confident and lifestyle. With the long, almost flat bonnet and the subtle flared fenders, it looks very stately. The interior with the curved dashboard, the large touch screen and the digital displays also appears very stylish. When it comes to digital communication, the 5008 is also up to date with mirror screen, 3D navigation and smartphone connectivity. Despite the new look, the 5008 shows classic Peugeot values ​​with comfortable front seats and a comfortably tuned chassis. There is no lack of space. The new 5008 is eleven centimeters longer than its predecessor, offers three rows of seats with a maximum of seven seats, a trunk with a maximum of 1940 liters and a loading length of more than three meters with the front passenger seat folded down. But even if it looks like it, you shouldn't drive the 5008 off-road, because there is no all-wheel drive."
-                }
-            ],
+            "models": [15, 16, 17],
             "brandHistory": "Peugeot has been building series vehicles since 1891. However, the company has been around much longer. The Peugeot family has been active in the area around the French town of Montbéliard since the end of the 18th century. The year 1810 is considered the founding year of the company. At that time, two Peugeot brothers added an iron foundry to their parents' oil mill in Herimoncourt. First of all, tool parts such as saw blades, rolling irons or corset stays are mainly manufactured. In the second half of the 19th century, agricultural implements, razor blades, coffee grinders and irons, among other things, were added. From 1881 bicycles are also on the production schedule. In 1889, the world's first Peugeot motor vehicle was born: a three-wheeler developed jointly with Léon Serpollet and powered by steam. A year later, with the Type 2, the switch to the combustion engine took place. It comes as a result of a license agreement between Patriarch Armand Peugeot and Gottlieb Daimler from Germany. The French only started building their own engines with the Type 14 in 1897. Peugeot was to retain the practice of corporate cooperation to this day."
         },
 
@@ -235,41 +44,7 @@
             "id": 6,
             "logo": "https://img.classistatic.de/api/v1/mo-prod/images/53/53101e93-8111-48a2-9fda-eee33f8a5738?rule=cf-150q.png",
             "brand": "Renault",
-            "models": [
-                {
-                    "model": "Kajar",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/07fb5bfb59a31d27f6197b7f4470b7660e06a41d_r161042h.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/da1c917060e8be9bf898cacf12881917522fccb9_r150111h.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/f4a36633bdfea2dbc3fd7c0b454ca3b6a9857474_r161039h.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/1e240e028eba069fdf0768dbdd80f8c46446bce1_r150576h.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 23280,
-                    "description": "The Renault Kadjar is a well-balanced car that doesn't have any major weaknesses and, with its comfort-focused set-up, represents a pleasant contrast to the sportiness of some competitors, which has been bought with firm chassis. The space is okay, as is the fair price-performance ratio. Entry into the Kadjar world starts at a manageable 19,990 euros. If you choose the very well-equipped top versions, the compact Frenchman also scratches the 35,000 euro mark and even skips it, including modern driver assistance systems with the more powerful engines."
-                },
-                {
-                    "model": "Megane",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/654f8428ac378a5920be3985264001ee9d0c1460_r160842h.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/17909a16abe90368e609df3ce8ad26335aabeb6b_r160821h.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/b65e1e787e43b11fa51e2e959ee8d07370394443_r160832h.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/f24f06b2e49cfcc7cec240608881f52f0a9d0e88_r160840h.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 21243,
-                    "description": "Everything is getting bigger, including the compact class. With a length of 4.63 meters, the Mégane Grand Tour has grown significantly compared to its predecessor and now also offers plenty of space for passengers and luggage. For comparison: a BMW 5 Series had the same format 30 years ago. The comfort-oriented chassis and the comfortable seats are typically French. Sporty driving characteristics are only available as standard for the top model TCe 205 EDC. Various ergonomic features of the infotainment system are not unusual for a French car. The Grand Tour is praised for its good workmanship."
-                },
-                {
-                    "model": "Talisman",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/c736d12ac274b929b245f9893ab3d00a7fdeba40_r160411h.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/ec0d6ca9dac9e55e8c07a66f399868a83f03b850_r160401h.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/b5551c41767bddb79ec29988181cf274c0d8b214_r160389h.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/bc304ae1e6c7a1cea9c780980526804c905e1ef2_r160369h.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 29880,
-                    "description": "The Renault Talisman Grand Tour is two centimeters longer and 1000 euros more expensive than the sedan. But it is more practical and also more elegant than the four-door counterpart. At 4.87 meters in length, the passengers sit very comfortably. The Grand Tour also has the advantage that tall people feel better in the back than in the limousine, because the roof line does not slope backwards as much here. As you would expect from a French station wagon, you sit on comfortable armchairs, have plenty of space and only have to deal with ergonomic peculiarities here and there. In this case it is the somewhat special menu navigation in the central touchscreen. With a trunk volume of 572 liters and 1681 liters with the rear seat folded down, the Grand Tour offers average values ​​for this class. Its strengths are rather the comfort and the good equipment as well as technical details such as the all-wheel steering, which is subject to a surcharge. But even the basic equipment includes a navigation system and rolls on alloy wheels."
-                }
-            ],
+            "models": [18, 19, 20],
             "brandHistory": "As is so often the case with large corporations, Renault started with a founding event that only became significant in retrospect: at Christmas 1898, the only 21-year-old Louis Renault drove to Paris in the wooden car he had assembled himself in his parents’ shed in Boulogne-Billancourt. The jaunt immediately brought him twelve orders to replicate his automobile. This is the first time that Renault's Model A has gone into series production. In February 1899, Louis and two brothers founded Société Renault Frères - a company owned by the Renault brothers. By the turn of the century, more than 100 employees were already working for the company. But the breakthrough to become an industrial group did not come until 1906, when a Parisian taxi company ordered 250 taxis in one fell swoop."
         },
 
@@ -277,126 +52,14 @@
             "id": 7,
             "logo": "https://img.classistatic.de/api/v1/mo-prod/images/f9/f9700d83-36f9-428a-abca-4eeedb156d40?rule=cf-150q.png",
             "brand": "Volkswagen",
-            "models": [
-                {
-                    "model": "Golf",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/345c0c2af3b25da68833ad8d5c5ed816ed36053a_db2015au01276_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/6dc1b791de6145a2e035104dab6ae39b67be0038_db2014au00498_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/9ab29af6cc99bb44bc0cd742b1539a84d800ec78_db2017au00164_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/af0e682fdc5f1ed15952d4e6306703b339547570_db2015au01064_large.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 27880,
-                    "description": "Golf or Golf Sportsvan - it is and remains a pure question of taste. Under the invisibility cloak of the still well-behaved design, there is a kind of grab bag among the Golfs: a spacious, versatile, yet compact space car with surprises. Nothing for Euro foxes and wannabe adventurers, but an interesting choice for connoisseurs. The lavish, flexible space concept of the Golf Sportsvan is just as much fun for young families – or those young at heart – as for high seat lovers looking for travel and seating comfort in their prime retirement age. Or should even fans of the premium segment be tickled? VW obviously has all customer requirements in mind here."
-                },
-                {
-                    "model": "Passat",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/441425abf193d4200169d64e1955c4b03eb4e0ad_db2014au01139_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/ea73c75eec8b9170f03e527e19de101026d7d007_db2014au01105_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/e03d343e67ca93c444fc0e8c5467b437e3db47ca_db2015au01142_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/8046dc67423bfdef710b621347c827c2e46c9989_db2014au01284_large.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 33880,
-                    "description": "The VW Passat B8 sedan has numerous advantages. It offers very good space, is of high quality and easy to use. Nevertheless, the notchback only plays a supporting role, especially on the German market. It has a share of just 30 percent of the sales of the series, 70 percent is accounted for by the station wagon with the designation Variant, which is only 1,000 euros more expensive. Whether notchback or Variant - this decision ultimately depends solely on personal preferences or requirements. The biggest differentiator is of course the trunk, although the sedan already has a large cargo area and can meet most everyday needs."
-                },
-                {
-                    "model": "Tiguan",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/ef7b6f74633df00402936be412f8d3ff99affdac_db2017au01429_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/28fe12e83c9cbc0feff6af8b4a837c6ed048e320_db2017au01430_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/d359f4d28f4b19daa4cf0c93a70e89c4724b533d_db2017au00762_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/117d4cee7753390a760bb4a27dca0a6880a50bcf_db2017au01428_large.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 27500,
-                    "description": "The critics were full of praise for the Tiguan in general. The second generation has significantly more character, once again sets standards in terms of ambience, offers advanced equipment and recently even a pinch of driving pleasure. Allspace, on the other hand, has triggered a divided echo. The experts judge the design to be successful despite the new proportions and they appreciate the significantly larger space. However, load masters are more likely to benefit from the new space than family fathers: suitcases can now be stowed away even better. But even for children beyond elementary school, the third row is considered an impertinence, not to mention adults. Anyone who wants to do something good for their offspring should therefore continue to drive a Touran or, ideally, a VW bus. "
-                },
-                {
-                    "model": "Touareg",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/3585f5d874b766bc4e6ae02817d79df0775bc866_db2006au01514_large.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/373395da191251eb39ade78ab1a2734a45a92dad_touareg-1-7l-main.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/8ece222847fe2b43d6e370563a1d9a3632ebac4f_db2014au01298_large.jpg.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/af56da6a50413a00832417d552a0dc16577034cb_touareg-1-7l-rear.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 57880,
-                    "description": "SUVs are very trendy - heavy SUVs, however, less so. The great popularity of the vehicle type relates primarily to the more compact models that have been added in recent years. VW sells more than five times as many Tiguans as Touaregs. This is certainly related to the higher price and the fact that the second Touareg generation is now showing its age. But the big SUV is also a real big ship, which is more unwieldy and thirsty than the Tiguan, especially in city traffic. Of course, the Touareg still remains an excellent touring car - and also a good deal cheaper than the similarly expansive models of the upscale premium competition."
-                }
-            ],
+            "models": [21, 22, 23, 24],
             "brandHistory": "The beginnings of Volkswagen are linked to the Austrian designer Ferdinand Porsche. In 1934 he was commissioned to create an economical and inexpensive family vehicle. After 13 months, the forerunner of the VW Beetle was to be presented as the KdF car (Strength through Joy). However, the factory in Wolfsburg, which was specially built for production, is no longer able to produce the Volkswagen, since at the beginning of World War II production was switched to the armament of the German Wehrmacht."
         },
         {
             "id": 8,
             "logo": "https://img.classistatic.de/api/v1/mo-prod/images/f6/f6f62a14-a2f5-488e-9031-c1cbaa9cc2e9?rule=cf-150q.png",
             "brand": "Volvo",
-            "models": [
-                {
-                    "model": "V60",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/1fd2113f31392fdfc52c07ea5f6792250de32ec8_167527_volvo_v60_r_design_model_year_2016.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/1f5fa1c9105472736369d0c5968e96ba7c3a0de6_188562_volvo_v60_edition.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/5412e5ffe674b39d4b673b955f2e82f247383af7_33331_volvo_v60.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/7356a94d1f813d5e65066b8bc30a965aa6a2eb5d_47876_volvo_v60.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 39890,
-                    "description": "The Volvo V60 is a station wagon for customers who like it a little sportier and more dynamic. Nevertheless, the agile V60 has remained a real Volvo, with solid workmanship, good safety standards and an attractive design. Here and there there are interesting details such as the rear headrests that can be lowered at the push of a button or the center console that appears to float. Especially with the adaptive damper control, the Volvo offers good driving comfort. As far as driving performance is concerned, the Swedes offer a wide range of petrol and diesel engines, from very reasonable to very sporty."
-                },
-                {
-                    "model": "V90",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/0135ed88397c8db3282dad8d98a2fb302478741c_192817_volvo_v90_r_design_studio.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/0fe186bc9b176bedf5e6bbfe14312248e2ea15bf_192820_volvo_v90_r_design_studio.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/280457458c58bb9607c7e67a56ebd594b3b04f47_191745_new_volvo_s90_v90_interior.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/6eadd4dc1abf3c480c8c2958be39bc73a8da5b51_173870_volvo_v90_location_3_4_rear.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 28850,
-                    "description": "The Volvo V90 has grown significantly compared to its predecessor, the V70. The station wagon, which is 4.94 meters long and 1.88 meters wide, looks very elegant and far less rustic than its predecessors. The noble station wagon corresponds to the new style of the house in terms of optics and technology, offers a lot of space in the interior and large displays, which are used to control a lot, even if they take some getting used to. You sit very comfortably, despite the wide center console has plenty of space. For the V90, too, the Swedes only offer four-cylinder engines with outputs of well over 300 hp, which lack a little smoothness compared to the powerful and melodious six-cylinders of the competition. In addition, the Volvo shines with its very good workmanship and its high level of safety."
-                },
-                {
-                    "model": "XC40",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/cb3895a84f2c189caab52f56d9a7f5b024ccec11_213085_new_volvo_xc40_exterior.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/d102cf1f63998ff924a85708c14a7ea94a7b596d_213091_new_volvo_xc40_exterior.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/7ba9c74a7ade54b6829a66847f463d61c3e4b22c_213042_new_volvo_xc40_interior.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/692a88bc99d80e84d954143fd28386500bcdbc55_216716_new_volvo_xc40_exterior.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 39890,
-                    "description": "With the XC40, Volvo offers a more compact and younger positioned alternative to the established SUV models XC60 and XC90. Although the XC40 is significantly shorter at 4.42 meters, it still weighs around 1.8 tons when it comes to agility. A four-cylinder petrol engine with 247 hp and a four-cylinder diesel with 190 hp are the first engines that move the XC40 quite quickly. An entry-level petrol engine with three cylinders is to follow in spring 2018. The XC40 is neither a sprinter nor is it particularly manoeuvrable. In return, it shines with the brand-typical high level of safety and dignified design. As with the larger brand colleagues, the central touchscreen dominates the interior. For a compact SUV, the space available, including the trunk with a maximum capacity of 1,336 liters, is good."
-                },
-                {
-                    "model": "XC60",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/4feaf7d6939500527e5590de94943ed3ba809dc2_205075_the_new_volvo_xc60.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/c6d5a56612d66451c8d71efe6b6872da3bd50eee_208166_the_new_volvo_xc60_t6.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/d06bac7a887dc716f35460f25c6494b1fc2223c7_205042_the_new_volvo_xc60.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/92f097910ac38472fdb64a0bca8bed2d333cfcb8_205074_the_new_volvo_xc60.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 41960,
-                    "description": "The second generation Volvo XC60 is significantly more premium than its predecessor. Elegant design in the style of the more expensive XC90, high-quality interior and very good safety equipment are among its advantages. With two petrol and two diesel four-cylinders and a hybrid model with 320 hp plus 87 hp electric motor, the XC60 is sufficiently motorized. The space of 4.69 meters long Volvo is good, but not lush. The trunk has a volume of up to 1,432 liters. The XC60, which weighs around two tons, is not an athlete; in general, it prefers a comfortable, relaxed driving style."
-                },
-                {
-                    "model": "XC70",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/f5b99cd0a390da6e05e8b7beef40addcc36670d7_main-1.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/5e1e401ce6d350e13f701747e65207e63f8e7d1f_ext2.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/e1ff6a7c180ad6af88a89ccc2cebfbe48777a970_int.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/634940716de00ae4046bdec7405d3b07850291be_rechts.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 2749,
-                    "description": "A Volvo as written in books: a bit angular, very spacious, well made and, above all, very safe. The XC70 is a mature offering in the off-road station wagon segment, created by its predecessor, the V70 XC. Apparently, the concept worked well for the Swedish brand: Under the name `Cross Country´ there is not only a gentle off-road version of the new V90 station wagon, the idea was also rolled out on the smaller V60 and V40 station wagon series. And with the Volvo S60 Cross Country, Volvo is trying out whether the whole thing also works with a sedan."
-                },
-                {
-                    "model": "XC90",
-                    "images": [
-                        "https://images.prismic.io/shacarlacca/c2cb1dce1e7e7c3b0b84ed830750d97ca66ad7f9_203097_volvo_xc90_t8_r_design.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/34ceb5ee17dd4e004ab3d3ef718fbac58e2421ed_162984_volvo_xc90.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/b523c6a511ea442047d90874a09de31faecfd64b_150064_volvo_xc90.jpg?auto=compress,format",
-                        "https://images.prismic.io/shacarlacca/7805a0ab9d111c757377c55a06d017645139585f_161485_volvo_xc90_excellence_lounge_console.jpg?auto=compress,format"
-                    ],
-                    "avgPrice": 54780,
-                    "description": "The Volvo XC90 looks classier and more modern than its predecessor. This external impression continues inside, where large screens dominate the cockpit. Not quite as extreme as with Tesla, but the Volvo still shows that connectivity is important in the new luxury SUV. The large Volvo is very suitable for everyday use with plenty of space in the front and rear and an equally spacious trunk. The fact that the XC90 is only available with turbocharged four-cylinder engines is a bold experiment in a segment where customers value the smoothness and sovereignty of the six- and eight-cylinder engines. At least the more powerful versions are not lacking in power, which is especially true for the T8 Twin-Engine hybrid version. The diesels, on the other hand, seem a bit robust. The chassis is designed for comfort. The XC90 lives up to its good reputation with its very good standard safety equipment."
-                }
-            ],
+            "models": [],
             "brandHistory": "In 1944, the first mass-produced Volvo was the PV 444, which also became a popular used Volvo car. In 1950, the Duett delivery van followed on the same basis.In 1954 the brand's first sports car appeared, the Volvo P 1900; however, the convertible with a plastic body is not very successful and is only bought as a used Volvo car at a reasonable price. Two years later, the family vehicle P 120, called Amazon, came onto the market. Perhaps the most beautiful Volvo ever built is the P 1800 introduced in 1960, a two-seater sports coupé that became famous through the crime series Simon Templar with Roger Moore and, as a vintage car, is probably the most coveted used Volvo car. Ten years later the station wagon coupe P 1800 ES appears, which is called Snow White's coffin because of its oversized, glass tailgate and inspires many buyers of a used Volvo car. The passive safety makes the vehicles sought-after Volvo cars In 1967, the P 140 series was introduced, which, with its angular, robust-looking design, long defined the style of the brand. In 1974 the Volvo 240 followed, which was built until 1993. It received a number of awards, including being the safest car of the year, and in 1977 it was the first vehicle in the world to be fitted with a lambda sensor and catalytic converter, meaning that even as a used Volvo car it had very low emissions. In the 1980s, Volvo underscored its claim to occupy a leading position in the field of active and passive safety with the early introduction of ABS, driver airbags and seat belt tensioners. At the beginning of the 1980s, the 700 series, which was even larger than the 240 type, came onto the market with the 740 and 760 models. In 1985, the company's first front-wheel drive vehicle appeared in the form of the sporty 480 ES coupé. A few years later, the 440 and 460 models were created on this basis, which are intended to appeal primarily to young buyers, but only when young people bought used Volvo cars. In 1990 the 700 series was replaced by the 940 and 960 models. The following year the new mid-range model Volvo 850 follows, which is particularly successful as a used Volvo station wagon. After a facelift in the mid-1990s, the station wagon became the V70, and the sedan first became the S70, and later the S60, which became popular Volvo used cars. The gap created by the phasing out of the 440 and 460 models is filled by the Volvo S40 and V40 respectively, the station wagon later renamed the V50. For cost reasons, the S40/V40 models were developed in cooperation with Mitsubishi, so they share the platform with the Mitsubishi Carisma. The Volvo 940/960 was later renamed the S90 (sedan) and V90 (estate). The latter is no longer built and is still available as a used Volvo car, the sedan will be replaced by the current S80. The only Volvo convertible is the C70 built since 1996, which will be manufactured until 2006; production of the coupé variant of the same name ended in 2002. Since 2002, Volvo has offered a large SUV called the XC90, as well as its little brother, the off-road station wagon XC70. The former is particularly successful in the USA as a used Volvo car. Broad portfolio of used Volvo cars The Volvo Car Corporation belonged to the Ford Motor Company until 2010 and was taken over by the Chinese Geely Group in April. This makes Volvo the first European group for new and used Volvo cars that has gone completely into Chinese hands. Volvo employs almost 100,000 people worldwide and manufactures over 400,000 cars a year, many of which are resold as used Volvo cars. The range includes the S, V, XC and C series. The S range includes the S40, S60 and S80. The last two are also available with the economical bi-fuel engine, which means they can run on both natural gas and petrol. With this system developed by Volvo, the driver has the option of switching between natural gas and petrol operation at any time. The range corresponds to According to the manufacturer, there are no limitations compared to conventional petrol engines, including in terms of safety and loading capacity. Thus, these models are also sought after as Volvo used cars for sale. Within the V series, Volvo offers the station wagons V50 and V70, the latter also as a bi-fuel version, in the XC series the SUVs XC70 and XC90 (also with V8 engine), and in the C series as the only convertible the C70, which can also sell well as a used Volvo car."
         }
     ],
@@ -482,6 +145,397 @@
             ],
             "description": "Like new. Drives very good. No accidents , scratches or cosmetic issues.First owner.Low mileage",
             "ownerId": "1"
+        }
+    ],
+    "models": [
+        {
+            "id": 1,
+            "model": "1 Series",
+            "images": [
+                "https://images.prismic.io/shacarlacca/0ae17ab7cec3d33348b137b06bedb9221c751ead_p90093261_highres.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/1ddca14fa4498ab623cb327d3a76680cfd23a426_p90093256_highres.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/c85a8389651b01892a2c5a07a149a5d5f869ddca_p90171618_highres.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/b5113fa55f7331cd0f99b42920dd1cd0a223d0ea_p90171315_highres.jpg?auto=compress,format"
+            ],
+            "brand": 2,
+            "avgPrice": 6450,
+            "description": "The BMW 1 Series F21 three-door is basically a unique car - because today rear-wheel drive is the absolute exception in the compact class. In the meantime, the small BMW is even the only compact model that relies on the combination of a front-mounted engine and driven rear wheels. This drive system guarantees more driving pleasure, especially on winding country roads, and better traction in dry road conditions. The three-door BMW 1 Series is primarily a car for singles or couples who prefer driving fun to practical history."
+        },
+        {
+            "id": 2,
+            "model": "2 Series",
+            "images": [
+                "https://images.prismic.io/shacarlacca/1d9e0c2791101512c15ef014615abd91d253c733_p90173833_highres.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/fa8976fd66d3550d6f4786011ef0bc1121540345_p90171434_highres.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/adfc09f42ebe15157137fed25751ed725f5419da_p90171830_highres.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/d5fd9c0a9bfd75722dfd71d71a50154597061cfa_p90171412_highres.jpg?auto=compress,format"
+            ],
+            "brand": 2,
+            "avgPrice": 17200,
+            "description": "When the BMW 2 Series Gran Tourer was presented, die-hard BMW fans worried. A family van with front-wheel drive from Munich - that could damage the sporty core of the brand. The wishes of this clientele should at least partially be taken into account. And so BMW was forced to make a compromise with the BMW 2 Series Gran Tourer. On the one hand it should be the functional van, on the other hand it should offer the advantages of a family-friendly travel companion and also those of a cheeky sports car. Ultimately, this led to the fact that he mastered everything a little, but nothing really perfectly. The BMW 2 Series Gran Tourer should iron out the faults of the Active Tourer: Mainly by really offering the interior space that is expected of such a car. The fact that the engineers openly admitted that they were based on the VW Touran should have scared the cast-iron supporters of the brand once again - but the pragmatists were happy."
+        },
+        {
+            "id": 3,
+            "model": "3 Series",
+            "images": [
+                "https://images.prismic.io/shacarlacca/f55044398d3985a274ff3ab5cf94a0e70e08d4a8_p90220383_highres.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/a7a1a67b17d9799c6f248df74bd297fff08d3695_p90220394_highres.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/f9efbe6e0a7d211a583b9b136f23640f121208a3_p90220413_highres.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/5ca667f11d1fcbad6a5aea0e8f4e0163f338104b_p90228553_highres.jpg?auto=compress,format"
+            ],
+            "brand": 2,
+            "avgPrice": 30758,
+            "description": "All too often the BMW 3 Series Gran Turismo (abbreviated: GT) is not seen on the local streets. Apparently, German buyers are reluctant to leave familiar paths and prefer to choose the 3 Series sedan or the 3 Series Touring. The GT lies somewhere between these two models and thus also sits a bit between the chairs.  It is certainly worthwhile for those interested in BMW to take a closer look at the GT. Thanks to its larger format, it offers significantly more legroom than its two brothers, and even a little more trunk space than the station wagon. In addition, due to the higher seating position, it allows for more comfortable entry. He combines these practical virtues with the roof line of a coupé, a type of vehicle that usually brings less rather than more utility. In addition, the GT is much less common on the streets than the other 3s. At the same time, BMW doesn't even charge too much for the exclusive exterior. So what speaks against the GT at all? Objectively surprisingly little. The question of whether you consider pumped-up pseudo coupes an aesthetic enrichment of the car market, everyone has to decide for themselves."
+        },
+        {
+            "id": 4,
+            "model": "A4",
+            "images": [
+                "https://images.prismic.io/shacarlacca/240cf5442f808e96ecc44ffd84c77613faf61253_a155138_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/62306cc930fc6302e1c54af77ca181b46750cc66_a159908_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/c1b2a28ff4e1a66d709c2df2fc64b02585c996e1_a155162_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/5dac15f65bd29132bd17209fa74fe1e704408144_a155134_large.jpg?auto=compress,format"
+            ],
+            "brand": 1,
+            "avgPrice": 15950,
+            "description": "Eight years is an eternity in the car world. But that's how long it took for Audi to bring a successor to the mid-range series offered up to and including 2015. In all these years, Audi was repeatedly criticized for despondent unit design. Although the new Audi A4 Avant continues to appear in its typical guise, its proportions and details such as the front represent a partial new beginning. Although the Audi A4 Avant still looks familiar, there are also many innovations under the sheet metal. The interior has been completely redesigned, and aluminum is used to reduce the weight of the body. However, the desire for less weight and the associated reduction in consumption also had strange consequences for the Audi A4 B9 Avant: the four-cylinder diesel models now only have a tank with a capacity of 40 liters ex works – 20 liters less than before."
+        },
+        {
+            "id": 5,
+            "model": "A6",
+            "images": [
+                "https://images.prismic.io/shacarlacca/9a473359e55065d2529949b6d620565c827530ef_a1510771_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/9bdf51a1c361653996d058404f79f91061946f37_a1510772_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/c1b2a28ff4e1a66d709c2df2fc64b02585c996e1_a155162_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/e609099709824df8b81f0f996e7f1dccf9e44461_a1510783_large.jpg?auto=compress,format"
+            ],
+            "brand": 1,
+            "avgPrice": 40400,
+            "description": "Audi no longer wanted to be considered a climber in the premium segment, but instead wanted to be mentioned in the same breath as BMW and Mercedes. The RS6 should contribute to this and put the competitors in their place in terms of performance. This is how an arms race began in a niche market, which Audi has won over and over again to this day. But the Ingolstadt-based company has a structural disadvantage: in an Audi, the front wheels are usually driven, while in the case of the competitors BMW and Mercedes, the rear wheels, which can better bring the power to the road. Audi's solution is all-wheel drive, which, however, increases consumption due to the increased weight and greater rolling resistance. Meanwhile, Mercedes also offers its competitor model with all-wheel drive, and Audi has quenched the thirst of its V8 thanks to cylinder deactivation. So the race for upgraded mid-range cars remains open. Due to a lack of material possibilities, most car fans will only follow it from the position of the amazed observer."
+        },
+        {
+            "id": 6,
+            "model": "A8",
+            "images": [
+                "https://images.prismic.io/shacarlacca/50ccd5fa39c91e4f91a156ad877e359ad665e44f_a178296_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/90c31eff613d185eb482874c9cf29522016018b8_a178292_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/b80cb0ecf0e7d5a117c5701c438f1073d441fd7d_a178305_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/bb3129fcab4d93a4cde8fdcce407b774d904cc4a_a1712072_large.jpg?auto=compress,format"
+            ],
+            "brand": 1,
+            "avgPrice": 83700,
+            "description": "When it premiered in 2017, the Audi A8 received mixed reviews. The testers were impressed by the interior and the new operating concept with extremely few switches and many touch elements, but correspondingly disappointed by the evolutionary body design. The technological innovations were also criticized in places. The 48-volt technology for the drive and chassis, on the other hand, was appreciated and that the traffic jam pilot, which was already very impressive in the test, still lacks official approval, nobody blames Audi. But the fact that the pioneers of lightweight aluminum construction, of all people, are returning to a mixed construction and thus accepting more weight was unanimously criticized. "
+        },
+        {
+            "id": 7,
+            "model": "Q7",
+            "images": [
+                "https://images.prismic.io/shacarlacca/f938200bebd02fa63934c6e1db70fea5b440c8ae_q7150155_medium.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/c3282c865c1328ac455f5ce003b75276183de478_q7150014_medium.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/fd0c2009711f4381537e94e0507e1d252957a7ad_q7150016_medium.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/bd4311742cc35c5a03dc7f85722adf063619eea2_q7150208_medium.jpg?auto=compress,format"
+            ],
+            "brand": 1,
+            "avgPrice": 83375,
+            "description": "Visually, the change to the second generation 4M was relatively subtle - the Audi Q7 no longer looks quite as bulky as its predecessor. Technically, much more has happened. For example, the virtual cockpit with a central display that can be individually configured is spectacular. There is also a large touchpad and a very modern navigation system that also forwards topography data and speed limits to the cruise control. In tests, the Audi Q7 received a lot of praise for its driving characteristics, especially in combination with all-wheel steering and air suspension: the car leveled out bumps as smoothly as previously only found in luxury sedans – without feeling rocking or imprecise."
+        },
+        {
+            "id": 8,
+            "model": "C-MAX",
+            "images": [
+                "https://images.prismic.io/shacarlacca/f58f810c0ba192b41291d94854d9200f0cfabcaa_fordc-max_exterior20.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/3aeb6267d6a0797f3639a45923676dfc72ea371a_c-max_03.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/b19ab50ab1527e844500df7ab40ffabcabfe1207_fordc-max_exterior13.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/2c6d5410ea3749ba5ac7367d8fd20563f03425e1_fordc-max_2015_015.jpg?auto=compress,format"
+            ],
+            "brand": 3,
+            "avgPrice": 9490,
+            "description": "Grand or not grand – that is not the question here. Yes, with the bold grille, the C-Max makes a bit of a family sports car. But deep down in his heart, this man from Cologne doesn't want to be a rebel at all. Since the 2015 facelift, the mid-size van has even become more relaxed and calm in some respects. Its engines run quieter and more efficiently, insulation and windows keep the hustle and bustle of everyday life away better, the chassis is softer and more comfortable. What is paramount in this car is safety for its passengers."
+        },
+        {
+            "id": 9,
+            "model": "Focus",
+            "images": [
+                "https://images.prismic.io/shacarlacca/32d2367987576099d7fc359642806b9659a291a6_ford2016_focusrs_01.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/e58e78bac22ad136971fd0c19a25461a1a32480c_ford2016_focusrs_06.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/74c64d51b40d8c44199cb94898cb748774e517be_fordfocusrs_lommel_37.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/d95794d5496ebc7e88d70cbfbe257f0f0f7675db_ford2016_focusrs_07.jpg?auto=compress,format"
+            ],
+            "brand": 3,
+            "avgPrice": 27980,
+            "description": "At the latest after the first courageous step on the gas pedal, the heart of a sports driver will smile. The way this €40,000 car gets down to business is second to none. And the next smile comes at the latest in the first corner. But this also makes the basic design of the Focus RS very quickly clear. A really species-appropriate attitude of the sporty Cologne native is only possible on the racetrack because of the high dynamic potential."
+        },
+        {
+            "id": 10,
+            "model": "Mondeo",
+            "images": [
+                "https://images.prismic.io/shacarlacca/2407efdb9257b8c90c976d9c6f0cffb4368635b7_fordmondeo_5door_07.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/683f2a4ef55710f985486a903fb1ad18b0d14092_fordmondeo-5door_16.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/907d407b830720aefedb79d44485cdd3f6faef3c_fordmondeo-5door_29.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/6311f856c4fe0815bfbe534f6c54ab79f2d3ec01_fordmondeo-5door_07.jpg?auto=compress,format"
+            ],
+            "brand": 3,
+            "avgPrice": 15990,
+            "description": "The Ford Mondeo is traditionally one of the underestimated sizes in the middle class. This also applies to the current fifth series, which now comes with a voracious maw in Aston Martin style. The Mondeo is also an impressive car overall and surpasses the certainly not small VW Passat by a whole ten centimeters. Starting at 25,750 euros, the Mondeo, like its predecessors, offers a lot of car for the money, but it also has good inner values: an agile but above all comfortable chassis and modern engines. The Mondeo sedan is overshadowed by the better-selling station wagon. It also offers a large tailgate, which hides an above-average loading volume."
+        },
+        {
+            "id": 11,
+            "model": "C-Class",
+            "images": [
+                "https://images.prismic.io/shacarlacca/f2d2d5202c5e62030175c287ae23055afbdde05c_13c1006_171.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/b25cf148636fdd26c83061ba7efbf7c2a3a42c3d_14c1134_14.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/f8a6f2c32dce28b8a01a50ee8d32469b0ac73875_13c1152_45.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/6bfbd2bc907fe7a2d21c63460ff2990bb9499804_13c1152_60.jpg?auto=compress,format"
+            ],
+            "brand": 4,
+            "avgPrice": 31430,
+            "description": "With a length of 4.70 meters, the C-Class ranks at the upper end of the middle class. Mercedes also places the model high up in terms of pricing - after all, a C-Class can cost 85,000 euros (AMG 63S). In terms of design, the C-Class uses the S-Class so uninhibitedly that not only laypeople have to look twice to see the difference. For the first time, the W205 series C-Class is also available with air suspension, which increases comfort for all occupants. No wonder, then, that even very long journeys can be comfortably endured in the C-Class. To save weight, however, the tank capacity has been reduced by 18 liters to 41 liters compared to the predecessor - a larger tank with a capacity of 66 liters is only available on request and at an additional cost (60 euros)."
+        },
+        {
+            "id": 12,
+            "model": "E-Class",
+            "images": [
+                "https://images.prismic.io/shacarlacca/218c9aaf195165a107ae47374173da2c54fee503_16c998_01.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/7a2c413e833d3cd65b28468bb3a96a1e64063007_16c949_010.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/545455b76672f1e08f1befcc25972bc1704e06a9_16c949_133.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/b8ad46da517a88c211156d5d8012eaf9f564e988_16c947_16.jpg?auto=compress,format"
+            ],
+            "brand": 4,
+            "avgPrice": 41990,
+            "description": "The Mercedes E-Class can be assigned to the so-called business class - these are cars from the upper middle class, which are often used as company cars and are very popular with fleet operators. Regardless of whether they are used for business or pleasure, customers can't do much wrong with the E-Class, which has been one of the model students in the main vehicle inspection for a number of years. Nothing will change with the new model. But with the new Mercedes E-Class there are also a few contradictions. On the one hand, like its predecessors, it has to satisfy managers and fathers alike - and probably also taxi drivers, although the taxi package is still pending. And since their clientele ticks rather conservatively, it remains to be seen whether regular customers will learn to appreciate the technically upgraded sedan. On the other hand, when it comes to assistance systems, it competes with the significantly higher positioned Mercedes S-Class."
+        },
+        {
+            "id": 13,
+            "model": "S-Class",
+            "images": [
+                "https://images.prismic.io/shacarlacca/45a8bfcd760048d5c1df5fbbe8a457e5116d8458_13c440_022.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/b6c7be847ed9ab6dd4fba1adf808895607ae11dd_13c882_05.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/4a718a4a0c2788aade4ff37f5a76e1a97075339d_13c704_004.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/210b33762dc471294686ecb1bbe96ae6037a0f1b_13c440_050.jpg?auto=compress,format"
+            ],
+            "brand": 4,
+            "avgPrice": 53490,
+            "description": "With the most recent facelift - as the people of Stuttgart lovingly describe their facelifts - the S-Class has again presented a mighty one to the eternal competition from Munich and Ingolstadt. Not that the BMW 7 Series and Audi A8 have nothing to offer in terms of driving dynamics, comfort and safety, because over the years they have come dangerously close to the Stuttgart status symbol - and in various comparison tests they have even been able to push it off the throne. So why buy an S-Class? You simply have to drive them to feel the special mixture of power, elegance and grace. Many ask themselves: is a car like the S-Class really needed? The clear answer is: No! And yet: It would be a shame if they didn't exist!."
+        },
+        {
+            "id": 14,
+            "model": "GLS-Class",
+            "images": [
+                "https://images.prismic.io/shacarlacca/735cbf34c20b94a2bc0a43d0b950cc21e55bf3c6_12c178_214.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/2a7af3554b3ef156ff26da4709bbd51a85f03ff9_15c1116_059.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/b352dd61fb33b30000ea6a64e1039c14e320901c_15c986_19.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/f60d4626a153f38c393d706e39965ab6669ced23_15c1115_060.jpg?auto=compress,format"
+            ],
+            "brand": 4,
+            "avgPrice": 119990,
+            "description": "Actually, the Mercedes GLS is a bit on the search for its identity, which is also reflected in the sales figures. As the largest representative of the Stuttgart-based SUV range, it cannot keep up with the cult potential of the G-Class. Compared to the smaller GLE, the optical and technical differentiation for a top model is not large enough. For those Mercedes customers who are looking for a comfortable SUV with plenty of space for up to seven people, it is still a very good, if not cheap, choice."
+        },
+        {
+            "id": 15,
+            "model": "308",
+            "images": [
+                "https://images.prismic.io/shacarlacca/52b9d41fcc3c4890a112094966c3d41e23c5b79f_1434605472_peugeot_308gti_1506js017.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/05b076e435bb4e2c00259b6fe12e90fe89d6e7a4_1434605705_peugeot_308gti_1506js021.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/47697b413a0ee41af55019a8c3a42ed16cdf0397_1434607076_peugeot_308gti_1506js070.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/589c62f0ccaf8fe4777e9fd34a9846c458930d57_1434605778_peugeot_308gti_1506js023.jpg?auto=compress,format"
+            ],
+            "brand": 5,
+            "avgPrice": 44490,
+            "description": "The 308 GTi is a hot hatch of the best grain and grain. The driving performance keep what the optics promise. It goes from zero to 100 km/h in six seconds, the top speed is 250 km/h – what more could you want in this class? Peugeot has given the model everything inside and out that would please fans of such models, from red calipers on the front brakes to beautiful rims, red contrast stitching on the seats and raised 308 GTi badges on the stainless steel door sills.The 308 GTi doesn't look as rowdy as, for example, a Honda Civic Type-R. Intended for people with a desire for horsepower, but without the urge to splurge. Particularly spectacular: the optional two-tone paintwork, which Peugeot intends to extend to other models in the future."
+        },
+        {
+            "id": 16,
+            "model": "3008",
+            "images": [
+                "https://images.prismic.io/shacarlacca/a6cf249199a21eb3be1890324dbfdb4fc10d76f4_322221-2wjkd6df0g-whr.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/1f14d488f34872f59f3d7ab2b2ee5feca11a02b0_790914-pdjsqqu64p-whr.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/54940b3e53861615569e58344adbf67736364dd1_790911-npyluq50ln-whr.jpg?auto=compress,format"
+            ],
+            "brand": 5,
+            "avgPrice": 27490,
+            "description": "Of the four equipment versions for the Peugeot 3008, the basic equipment Access for the model with the 130 hp three-cylinder engine and the top equipment GT for the most powerful diesel are only available with the corresponding engines. Most versions are therefore only available in the two equipment lines Active. The standard equipment is quite extensive, including the basic air conditioning and audio system as well as several assistance systems. In the higher equipment lines there are numerous comfort accessories and several assistance systems such as a blind spot and lane departure warning system with steering intervention, fatigue warning and a parking aid at the front and rear."
+        },
+        {
+            "id": 17,
+            "model": "5008",
+            "images": [
+                "https://images.prismic.io/shacarlacca/4cef2ecb024d5b65488b6c97e4e2729e5060c902_1215936-p8uf0ipkne.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/54e3cc40b5d97f4fde4c77af9aa409dacfa2c015_1213518-31r0hxk19t.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/73196f9de42c446a9e1fe432174c78325b1e2340_1216302-falsidhb3c.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/9d3eab1caf33c8143d86859441825c880b58f0d3_1213536-fn0m9mor4f.jpg?auto=compress,format"
+            ],
+            "brand": 5,
+            "avgPrice": 32280,
+            "description": "If the old Peugeot 5008 was a more well-behaved, practical van, the 5008 from 2017 appears much more self-confident and lifestyle. With the long, almost flat bonnet and the subtle flared fenders, it looks very stately. The interior with the curved dashboard, the large touch screen and the digital displays also appears very stylish. When it comes to digital communication, the 5008 is also up to date with mirror screen, 3D navigation and smartphone connectivity. Despite the new look, the 5008 shows classic Peugeot values ​​with comfortable front seats and a comfortably tuned chassis. There is no lack of space. The new 5008 is eleven centimeters longer than its predecessor, offers three rows of seats with a maximum of seven seats, a trunk with a maximum of 1940 liters and a loading length of more than three meters with the front passenger seat folded down. But even if it looks like it, you shouldn't drive the 5008 off-road, because there is no all-wheel drive."
+        },
+        {
+            "id": 18,
+            "model": "Kajar",
+            "images": [
+                "https://images.prismic.io/shacarlacca/07fb5bfb59a31d27f6197b7f4470b7660e06a41d_r161042h.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/da1c917060e8be9bf898cacf12881917522fccb9_r150111h.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/f4a36633bdfea2dbc3fd7c0b454ca3b6a9857474_r161039h.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/1e240e028eba069fdf0768dbdd80f8c46446bce1_r150576h.jpg?auto=compress,format"
+            ],
+            "brand": 6,
+            "avgPrice": 23280,
+            "description": "The Renault Kadjar is a well-balanced car that doesn't have any major weaknesses and, with its comfort-focused set-up, represents a pleasant contrast to the sportiness of some competitors, which has been bought with firm chassis. The space is okay, as is the fair price-performance ratio. Entry into the Kadjar world starts at a manageable 19,990 euros. If you choose the very well-equipped top versions, the compact Frenchman also scratches the 35,000 euro mark and even skips it, including modern driver assistance systems with the more powerful engines."
+        },
+        {
+            "id": 19,
+            "model": "Megane",
+            "images": [
+                "https://images.prismic.io/shacarlacca/654f8428ac378a5920be3985264001ee9d0c1460_r160842h.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/17909a16abe90368e609df3ce8ad26335aabeb6b_r160821h.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/b65e1e787e43b11fa51e2e959ee8d07370394443_r160832h.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/f24f06b2e49cfcc7cec240608881f52f0a9d0e88_r160840h.jpg?auto=compress,format"
+            ],
+            "brand": 6,
+            "avgPrice": 21243,
+            "description": "Everything is getting bigger, including the compact class. With a length of 4.63 meters, the Mégane Grand Tour has grown significantly compared to its predecessor and now also offers plenty of space for passengers and luggage. For comparison: a BMW 5 Series had the same format 30 years ago. The comfort-oriented chassis and the comfortable seats are typically French. Sporty driving characteristics are only available as standard for the top model TCe 205 EDC. Various ergonomic features of the infotainment system are not unusual for a French car. The Grand Tour is praised for its good workmanship."
+        },
+        {
+            "id": 20,
+            "model": "Talisman",
+            "images": [
+                "https://images.prismic.io/shacarlacca/c736d12ac274b929b245f9893ab3d00a7fdeba40_r160411h.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/ec0d6ca9dac9e55e8c07a66f399868a83f03b850_r160401h.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/b5551c41767bddb79ec29988181cf274c0d8b214_r160389h.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/bc304ae1e6c7a1cea9c780980526804c905e1ef2_r160369h.jpg?auto=compress,format"
+            ],
+            "brand": 6,
+            "avgPrice": 29880,
+            "description": "The Renault Talisman Grand Tour is two centimeters longer and 1000 euros more expensive than the sedan. But it is more practical and also more elegant than the four-door counterpart. At 4.87 meters in length, the passengers sit very comfortably. The Grand Tour also has the advantage that tall people feel better in the back than in the limousine, because the roof line does not slope backwards as much here. As you would expect from a French station wagon, you sit on comfortable armchairs, have plenty of space and only have to deal with ergonomic peculiarities here and there. In this case it is the somewhat special menu navigation in the central touchscreen. With a trunk volume of 572 liters and 1681 liters with the rear seat folded down, the Grand Tour offers average values ​​for this class. Its strengths are rather the comfort and the good equipment as well as technical details such as the all-wheel steering, which is subject to a surcharge. But even the basic equipment includes a navigation system and rolls on alloy wheels."
+        },
+        {
+            "id": 21,
+            "model": "Golf",
+            "images": [
+                "https://images.prismic.io/shacarlacca/345c0c2af3b25da68833ad8d5c5ed816ed36053a_db2015au01276_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/6dc1b791de6145a2e035104dab6ae39b67be0038_db2014au00498_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/9ab29af6cc99bb44bc0cd742b1539a84d800ec78_db2017au00164_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/af0e682fdc5f1ed15952d4e6306703b339547570_db2015au01064_large.jpg?auto=compress,format"
+            ],
+            "brand": 7,
+            "avgPrice": 27880,
+            "description": "Golf or Golf Sportsvan - it is and remains a pure question of taste. Under the invisibility cloak of the still well-behaved design, there is a kind of grab bag among the Golfs: a spacious, versatile, yet compact space car with surprises. Nothing for Euro foxes and wannabe adventurers, but an interesting choice for connoisseurs. The lavish, flexible space concept of the Golf Sportsvan is just as much fun for young families – or those young at heart – as for high seat lovers looking for travel and seating comfort in their prime retirement age. Or should even fans of the premium segment be tickled? VW obviously has all customer requirements in mind here."
+        },
+        {
+            "id": 22,
+            "model": "Passat",
+            "images": [
+                "https://images.prismic.io/shacarlacca/441425abf193d4200169d64e1955c4b03eb4e0ad_db2014au01139_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/ea73c75eec8b9170f03e527e19de101026d7d007_db2014au01105_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/e03d343e67ca93c444fc0e8c5467b437e3db47ca_db2015au01142_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/8046dc67423bfdef710b621347c827c2e46c9989_db2014au01284_large.jpg?auto=compress,format"
+            ],
+            "brand": 7,
+            "avgPrice": 33880,
+            "description": "The VW Passat B8 sedan has numerous advantages. It offers very good space, is of high quality and easy to use. Nevertheless, the notchback only plays a supporting role, especially on the German market. It has a share of just 30 percent of the sales of the series, 70 percent is accounted for by the station wagon with the designation Variant, which is only 1,000 euros more expensive. Whether notchback or Variant - this decision ultimately depends solely on personal preferences or requirements. The biggest differentiator is of course the trunk, although the sedan already has a large cargo area and can meet most everyday needs."
+        },
+        {
+            "id": 23,
+            "model": "Tiguan",
+            "images": [
+                "https://images.prismic.io/shacarlacca/ef7b6f74633df00402936be412f8d3ff99affdac_db2017au01429_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/28fe12e83c9cbc0feff6af8b4a837c6ed048e320_db2017au01430_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/d359f4d28f4b19daa4cf0c93a70e89c4724b533d_db2017au00762_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/117d4cee7753390a760bb4a27dca0a6880a50bcf_db2017au01428_large.jpg?auto=compress,format"
+            ],
+            "brand": 7,
+            "avgPrice": 27500,
+            "description": "The critics were full of praise for the Tiguan in general. The second generation has significantly more character, once again sets standards in terms of ambience, offers advanced equipment and recently even a pinch of driving pleasure. Allspace, on the other hand, has triggered a divided echo. The experts judge the design to be successful despite the new proportions and they appreciate the significantly larger space. However, load masters are more likely to benefit from the new space than family fathers: suitcases can now be stowed away even better. But even for children beyond elementary school, the third row is considered an impertinence, not to mention adults. Anyone who wants to do something good for their offspring should therefore continue to drive a Touran or, ideally, a VW bus. "
+        },
+        {
+            "id": 24,
+            "model": "Touareg",
+            "images": [
+                "https://images.prismic.io/shacarlacca/3585f5d874b766bc4e6ae02817d79df0775bc866_db2006au01514_large.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/373395da191251eb39ade78ab1a2734a45a92dad_touareg-1-7l-main.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/8ece222847fe2b43d6e370563a1d9a3632ebac4f_db2014au01298_large.jpg.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/af56da6a50413a00832417d552a0dc16577034cb_touareg-1-7l-rear.jpg?auto=compress,format"
+            ],
+            "brand": 7,
+            "avgPrice": 57880,
+            "description": "SUVs are very trendy - heavy SUVs, however, less so. The great popularity of the vehicle type relates primarily to the more compact models that have been added in recent years. VW sells more than five times as many Tiguans as Touaregs. This is certainly related to the higher price and the fact that the second Touareg generation is now showing its age. But the big SUV is also a real big ship, which is more unwieldy and thirsty than the Tiguan, especially in city traffic. Of course, the Touareg still remains an excellent touring car - and also a good deal cheaper than the similarly expansive models of the upscale premium competition."
+        },
+        {
+            "id": 25,
+            "model": "V60",
+            "images": [
+                "https://images.prismic.io/shacarlacca/1fd2113f31392fdfc52c07ea5f6792250de32ec8_167527_volvo_v60_r_design_model_year_2016.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/1f5fa1c9105472736369d0c5968e96ba7c3a0de6_188562_volvo_v60_edition.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/5412e5ffe674b39d4b673b955f2e82f247383af7_33331_volvo_v60.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/7356a94d1f813d5e65066b8bc30a965aa6a2eb5d_47876_volvo_v60.jpg?auto=compress,format"
+            ],
+            "brand": 8,
+            "avgPrice": 39890,
+            "description": "The Volvo V60 is a station wagon for customers who like it a little sportier and more dynamic. Nevertheless, the agile V60 has remained a real Volvo, with solid workmanship, good safety standards and an attractive design. Here and there there are interesting details such as the rear headrests that can be lowered at the push of a button or the center console that appears to float. Especially with the adaptive damper control, the Volvo offers good driving comfort. As far as driving performance is concerned, the Swedes offer a wide range of petrol and diesel engines, from very reasonable to very sporty."
+        },
+        {
+            "id": 26,
+            "model": "V90",
+            "images": [
+                "https://images.prismic.io/shacarlacca/0135ed88397c8db3282dad8d98a2fb302478741c_192817_volvo_v90_r_design_studio.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/0fe186bc9b176bedf5e6bbfe14312248e2ea15bf_192820_volvo_v90_r_design_studio.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/280457458c58bb9607c7e67a56ebd594b3b04f47_191745_new_volvo_s90_v90_interior.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/6eadd4dc1abf3c480c8c2958be39bc73a8da5b51_173870_volvo_v90_location_3_4_rear.jpg?auto=compress,format"
+            ],
+            "brand": 8,
+            "avgPrice": 28850,
+            "description": "The Volvo V90 has grown significantly compared to its predecessor, the V70. The station wagon, which is 4.94 meters long and 1.88 meters wide, looks very elegant and far less rustic than its predecessors. The noble station wagon corresponds to the new style of the house in terms of optics and technology, offers a lot of space in the interior and large displays, which are used to control a lot, even if they take some getting used to. You sit very comfortably, despite the wide center console has plenty of space. For the V90, too, the Swedes only offer four-cylinder engines with outputs of well over 300 hp, which lack a little smoothness compared to the powerful and melodious six-cylinders of the competition. In addition, the Volvo shines with its very good workmanship and its high level of safety."
+        },
+        {
+            "id": 27,
+            "model": "XC40",
+            "images": [
+                "https://images.prismic.io/shacarlacca/cb3895a84f2c189caab52f56d9a7f5b024ccec11_213085_new_volvo_xc40_exterior.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/d102cf1f63998ff924a85708c14a7ea94a7b596d_213091_new_volvo_xc40_exterior.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/7ba9c74a7ade54b6829a66847f463d61c3e4b22c_213042_new_volvo_xc40_interior.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/692a88bc99d80e84d954143fd28386500bcdbc55_216716_new_volvo_xc40_exterior.jpg?auto=compress,format"
+            ],
+            "brand": 8,
+            "avgPrice": 39890,
+            "description": "With the XC40, Volvo offers a more compact and younger positioned alternative to the established SUV models XC60 and XC90. Although the XC40 is significantly shorter at 4.42 meters, it still weighs around 1.8 tons when it comes to agility. A four-cylinder petrol engine with 247 hp and a four-cylinder diesel with 190 hp are the first engines that move the XC40 quite quickly. An entry-level petrol engine with three cylinders is to follow in spring 2018. The XC40 is neither a sprinter nor is it particularly manoeuvrable. In return, it shines with the brand-typical high level of safety and dignified design. As with the larger brand colleagues, the central touchscreen dominates the interior. For a compact SUV, the space available, including the trunk with a maximum capacity of 1,336 liters, is good."
+        },
+        {
+            "id": 28,
+            "model": "XC60",
+            "images": [
+                "https://images.prismic.io/shacarlacca/4feaf7d6939500527e5590de94943ed3ba809dc2_205075_the_new_volvo_xc60.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/c6d5a56612d66451c8d71efe6b6872da3bd50eee_208166_the_new_volvo_xc60_t6.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/d06bac7a887dc716f35460f25c6494b1fc2223c7_205042_the_new_volvo_xc60.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/92f097910ac38472fdb64a0bca8bed2d333cfcb8_205074_the_new_volvo_xc60.jpg?auto=compress,format"
+            ],
+            "brand": 8,
+            "avgPrice": 41960,
+            "description": "The second generation Volvo XC60 is significantly more premium than its predecessor. Elegant design in the style of the more expensive XC90, high-quality interior and very good safety equipment are among its advantages. With two petrol and two diesel four-cylinders and a hybrid model with 320 hp plus 87 hp electric motor, the XC60 is sufficiently motorized. The space of 4.69 meters long Volvo is good, but not lush. The trunk has a volume of up to 1,432 liters. The XC60, which weighs around two tons, is not an athlete; in general, it prefers a comfortable, relaxed driving style."
+        },
+        {
+            "id": 29,
+            "model": "XC70",
+            "images": [
+                "https://images.prismic.io/shacarlacca/f5b99cd0a390da6e05e8b7beef40addcc36670d7_main-1.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/5e1e401ce6d350e13f701747e65207e63f8e7d1f_ext2.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/e1ff6a7c180ad6af88a89ccc2cebfbe48777a970_int.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/634940716de00ae4046bdec7405d3b07850291be_rechts.jpg?auto=compress,format"
+            ],
+            "brand": 8,
+            "avgPrice": 2749,
+            "description": "A Volvo as written in books: a bit angular, very spacious, well made and, above all, very safe. The XC70 is a mature offering in the off-road station wagon segment, created by its predecessor, the V70 XC. Apparently, the concept worked well for the Swedish brand: Under the name `Cross Country´ there is not only a gentle off-road version of the new V90 station wagon, the idea was also rolled out on the smaller V60 and V40 station wagon series. And with the Volvo S60 Cross Country, Volvo is trying out whether the whole thing also works with a sedan."
+        },
+        {
+            "id": 30,
+            "model": "XC90",
+            "images": [
+                "https://images.prismic.io/shacarlacca/c2cb1dce1e7e7c3b0b84ed830750d97ca66ad7f9_203097_volvo_xc90_t8_r_design.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/34ceb5ee17dd4e004ab3d3ef718fbac58e2421ed_162984_volvo_xc90.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/b523c6a511ea442047d90874a09de31faecfd64b_150064_volvo_xc90.jpg?auto=compress,format",
+                "https://images.prismic.io/shacarlacca/7805a0ab9d111c757377c55a06d017645139585f_161485_volvo_xc90_excellence_lounge_console.jpg?auto=compress,format"
+            ],
+            "brand": 8,
+            "avgPrice": 54780,
+            "description": "The Volvo XC90 looks classier and more modern than its predecessor. This external impression continues inside, where large screens dominate the cockpit. Not quite as extreme as with Tesla, but the Volvo still shows that connectivity is important in the new luxury SUV. The large Volvo is very suitable for everyday use with plenty of space in the front and rear and an equally spacious trunk. The fact that the XC90 is only available with turbocharged four-cylinder engines is a bold experiment in a segment where customers value the smoothness and sovereignty of the six- and eight-cylinder engines. At least the more powerful versions are not lacking in power, which is especially true for the T8 Twin-Engine hybrid version. The diesels, on the other hand, seem a bit robust. The chassis is designed for comfort. The XC90 lives up to its good reputation with its very good standard safety equipment."
         }
     ]
 }
