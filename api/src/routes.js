@@ -1,3 +1,6 @@
 const router = require("express").Router();
+const carsController = require("./controlers/carsController");
 
-//router.get("/cars", carsController);
+router.use("/cars", carsController);
+
+module.exports = router;
