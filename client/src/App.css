@@ -1,0 +1,12 @@
+html {
+    background-color: #0B0F19;
+    color: #fff;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
