@@ -1,0 +1,2 @@
+-put users on bottom of reviews
+-my account i should be able to edit delete my own reviews 
