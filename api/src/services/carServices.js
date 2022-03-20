@@ -1,15 +1,11 @@
 const Car = require("../models/Car");
+const Model = require("../models/Model");
 
 const getAllCars = () => {
     return Car.find({})
-        .populate({
-            path: "models",
-            options: { lean: true },
-        })
+        .populate("models")
         .lean()
-        .exec()
         .then((cars) => {
-            console.log(cars);
             return cars;
         })
         .catch((err) => {
