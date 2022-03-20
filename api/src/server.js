@@ -7,8 +7,8 @@ const routes = require("./routes");
 const app = express();
 
 app.use(cors());
-
 app.use(routes);
+
 app.use(express.json());
 
 initDB(config.DB_CONNECTION_STRING)
