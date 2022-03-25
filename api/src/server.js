@@ -1,12 +1,14 @@
 const express = require("express");
 const initDB = require("./config/database");
 const cors = require("cors");
+const bodyParser = require("body-parser");
 
 const config = require("./config/config.json");
 const routes = require("./routes");
 const app = express();
 
 app.use(cors());
+app.use(bodyParser.json());
 app.use(routes);
 
 app.use(express.json());
