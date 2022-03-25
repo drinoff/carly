@@ -8,6 +8,8 @@ import ModelDetails from "./components/Cars/BrandDetails/CarModelButton/ModelDet
 import Blog from "./components/Blog/Blog";
 
 import "./App.css";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
 
 function App() {
     return (
@@ -20,6 +22,8 @@ function App() {
                 <Route path="cars/:brand" element={<BrandDetails />} />
                 <Route path="cars/:brand/:model" element={<ModelDetails />} />
                 <Route path="blog" element={<Blog />} />
+                <Route path="register" element={<Register />} />
+                <Route path="login" element={<Login />} />
             </Routes>
         </div>
     );
