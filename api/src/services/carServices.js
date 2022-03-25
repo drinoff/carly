@@ -1,5 +1,4 @@
 const Car = require("../models/Car");
-const Model = require("../models/Model");
 
 const getAllCars = () => {
     return Car.find({})
