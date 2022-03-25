@@ -1,14 +1,36 @@
 const User = require("../models/User");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const JWT_SECRET = require("../constants").JWT_SECRET;
 
-const register = (userData) => {
-    return User.create(userData)
-        .then((user) => {
-            return user;
-        })
-        .catch((err) => {
-            return err;
-        });
+const register = async (userData) => {
+    const { email, password } = userData;
+    const user = await User.findOne({ email });
+    if (user) {
+        throw new Error("User already exists");
+    }
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const newUser = new User({
+        email,
+        password: hashedPassword,
+    });
+    await newUser.save();
+    return createSession(newUser);
 };
+
+function createSession(user) {
+    return {
+        email: user.email,
+        _id: user._id,
+        accessToken: jwt.sign(
+            {
+                email: user.email,
+                _id: user._id,
+            },
+            JWT_SECRET
+        ),
+    };
+}
 
 const userServices = {
     register,

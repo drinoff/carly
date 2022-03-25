@@ -1,11 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { Box } from "@mui/material";
+import userServices from "../../services/userServices";
 import "./Register.css";
 
 const Register = () => {
+    const navigate = useNavigate();
+
     const onRegisterFormSubmitHandler = (e) => {
         e.preventDefault();
+        const formData = new FormData(e.target);
+        const email = formData.get("email");
+        const password = formData.get("password");
+        const rePass = formData.get("rePass");
+        const userData = {
+            email,
+            password,
+            rePass,
+        };
+        userServices.register(userData).then((user) => {
+            console.log(user);
+            // navigate("/");
+        });
     };
 
     return (
