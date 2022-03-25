@@ -18,8 +18,9 @@ const Cars = () => {
         });
     }, []);
 
-    const carClickHandler = (e) => {
-        const currentCar = cars.find((car) => car.id === +e.currentTarget.id);
+    const carClickHandler = (_id) => {
+        const currentCar = cars.find((car) => car._id === _id);
+
         navigate(`/cars/${currentCar.brand}`, {
             state: { car: currentCar },
         });
