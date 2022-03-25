@@ -1,1 +1,6 @@
-export const DB_CONNECTION_STRING = "mongodb://localhost:27017/carly";
+const JWT_SECRET =
+    "SNNX(((E9nX£X&N(£NX£EX(£MX£EX<E£X(£EXM£(EUNxu93mUnfljdwkMOENE|ecfiduxMOUECNEFdoUNEIDO473uhofnlkd";
+
+module.exports = {
+    JWT_SECRET,
+};
