@@ -1,13 +1,10 @@
 const yup = require("yup");
 
-yup.addMethod(yup.array, "unique", function (message, mapper = (a) => a) {
-    return this.test("unique", message, function (list) {
-        return list.length === new Set(list.map(mapper)).size;
-    });
-});
-
 const registerSchema = yup.object().shape({
-    email: yup.string().email("Please input a valid email").required(),
+    email: yup
+        .string()
+        .email("Please input a valid email")
+        .required("Email field cannot be empty"),
     password: yup
         .string()
         .min(8, "Password should be longer than 8 characters")
@@ -22,8 +19,11 @@ const registerSchema = yup.object().shape({
 });
 
 const loginSchema = yup.object().shape({
-    email: yup.string().email("Please input a valid email").required(),
-    password: yup.string().required(),
+    email: yup
+        .string()
+        .email("Please input a valid email")
+        .required("Email field cannot be empty"),
+    password: yup.string().required("Password field cannot be empty"),
 });
 
 const yupSchemas = {
