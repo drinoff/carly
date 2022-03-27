@@ -10,10 +10,20 @@ const register = async (req, res) => {
 
         res.status(201).json(result);
     } catch (error) {
-        res.status(400).json({ message: error });
+        res.status(400).json(error.message);
+    }
+};
+
+const login = async (req, res) => {
+    try {
+        const result = await userServices.login(req.body);
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(400).json(error.message);
     }
 };
 
 router.post("/register", validate(schemas.registerSchema), register);
+router.post("/login", validate(schemas.loginSchema), login);
 
 module.exports = router;
