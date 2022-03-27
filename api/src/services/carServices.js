@@ -8,14 +8,23 @@ const getAllCars = () => {
             return cars;
         })
         .catch((err) => {
-            console.log(err);
+            throw err;
+        });
+};
 
+const addCar = (car) => {
+    return Car.create(car)
+        .then((car) => {
+            return car;
+        })
+        .catch((err) => {
             throw err;
         });
 };
 
 const carServices = {
     getAllCars,
+    addCar,
 };
 
 module.exports = carServices;
