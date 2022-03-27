@@ -7,6 +7,17 @@ const getAllCars = (req, res) => {
     });
 };
 
+const addCar = (req, res) => {
+    carServices
+        .addCar(req.body)
+        .then((car) => {
+            res.json(car);
+        })
+        .catch((err) => {
+            res.json(err);
+        });
+};
+
 router.get("/", getAllCars);
 
 module.exports = router;
