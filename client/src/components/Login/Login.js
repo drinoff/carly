@@ -1,11 +1,30 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { Box } from "@mui/material";
 import "./Login.css";
+import userServices from "../../services/userServices";
 
-const Login = () => {
+const Login = ({ onLogin, onError }) => {
+    const navigate = useNavigate();
+
     const onRegisterFormSubmitHandler = (e) => {
         e.preventDefault();
+        const formData = new FormData(e.target);
+        const email = formData.get("email");
+        const password = formData.get("password");
+        const userData = {
+            email,
+            password,
+        };
+        userServices.login(userData).then((user) => {
+            if (user.error) {
+                onError(user.error);
+            } else {
+                user.isAuthenticated = true;
+                onLogin(user);
+                navigate("/");
+            }
+        });
     };
     return (
         <Box
