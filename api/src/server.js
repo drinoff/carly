@@ -1,5 +1,7 @@
 const express = require("express");
 const initDB = require("./config/database");
+require("./models/Model");
+require("./models/Car");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
