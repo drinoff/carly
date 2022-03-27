@@ -6,7 +6,7 @@ const modelSchema = new mongoose.Schema({
         required: true,
         validate: [
             /^[a-zA-Z0-9 ]+$/,
-            "Brand should contain only english letters,digits and spaces",
+            "Model should contain only english letters,digits and spaces",
         ],
     },
     avgPrice: {
