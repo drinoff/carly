@@ -18,6 +18,19 @@ const register = async (userData) => {
     return createSession(newUser);
 };
 
+const login = async (userData) => {
+    const { email, password } = userData;
+    const user = await User.findOne({ email });
+    if (!user) {
+        throw new Error("User does not exist");
+    }
+    const isPasswordValid = await bcrypt.compare(password, user.password);
+    if (!isPasswordValid) {
+        throw new Error("Email or Password is incorrect");
+    }
+    return createSession(user);
+};
+
 function createSession(user) {
     return {
         email: user.email,
@@ -34,6 +47,7 @@ function createSession(user) {
 
 const userServices = {
     register,
+    login,
 };
 
 module.exports = userServices;
