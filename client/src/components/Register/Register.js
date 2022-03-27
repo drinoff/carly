@@ -4,7 +4,7 @@ import { Box } from "@mui/material";
 import userServices from "../../services/userServices";
 import "./Register.css";
 
-const Register = () => {
+const Register = ({ onError }) => {
     const navigate = useNavigate();
 
     const onRegisterFormSubmitHandler = (e) => {
@@ -19,8 +19,11 @@ const Register = () => {
             rePass,
         };
         userServices.register(userData).then((user) => {
-            console.log(user);
-            // navigate("/");
+            if (user.error) {
+                onError(user.error);
+            } else {
+                navigate("/login");
+            }
         });
     };
 
