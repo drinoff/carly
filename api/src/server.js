@@ -2,6 +2,8 @@ const express = require("express");
 const initDB = require("./config/database");
 require("./models/Model");
 require("./models/Car");
+require("./models/User");
+require("./models/Review");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
