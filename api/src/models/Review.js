@@ -5,6 +5,14 @@ const reviewSchema = mongoose.Schema({
         type: String,
         required: true,
     },
+    brand: {
+        type: String,
+        required: true,
+    },
+    model: {
+        type: String,
+        required: true,
+    },
     desccription: {
         type: String,
         required: true,
@@ -26,9 +34,8 @@ const reviewSchema = mongoose.Schema({
         required: true,
     },
     ownerId: {
-        type: mongoose.Schema.Types.ObjectId,
+        type: mongoose.Types.ObjectId,
         ref: "User",
-        required: true,
     },
 });
 
