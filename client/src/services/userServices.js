@@ -25,9 +25,22 @@ const login = (userData) => {
     });
 };
 
+const logout = (token) => {
+    return fetch(BASE_URL + "/user/logout", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ token }),
+    }).then((response) => {
+        return response.json();
+    });
+};
+
 const userServices = {
     register,
     login,
+    logout,
 };
 
 export default userServices;
