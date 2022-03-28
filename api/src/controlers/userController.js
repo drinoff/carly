@@ -22,8 +22,17 @@ const login = async (req, res) => {
         res.status(400).json(error.message);
     }
 };
+const logout = async (req, res) => {
+    try {
+        const result = await userServices.logout(req.body.token);
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(400).json(error.message);
+    }
+};
 
 router.post("/register", validate(schemas.registerSchema), register);
 router.post("/login", validate(schemas.loginSchema), login);
+router.post("/logout", logout);
 
 module.exports = router;

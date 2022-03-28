@@ -3,6 +3,8 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const JWT_SECRET = require("../constants").JWT_SECRET;
 
+const blackList = [];
+
 const register = async (userData) => {
     const { email, password } = userData;
     const user = await User.findOne({ email });
@@ -20,7 +22,7 @@ const register = async (userData) => {
 
 const login = async (userData) => {
     const { email, password } = userData;
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ email: email.trim().toLowerCase() });
     if (!user) {
         throw new Error("User does not exist");
     }
@@ -30,11 +32,16 @@ const login = async (userData) => {
     }
     return createSession(user);
 };
+const logout = async (token) => {
+    blackList.push(token);
+    return { message: "Logout successful" };
+};
 
 function createSession(user) {
     return {
         email: user.email,
         _id: user._id,
+        isAuthenticated: true,
         accessToken: jwt.sign(
             {
                 email: user.email,
@@ -48,6 +55,7 @@ function createSession(user) {
 const userServices = {
     register,
     login,
+    logout,
 };
 
 module.exports = userServices;
