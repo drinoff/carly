@@ -1,17 +1,17 @@
 import { Routes, Route } from "react-router-dom";
-import useLocalStorage from "./hooks/useLocalStorage";
+import useLocalStorage from "../hooks/useLocalStorage";
 
-import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
-import Cars from "./components/Cars/Cars";
-import BrandDetails from "./components/Cars/BrandDetails/BrandDetails";
-import ModelDetails from "./components/Cars/BrandDetails/CarModelButton/ModelDetails/ModelDetails";
-import Blog from "./components/Blog/Blog";
-import UserContext from "./contexts/UserContext";
+import Header from "../components/Header/Header";
+import Home from "../components/Home/Home";
+import Cars from "../features/car/Cars";
+import BrandDetails from "../components/Cars/BrandDetails/BrandDetails";
+import ModelDetails from "../components/Cars/BrandDetails/CarModelButton/ModelDetails/ModelDetails";
+import Blog from "../features/review/Review";
+import UserContext from "../contexts/UserContext";
+import Login from "../components/Login/Login";
+import Register from "../components/Register/Register";
 
 import "./App.css";
-import Login from "./components/Login/Login";
-import Register from "./components/Register/Register";
 
 const initialValue = {
     email: "",
