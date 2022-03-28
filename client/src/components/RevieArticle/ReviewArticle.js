@@ -1,7 +1,6 @@
 import "./ReviewArticle.css";
 
 const BlogArticle = ({ review }) => {
-    console.log(review);
     return (
         <div className="Blog-blogArticle">
             <h1>{review.title}</h1>
