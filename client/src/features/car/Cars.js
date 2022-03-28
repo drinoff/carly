@@ -23,7 +23,7 @@ const Cars = () => {
             state: { car: currentCar },
         });
     };
-    console.log(cars);
+
     return (
         <div className="Cars-boxWrapper">
             <Box
