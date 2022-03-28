@@ -1,10 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { authenticateUser } from "../../features/auth/authSlice";
 
 import { Box } from "@mui/material";
 import "./Login.css";
-import userServices from "../../services/userServices";
 
-const Login = ({ onLogin, onError }) => {
+const Login = ({ onError }) => {
+    const dispatch = useDispatch();
     const navigate = useNavigate();
 
     const onRegisterFormSubmitHandler = (e) => {
@@ -16,12 +18,10 @@ const Login = ({ onLogin, onError }) => {
             email,
             password,
         };
-        userServices.login(userData).then((user) => {
-            if (user.error) {
-                onError(user.error);
+        dispatch(authenticateUser(userData)).then((response) => {
+            if (response.error) {
+                onError(response.payload);
             } else {
-                user.isAuthenticated = true;
-                onLogin(user);
                 navigate("/");
             }
         });
