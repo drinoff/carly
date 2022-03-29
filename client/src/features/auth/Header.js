@@ -7,7 +7,6 @@ import User from "../../components/User/User";
 const Header = () => {
     const user = useSelector(userSelector);
     const isAuthenticated = useSelector(isAuthenticatedSelector);
-    console.log(user, isAuthenticated);
     return (
         <div className="header">
             <User isAuthenticated={isAuthenticated} user={user} />
