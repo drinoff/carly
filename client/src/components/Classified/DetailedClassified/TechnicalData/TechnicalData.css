@@ -1,0 +1,75 @@
+.TechnicalData-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.TechnicalData-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #7582EB;
+}
+
+.TechnicalData-container .TechnicalData-Price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #75FAC8;
+    margin: 20px 15px 20px 15px;
+    border: 2px solid #FF4F87;
+    padding: 5px;
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+
+}
+
+.TechnicalData-container .TechnicalData-Price p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.TechnicalData-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.TechnicalData-container>div>span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFB023;
+    margin: 20px 15px 20px 15px;
+    border: 2px solid #7582EB;
+    padding: 5px;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.TechnicalData-container div span span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #75FAC8;
+    margin-left: 10px;
+}
+
+.TechnicalData-container div .TechnicalData-category {
+    border: 2px solid #FFB023;
+    width: 30%;
+}
+
+.TechnicalData-container div .TechnicalData-location {
+    border: 2px solid #9820E7;
+
+}
