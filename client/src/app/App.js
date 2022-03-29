@@ -8,6 +8,8 @@ import ModelDetails from "../components/Cars/BrandDetails/CarModelButton/ModelDe
 import Blog from "../features/review/Review";
 import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
+import Classifieds from "../features/classifieds/Classifieds";
+import DetailedClassified from "../components/Classified/DetailedClassified/DetailedClassified";
 import UserPanel from "../components/UserPanel/UserPanel";
 
 import "./App.css";
@@ -34,6 +36,11 @@ function App() {
                 />
                 <Route path="login" element={<Login onError={onError} />} />
                 <Route path="logout" element={<Logout />} />
+                <Route path="classifieds" element={<Classifieds />} />
+                <Route
+                    path="classifieds/:id"
+                    element={<DetailedClassified />}
+                />
                 <Route path="user/:name" element={<UserPanel />} />
             </Routes>
         </div>
