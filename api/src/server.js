@@ -4,6 +4,7 @@ require("./models/Model");
 require("./models/Car");
 require("./models/User");
 require("./models/Review");
+require("./models/Classified");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
