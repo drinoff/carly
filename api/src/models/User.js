@@ -10,6 +10,11 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    role: {
+        type: String,
+        enum: ["user", "reviewer", "admin"],
+        default: "user",
+    },
     classifieds: [
         {
             type: mongoose.Schema.Types.ObjectId,
