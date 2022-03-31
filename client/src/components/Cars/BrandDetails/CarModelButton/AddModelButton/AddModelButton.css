@@ -1,0 +1,15 @@
+.AddModelButton-modelButton {
+    width: 13%;
+    background-color: #151C2E;
+    border: 1px solid #515BA4;
+    border-radius: 8px;
+    color: #7582EB;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+}
+
+.AddModelButton-modelButton:hover {
+    border: 1px solid #7582EB;
+    cursor: pointer;
+}
