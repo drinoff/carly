@@ -1,4 +1,4 @@
-.Cars-carsContainer {
+.Clasified-clasifiedContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -7,7 +7,7 @@
 
 }
 
-.Cars-carsContainer:hover {
+.Clasified-clasifiedContainer:hover {
     cursor: pointer;
     opacity: 0.7;
     border: 2px solid #7582EB;
