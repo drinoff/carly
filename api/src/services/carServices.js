@@ -1,4 +1,5 @@
 const Car = require("../models/Car");
+const Model = require("../models/Model");
 
 const getAllCars = () => {
     return Car.find({})
@@ -22,9 +23,29 @@ const addCar = (car) => {
         });
 };
 
+const addModel = (model, brandId) => {
+    return Model.create(model)
+        .then((model) => {
+            return Car.findByIdAndUpdate(brandId, {
+                $push: {
+                    models: model._id,
+                },
+            }).then((car) => {
+                return car;
+            });
+        })
+        .then((res) => {
+            return res;
+        })
+        .catch((err) => {
+            throw err;
+        });
+};
+
 const carServices = {
     getAllCars,
     addCar,
+    addModel,
 };
 
 module.exports = carServices;
