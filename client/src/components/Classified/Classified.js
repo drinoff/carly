@@ -9,7 +9,7 @@ const Classified = ({ classified, onClassifiedCLickHandler }) => {
     return (
         <Box
             onClick={() => onClassifiedCLickHandler(classified)}
-            className="Cars-carsContainer"
+            className="Clasified-clasifiedContainer"
             sx={{
                 bgcolor: "#111827",
                 height: "auto",
