@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const JWT_SECRET = require("../constants").JWT_SECRET;
 
-const blackList = [];
+const blacklist = [];
 
 const register = async (userData) => {
     const { email, password } = userData;
@@ -33,13 +33,14 @@ const login = async (userData) => {
     return createSession(user);
 };
 const logout = async (token) => {
-    blackList.push(token);
+    blacklist.push(token);
     return { message: "Logout successful" };
 };
 
 function createSession(user) {
     return {
         email: user.email,
+        role: user.role,
         _id: user._id,
         isAuthenticated: true,
         accessToken: jwt.sign(
@@ -52,10 +53,26 @@ function createSession(user) {
     };
 }
 
+function verifySession(token) {
+    if (blacklist.includes(token)) {
+        throw new Error("Token is invalidated");
+    }
+
+    const payload = jwt.verify(token, JWT_SECRET);
+
+    return {
+        email: payload.email,
+        _id: payload._id,
+        role: payload.role,
+        token,
+    };
+}
+
 const userServices = {
     register,
     login,
     logout,
+    verifySession,
 };
 
 module.exports = userServices;
