@@ -2,6 +2,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 import { Box } from "@mui/material";
 import CarModelButton from "./CarModelButton/CarModelButton";
+import AddModelButton from "../BrandDetails/CarModelButton/AddModelButton/AddModelButton";
 
 import "./BrandDetails.css";
 
@@ -43,6 +44,7 @@ const BrandDetails = () => {
                         onCarModelClickHandler={onCarModelClickHandler}
                     />
                 ))}
+                <AddModelButton car={car} />
             </div>
             <h2>Brief History</h2>
             <p className="BrandDetails-description">{car.brandHistory}</p>
