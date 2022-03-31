@@ -7,6 +7,7 @@ const initialState = {
     user: {
         id: authStatus ? authStatus._id : null,
         email: authStatus ? authStatus.email : null,
+        role: authStatus ? authStatus.role : null,
         isAuthenticated: authStatus ? true : false,
     },
 };
