@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./AddModelButton.css";
 
 const AddModelButton = ({ car }) => {
-    const carBrand = car.brand;
+    const carBrand = car?.brand;
 
     const navigate = useNavigate();
 
