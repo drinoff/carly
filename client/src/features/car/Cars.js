@@ -20,7 +20,7 @@ const Cars = () => {
         const currentCar = cars.find((car) => car._id === _id);
 
         navigate(`/cars/${currentCar.brand}`, {
-            state: { car: currentCar },
+            state: { carId: currentCar._id, carModels: currentCar.models },
         });
     };
 
