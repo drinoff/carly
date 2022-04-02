@@ -1,0 +1,39 @@
+.ReviewAdminButtons {
+    width: 50%;
+}
+
+.ReviewAdminButtons-edit {
+    width: 35%;
+    height: 10%;
+    border-radius: 12px;
+    background-color: #151C2E;
+    border: 1px solid #ffb12091;
+    border-radius: 8px;
+    color: #FFB020;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+}
+
+.ReviewAdminButtons-edit:hover {
+    border: 1px solid #FFB020;
+    cursor: pointer;
+}
+
+.ReviewAdminButtons-delete {
+    width: 35%;
+    height: 10%;
+    border-radius: 12px;
+    background-color: #151C2E;
+    border: 1px solid #f1444488;
+    border-radius: 8px;
+    color: #fe0101;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+}
+
+.ReviewAdminButtons-delete:hover {
+    border: 1px solid #fa0404;
+    cursor: pointer;
+}
