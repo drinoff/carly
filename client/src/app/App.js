@@ -16,6 +16,7 @@ import RouteGuard from "../components/RouteGuard/RouteGuard";
 import Logout from "../components/Logout/Logout";
 import AddCar from "../components/Cars/AddCar/AddCar";
 import AddModel from "../components/Cars/BrandDetails/AddModel/AddModel";
+import AddArticle from "../components/AddArticle/AddArticle";
 import EditModel from "../components/Cars/EditModel/EditModel";
 import UserPanel from "../components/UserPanel/UserPanel";
 
@@ -73,6 +74,7 @@ function App() {
 				/>
 
 				<Route path="blog" element={<Blog />} />
+				<Route path="blog/add" element={<AddArticle />} />
 				<Route path="register" element={<Register onError={onError} />} />
 				<Route path="login" element={<Login onError={onError} />} />
 				<Route path="logout" element={<Logout />} />
