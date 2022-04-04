@@ -1,0 +1,20 @@
+.addArticleButton {
+    position: fixed;
+    width: 10%;
+    height: 10%;
+    border-radius: 12px;
+    top: 103px;
+    right: 30px;
+    background-color: #151C2E;
+    border: 1px solid #10B981;
+    border-radius: 8px;
+    color: #10B981;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+}
+
+.addArticleButton:hover {
+    border: 1px solid #75FAC8;
+    cursor: pointer;
+}
