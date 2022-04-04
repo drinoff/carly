@@ -37,7 +37,6 @@ function isAdmin() {
 function isReviewer() {
 	return async (req, res, next) => {
 		const userEmail = req.user.email;
-		console.log(userEmail);
 		const existing = await User.findOne({ email: userEmail });
 
 		if (existing.role === "reviewer" || existing.role === "admin") {
