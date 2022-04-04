@@ -1,7 +1,7 @@
 import { BASE_URL } from "../constants";
 
 const user = JSON.parse(localStorage.getItem("user"));
-const accessToken = user.accessToken;
+const accessToken = user?.accessToken;
 
 const getAllCars = async () => {
 	return fetch(`${BASE_URL}/cars`).then((res) =>
