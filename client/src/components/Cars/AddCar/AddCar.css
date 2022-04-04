@@ -93,3 +93,13 @@
     resize: none;
 
 }
+
+#brandHistory:hover {
+    border: 1px solid white;
+
+}
+
+#brandHistory:focus {
+    outline: none;
+    border: 1px solid #7582EB;
+}

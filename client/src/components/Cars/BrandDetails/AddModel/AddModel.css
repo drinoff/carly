@@ -95,3 +95,12 @@
     resize: none;
 
 }
+
+#modelDesc:hover {
+    border: 1px solid white;
+}
+
+#modelDesc:focus {
+    outline: none;
+    border: 1px solid #7582EB;
+}
