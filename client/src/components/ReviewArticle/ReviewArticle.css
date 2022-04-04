@@ -53,3 +53,17 @@
 .BlogArticle-verdict {
     color: #7582EB;
 }
+
+.ReviewArticle-description {
+    word-wrap: break-word;
+}
+
+.RevieArticle-owner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0px;
+    color: #75FAC8;
+    font-size: 12px;
+}
