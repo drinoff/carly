@@ -40,6 +40,16 @@ const reviewSchema = mongoose.Schema({
 	regDate: {
 		type: Date,
 	},
+	comments: [
+		{
+			owner: {
+				type: String,
+			},
+			comment: {
+				type: String,
+			},
+		},
+	],
 });
 
 const Review = mongoose.model("Review", reviewSchema);
