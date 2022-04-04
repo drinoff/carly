@@ -20,6 +20,7 @@ import AddCar from "../components/Cars/AddCar/AddCar";
 import AddModel from "../components/Cars/BrandDetails/AddModel/AddModel";
 import AddArticle from "../components/ReviewArticle/AddArticle/AddArticle";
 import EditModel from "../components/Cars/EditModel/EditModel";
+import EditClassified from "../components/Classified/EditClassified/EditClassified";
 import AddClassified from "../components/Classified/AddClassified/AddClassified";
 import UserPanel from "../components/UserPanel/UserPanel";
 
@@ -101,6 +102,7 @@ function App() {
 					<Route path="classifieds" element={<Classifieds />} />
 					<Route path="classifieds/:id" element={<DetailedClassified />} />
 					<Route path="classifieds/add" element={<AddClassified />} />
+					<Route path="classifieds/:id/edit" element={<EditClassified />} />
 					<Route path="user/:name" element={<UserPanel />} />
 				</Routes>
 			</Suspense>
