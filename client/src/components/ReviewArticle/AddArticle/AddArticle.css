@@ -109,3 +109,13 @@
     resize: none;
 
 }
+
+#articleDescription:hover {
+    border: 1px solid white;
+
+}
+
+#articleDescription:focus {
+    outline: none;
+    border: 1px solid #7582EB;
+}
