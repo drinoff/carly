@@ -23,6 +23,7 @@ const Blog = () => {
 	const onAddArticleClickHandler = () => {
 		navigate(`/blog/add`);
 	};
+
 	return (
 		<Box
 			className="Blog-blogContainer"
@@ -32,9 +33,11 @@ const Blog = () => {
 				width: "70%",
 			}}
 		>
-			{reviews.map((review) => (
-				<ReviewArticle key={review.title} review={review} />
-			))}
+			{[...reviews]
+				.sort((a, b) => new Date(b.regDate) - new Date(a.regDate))
+				.map((review) => (
+					<ReviewArticle key={review.title} review={review} />
+				))}
 			{isAuthenticated ? (
 				user.role === "admin" || user.role === "reviewer" ? (
 					<button className="addArticleButton" onClick={onAddArticleClickHandler}>
