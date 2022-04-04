@@ -29,7 +29,6 @@ const getCarById = (req, res) => {
 
 const updateCar = (req, res) => {
 	const carId = req.params.id;
-	console.log(req.body);
 	carServices.updateCar(carId, req.body).then((car) => {
 		res.json(car);
 	});
