@@ -7,9 +7,9 @@ import "./AddModel.css";
 const AddModel = () => {
 	const navigate = useNavigate();
 	const location = useLocation();
-	const car = location.state.car;
+	const car = location.state?.car;
 
-	const carBrandId = car._id;
+	const carBrandId = car?._id;
 
 	const onAddModelFormSubmitHandler = (e) => {
 		e.preventDefault();
@@ -50,84 +50,38 @@ const AddModel = () => {
 			}}
 		>
 			<h1 className="addModelHeading">Add Car</h1>
-			<form
-				id="addModel-form"
-				action="POST"
-				className="addModel-form"
-				onSubmit={onAddModelFormSubmitHandler}
-			>
+			<form id="addModel-form" action="POST" className="addModel-form" onSubmit={onAddModelFormSubmitHandler}>
 				<div className="modelNameContainer">
 					<label htmlFor="modelName">Model Name</label>
-					<input
-						autoComplete="off"
-						id="modelName"
-						type="text"
-						name="modelName"
-						className="formInputStyle"
-					/>
+					<input autoComplete="off" id="modelName" type="text" name="modelName" className="formInputStyle" />
 				</div>
 
 				<div className="avgPriceContainer">
 					<label htmlFor="avgPrice">Average Price</label>
-					<input
-						id="avgPrice"
-						type="text"
-						name="avgPrice"
-						className="formInputStyle"
-					/>
+					<input id="avgPrice" type="text" name="avgPrice" className="formInputStyle" />
 				</div>
 				<div className="modelDescContainer">
 					<label htmlFor="modelDesc">Model Description</label>
-					<textarea
-						rows={6}
-						cols={50}
-						id="modelDesc"
-						type="text"
-						name="modelDesc"
-					></textarea>
+					<textarea rows={6} cols={50} id="modelDesc" type="text" name="modelDesc"></textarea>
 				</div>
 				<div className="pictureContainer">
 					<label htmlFor="modelPic">Image URL</label>
-					<input
-						id="modelPic-a"
-						type="text"
-						name="modelPic-a"
-						className="formInputStyle"
-					/>
+					<input id="modelPic-a" type="text" name="modelPic-a" className="formInputStyle" />
 				</div>
 				<div className="pictureContainer">
 					<label htmlFor="modelPic">Image URL</label>
-					<input
-						id="modelPic-b"
-						type="text"
-						name="modelPic-b"
-						className="formInputStyle"
-					/>
+					<input id="modelPic-b" type="text" name="modelPic-b" className="formInputStyle" />
 				</div>
 				<div className="pictureContainer">
 					<label htmlFor="modelPic">Image URL</label>
-					<input
-						id="modelPic-c"
-						type="text"
-						name="modelPic-c"
-						className="formInputStyle"
-					/>
+					<input id="modelPic-c" type="text" name="modelPic-c" className="formInputStyle" />
 				</div>
 				<div className="pictureContainer">
 					<label htmlFor="modelPic">Image URL</label>
-					<input
-						id="modelPic-d"
-						type="text"
-						name="modelPic-d"
-						className="formInputStyle"
-					/>
+					<input id="modelPic-d" type="text" name="modelPic-d" className="formInputStyle" />
 				</div>
 
-				<input
-					className="addModelButton"
-					type="submit"
-					value="Add Model"
-				/>
+				<input className="addModelButton" type="submit" value="Add Model" />
 			</form>
 		</Box>
 	);
