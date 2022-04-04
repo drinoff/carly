@@ -1,7 +1,5 @@
 import { BASE_URL } from "../constants";
-
-const user = JSON.parse(localStorage.getItem("user"));
-const accessToken = user?.accessToken;
+import { getAccessToken } from "../utils/utils";
 
 const getAllReviews = async () => {
 	return fetch(`${BASE_URL}/reviews`)
@@ -16,7 +14,7 @@ const addReview = (review) => {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
-			"x-authorization": accessToken,
+			"x-authorization": getAccessToken(),
 		},
 		body: JSON.stringify(review),
 	})
@@ -29,7 +27,7 @@ const updateReview = (reviewId, review) => {
 		method: "PUT",
 		headers: {
 			"Content-Type": "application/json",
-			"x-authorization": accessToken,
+			"x-authorization": getAccessToken(),
 		},
 		body: JSON.stringify(review),
 	})
@@ -42,7 +40,7 @@ const deleteReview = (reviewId) => {
 		method: "DELETE",
 		headers: {
 			"Content-Type": "application/json",
-			"x-authorization": accessToken,
+			"x-authorization": getAccessToken(),
 		},
 	})
 		.then((res) => res.json())
@@ -54,7 +52,7 @@ const addComment = (reviewId, review) => {
 		method: "PATCH",
 		headers: {
 			"Content-Type": "application/json",
-			"x-authorization": accessToken,
+			"x-authorization": getAccessToken(),
 		},
 		body: JSON.stringify(review),
 	})

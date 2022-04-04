@@ -1,7 +1,5 @@
 import { BASE_URL } from "../constants";
-
-const user = JSON.parse(localStorage.getItem("user"));
-const accessToken = user?.accessToken;
+import { getAccessToken } from "../utils/utils";
 
 const getAllCars = async () => {
 	return fetch(`${BASE_URL}/cars`).then((res) =>
@@ -16,7 +14,7 @@ const addCar = async (car) => {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
-			"x-authorization": accessToken,
+			"x-authorization": getAccessToken(),
 		},
 		body: JSON.stringify(car),
 	}).then((res) => res.json());
@@ -35,7 +33,7 @@ const updateCar = (carId, carData) => {
 		method: "PUT",
 		headers: {
 			"Content-Type": "application/json",
-			"x-authorization": accessToken,
+			"x-authorization": getAccessToken(),
 		},
 		body: JSON.stringify(carData),
 	})
@@ -48,7 +46,7 @@ const deleteCar = (carId) => {
 		method: "DELETE",
 		headers: {
 			"Content-Type": "application/json",
-			"x-authorization": accessToken,
+			"x-authorization": getAccessToken(),
 		},
 	})
 		.then((res) => res.json())
@@ -62,7 +60,7 @@ const addModel = (model) => {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
-			"x-authorization": accessToken,
+			"x-authorization": getAccessToken(),
 		},
 		body: JSON.stringify(model),
 	})
@@ -85,7 +83,7 @@ const updateModel = (modelId, modelData) => {
 		method: "PUT",
 		headers: {
 			"Content-Type": "application/json",
-			"x-authorization": accessToken,
+			"x-authorization": getAccessToken(),
 		},
 		body: JSON.stringify(modelData),
 	})
@@ -100,7 +98,7 @@ const deleteModel = (modelId) => {
 		method: "DELETE",
 		headers: {
 			"Content-Type": "application/json",
-			"x-authorization": accessToken,
+			"x-authorization": getAccessToken(),
 		},
 	})
 		.then((res) => res.json())
