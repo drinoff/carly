@@ -46,3 +46,12 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+.DetailedClassified-extras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
