@@ -5,11 +5,9 @@ const getAllReviews = () => {
 		.populate("ownerId", "email")
 		.lean()
 		.then((reviews) => {
-			console.log(reviews);
 			return reviews;
 		})
 		.catch((err) => {
-			console.log(err);
 			throw err;
 		});
 };
@@ -20,7 +18,39 @@ const addReview = (review) => {
 			return review;
 		})
 		.catch((err) => {
-			console.log(err);
+			throw err;
+		});
+};
+
+const updateReview = (reviewId, review) => {
+	return Review.findByIdAndUpdate(reviewId, review, { new: true })
+		.then((updatedReview) => {
+			return updatedReview;
+		})
+		.catch((err) => {
+			throw err;
+		});
+};
+
+const deleteReview = (reviewId) => {
+	return Review.findByIdAndDelete(reviewId)
+		.then((review) => {
+			return review;
+		})
+		.catch((err) => {
+			throw err;
+		});
+};
+
+const addComment = async (reviewId, comment) => {
+	return Review.updateOne(
+		{ _id: reviewId },
+		{ $push: { comments: { owner: comment.owner, comment: comment.comment } } }
+	)
+		.then((updatedReview) => {
+			return updatedReview;
+		})
+		.catch((err) => {
 			throw err;
 		});
 };
@@ -28,6 +58,9 @@ const addReview = (review) => {
 const reviewServices = {
 	getAllReviews,
 	addReview,
+	updateReview,
+	deleteReview,
+	addComment,
 };
 
 module.exports = reviewServices;
