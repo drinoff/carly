@@ -1,0 +1,17 @@
+.extraContainer {
+    border: 2px solid #FF4F87;
+    border-radius: 50px;
+    margin: 10px 10px;
+    width: 15%;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.extraContainer span {
+    width: 15%;
+
+}
+
+.fa-check {
+    size: 20px;
+}
