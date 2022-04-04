@@ -8,7 +8,7 @@ const EditModel = () => {
 		model: "",
 		avgPrice: "",
 		description: "",
-		images: [],
+		images: ["", "", "", ""],
 	});
 
 	const navigate = useNavigate();
@@ -65,7 +65,7 @@ const EditModel = () => {
 				width: "70%",
 			}}
 		>
-			<h1 className="addModelHeading">Add Car</h1>
+			<h1 className="addModelHeading">Edit Model</h1>
 			<form id="addModel-form" action="POST" className="addModel-form" onSubmit={onEditModelFormSubmitHandler}>
 				<div className="modelNameContainer">
 					<label htmlFor="modelName">Model Name</label>
@@ -183,7 +183,7 @@ const EditModel = () => {
 					/>
 				</div>
 
-				<input className="addModelButton" type="submit" value="Add Model" />
+				<input className="addModelButton" type="submit" value="Edit Model" />
 			</form>
 		</Box>
 	);
