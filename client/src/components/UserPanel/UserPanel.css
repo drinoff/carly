@@ -1,0 +1,126 @@
+.userPanelContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 73px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #161D2C;
+    font-size: 14px;
+    font-family: 500;
+}
+
+.mainContainer p {
+    background-color: #10B981;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+.dividerListItem {
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    color: #7582EB !important;
+    text-align: center !important;
+    align-self: center !important;
+
+}
+
+.dividerListItem:hover {
+    background-color: #161D2C !important;
+    color: #75FAC8 !important;
+    transition: 0.2s ease-in-out !important;
+}
+
+.ListItem {
+    align-items: center !important;
+}
+
+.myStuff {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.userRoleContainer {
+    position: absolute;
+    top: 130px;
+    left: 15%;
+}
+
+.userClassifiedContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+.userReviewContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+.userChartContainer {
+    margin-top: 30px;
+    border-radius: 12px;
+    position: relative !important;
+}
+
+.userClassifiedMap {
+    padding: 5px;
+    border-radius: 12px;
+    background-color: #7582EB;
+    color: #161D2C;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    transition: 0.2s ease-in-out;
+}
+
+.userClassifiedMap:hover {
+    background-color: #161D2C;
+    color: #75FAC8;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    border: 1px solid #75FAC8;
+}
+
+.userReviewMap {
+    padding: 5px;
+    border-radius: 12px;
+    background-color: #8A2BE2;
+    color: #161D2C;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid transparent;
+
+}
+
+
+.positionChart {
+    margin-left: auto;
+    margin-right: auto;
+}
