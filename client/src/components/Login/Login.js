@@ -22,6 +22,7 @@ const Login = ({ onError }) => {
 			if (response.error) {
 				onError(response.error);
 			} else {
+				onError(response.message);
 				navigate("/");
 			}
 		});

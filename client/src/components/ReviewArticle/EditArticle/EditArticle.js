@@ -38,14 +38,14 @@ const EditArticle = ({ onError }) => {
 			comments: article.comments,
 		};
 
-		reviewServices
-			.updateReview(article._id, articleData)
-			.then(() => {
+		reviewServices.updateReview(article._id, articleData).then((res) => {
+			if (res.error) {
+				onError(res.error);
+			} else {
+				onError(res.message);
 				navigate(`/blog`);
-			})
-			.catch((err) => {
-				onError(err.error);
-			});
+			}
+		});
 	};
 
 	return (

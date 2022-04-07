@@ -3,18 +3,18 @@ import classifiedServices from "../../../../services/classifiedServices";
 
 import "./ClassifiedAdminButtons.css";
 
-const CLassifiedAdminButtons = ({ classified }) => {
+const CLassifiedAdminButtons = ({ classified, onError }) => {
 	const navigate = useNavigate();
 
 	const onClassifiedDeleteClickHandler = () => {
-		classifiedServices
-			.deleteClassified(classified._id)
-			.then(() => {
+		classifiedServices.deleteClassified(classified._id).then((res) => {
+			if (res.error) {
+				onError(res.error);
+			} else {
+				onError(res.message);
 				navigate("/classifieds");
-			})
-			.catch((err) => {
-				console.log(err);
-			});
+			}
+		});
 	};
 	const onClassifiedEditClickHandler = () => {
 		navigate(`/classifieds/${classified._id}/edit`, { state: { classified } });

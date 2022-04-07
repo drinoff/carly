@@ -5,7 +5,7 @@ import Comments from "./Comments/Comments";
 
 import "./ReviewArticle.css";
 
-const BlogArticle = ({ review }) => {
+const BlogArticle = ({ review, onError }) => {
 	const user = useSelector(userSelector);
 	const isAuthenticated = useSelector(isAuthenticatedSelector);
 	return (
@@ -42,9 +42,9 @@ const BlogArticle = ({ review }) => {
 			<Comments review={review} />
 			{isAuthenticated ? (
 				user.id === review.ownerId._id ? (
-					<ReviewAdminButtons review={review} />
+					<ReviewAdminButtons review={review} onError={onError} />
 				) : user.role === "admin" ? (
-					<ReviewAdminButtons review={review} />
+					<ReviewAdminButtons review={review} onError={onError} />
 				) : null
 			) : null}
 

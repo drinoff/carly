@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 
 import "./ModelDetails.css";
 
-const ModelDetails = () => {
+const ModelDetails = ({ onError }) => {
 	const location = useLocation();
 	const model = location.state.model;
 	const brand = location.state.brand;
@@ -30,17 +30,12 @@ const ModelDetails = () => {
 					<CarImage key={image} image={image} />
 				))}
 			</div>
-			<p className="ModelDetails-avgPrice">
-				Average Price: {model.avgPrice}€
-			</p>
+			<p className="ModelDetails-avgPrice">Average Price: {model.avgPrice}€</p>
 			<p className="ModelDetails-modelDescription">{model.description}</p>
-			<button
-				className="ModelDetails-BackBtn"
-				onClick={onBackButtonClickHandler}
-			>
+			<button className="ModelDetails-BackBtn" onClick={onBackButtonClickHandler}>
 				Back
 			</button>
-			<ModelAdminButtons model={model} brand={brand} />
+			<ModelAdminButtons model={model} brand={brand} onError={onError} />
 		</Box>
 	);
 };

@@ -35,14 +35,14 @@ const AddArticle = ({ onError }) => {
 			regDate: Date.now(),
 			comments: [],
 		};
-		reviewServices
-			.addReview(articleData)
-			.then(() => {
+		reviewServices.addReview(articleData).then((res) => {
+			if (res.error) {
+				onError(res.error);
+			} else {
+				onError(res.message);
 				navigate("/blog");
-			})
-			.catch((err) => {
-				onError(err.error);
-			});
+			}
+		});
 	};
 
 	return (

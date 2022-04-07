@@ -3,7 +3,6 @@ const carServices = require("../services/carServices");
 const validate = require("../middlewares/validation/validate");
 const schemas = require("../middlewares/validation/schemas");
 const { isAuthorized, isAdmin } = require("../middlewares/guards");
-const { mapErrors } = require("../utils/mapper");
 
 const getAllCars = (req, res) => {
 	carServices.getAllCars().then((cars) => {
@@ -18,8 +17,7 @@ const addCar = (req, res) => {
 			res.status(200).json({ message: "Successfully added", car });
 		})
 		.catch((err) => {
-			const error = mapErrors(err);
-			res.status(400).json({ message: error });
+			res.status(400).json({ message: err });
 		});
 };
 
@@ -37,8 +35,7 @@ const updateCar = (req, res) => {
 			res.status(200).json({ message: "Successfully updated", car });
 		})
 		.catch((err) => {
-			const error = mapErrors(err);
-			res.status(400).json({ message: error });
+			res.status(400).json({ message: err });
 		});
 };
 
@@ -49,7 +46,7 @@ const deleteCar = (req, res) => {
 			res.status(204).json({ message: "Successfully deleted" });
 		})
 		.catch((err) => {
-			res.status(400).json({ message: err.message });
+			res.status(400).json({ message: err });
 		});
 };
 

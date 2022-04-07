@@ -41,18 +41,18 @@ const EditCar = ({ onError }) => {
 			models: carModelIds,
 		};
 
-		carServices
-			.updateCar(carId, carData)
-			.then((car) => {
-				console.log(car);
+		carServices.updateCar(carId, carData).then((car) => {
+			if (car.error) {
+				onError(car.error);
+			} else {
+				onError(car.message);
 				navigate(`/cars/${brand}`, {
 					state: { carId: car.car._id, carModels: car.car.models },
 				});
-			})
-			.catch((err) => {
-				onError(err.error);
-			});
+			}
+		});
 	};
+
 	return (
 		<Box
 			className="addCarContainer"

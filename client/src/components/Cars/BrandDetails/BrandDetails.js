@@ -8,71 +8,65 @@ import AdminButtons from "../../AdminButtons/AdminButtons";
 import "./BrandDetails.css";
 import carServices from "../../../services/carServices";
 
-const BrandDetails = () => {
-    const [car, setCar] = useState();
-    const navigate = useNavigate();
-    const location = useLocation();
-    const carId = location.state.carId;
-    const carModels = location.state.carModels;
+const BrandDetails = ({ onError }) => {
+	const [car, setCar] = useState();
+	const navigate = useNavigate();
+	const location = useLocation();
+	const carId = location.state.carId;
+	const carModels = location.state.carModels;
 
-    useEffect(() => {
-        carServices
-            .getCarById(carId)
-            .then((car) => {
-                setCar(car);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    }, [carId]);
+	useEffect(() => {
+		carServices
+			.getCarById(carId)
+			.then((car) => {
+				setCar(car);
+			})
+			.catch((err) => {
+				console.log(err);
+			});
+	}, [carId]);
 
-    const onCarModelClickHandler = (e) => {
-        const currentModel = car.models.find(
-            (model) => model.model === e.currentTarget.id
-        );
-        navigate(`/cars/${car.brand}/${currentModel.model}`, {
-            state: { model: currentModel, brand: car.brand },
-        });
-    };
+	const onCarModelClickHandler = (e) => {
+		const currentModel = car.models.find((model) => model.model === e.currentTarget.id);
+		navigate(`/cars/${car.brand}/${currentModel.model}`, {
+			state: { model: currentModel, brand: car.brand },
+		});
+	};
 
-    const onBackButtonClickHandler = () => {
-        window.history.back();
-    };
+	const onBackButtonClickHandler = () => {
+		window.history.back();
+	};
 
-    return (
-        <Box
-            className="CarDetails-MainContainer"
-            sx={{
-                bgcolor: "#111827",
-                height: "auto",
-                width: "70%",
-            }}
-        >
-            <h1>{car?.brand}</h1>
-            <img className="bounce-in-top" src={car?.logo} alt="Car-logo" />
-            <p className="CarDetails-popularModels">Popular Models</p>
-            <div className="BrandDetails-modelButton">
-                {car?.models.map((model) => (
-                    <CarModelButton
-                        key={model.model}
-                        carModel={model.model}
-                        onCarModelClickHandler={onCarModelClickHandler}
-                    />
-                ))}
-                <AddModelButton car={car} />
-            </div>
-            <h2>Brief History</h2>
-            <p className="BrandDetails-description">{car?.brandHistory}</p>
-            <button className="backBtn" onClick={onBackButtonClickHandler}>
-                Back
-            </button>
-            <AdminButtons
-                carId={car?._id}
-                carBrand={car?.brand}
-                carModels={carModels}
-            />
-        </Box>
-    );
+	return (
+		<Box
+			className="CarDetails-MainContainer"
+			sx={{
+				bgcolor: "#111827",
+				height: "auto",
+				width: "70%",
+			}}
+		>
+			<h1>{car?.brand}</h1>
+			<img className="bounce-in-top" src={car?.logo} alt="Car-logo" />
+			<p className="CarDetails-popularModels">Popular Models</p>
+			<div className="BrandDetails-modelButton">
+				{car?.models.map((model) => (
+					<CarModelButton
+						key={model.model}
+						carModel={model.model}
+						onCarModelClickHandler={onCarModelClickHandler}
+					/>
+				))}
+				<AddModelButton car={car} />
+			</div>
+			<h2>Brief History</h2>
+			<p className="BrandDetails-description">{car?.brandHistory}</p>
+			<button className="backBtn" onClick={onBackButtonClickHandler}>
+				Back
+			</button>
+			<AdminButtons carId={car?._id} carBrand={car?.brand} carModels={carModels} onError={onError} />
+		</Box>
+	);
 };
 
 export default BrandDetails;

@@ -29,15 +29,15 @@ const EditClassified = ({ onError }) => {
 			images: pictures,
 			ownerId: initialClassified._id,
 		};
-		classifiedServices
-			.updateClassified(classifiedData)
-			.then((res) => {
-				console.log("Classified updated successfully: ", res);
+		classifiedServices.updateClassified(classifiedData).then((res) => {
+			if (res.error) {
+				onError(res.error);
+			} else {
+				onError(res.message);
+
 				navigate("/classifieds");
-			})
-			.catch((err) => {
-				onError(err.error);
-			});
+			}
+		});
 	};
 
 	const acordeonHandler = (e) => {

@@ -9,7 +9,7 @@ import ReviewArticle from "../../components/ReviewArticle/ReviewArticle";
 
 import "./Review.css";
 
-const Blog = () => {
+const Blog = ({ onError }) => {
 	const dispatch = useDispatch();
 	const reviews = useSelector(selectAllReviews);
 	const user = useSelector(userSelector);
@@ -36,7 +36,7 @@ const Blog = () => {
 			{[...reviews]
 				.sort((a, b) => new Date(b.regDate) - new Date(a.regDate))
 				.map((review) => (
-					<ReviewArticle key={review.title} review={review} />
+					<ReviewArticle key={review.title} review={review} onError={onError} />
 				))}
 			{isAuthenticated ? (
 				user.role === "admin" || user.role === "reviewer" ? (

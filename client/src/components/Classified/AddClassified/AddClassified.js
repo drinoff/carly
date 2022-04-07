@@ -33,15 +33,15 @@ const AddClassified = ({ onError }) => {
 			images: pictures,
 			ownerId: user.id,
 		};
-		classifiedServices
-			.addClassified(classifiedData)
-			.then((res) => {
-				console.log(res);
+		classifiedServices.addClassified(classifiedData).then((res) => {
+			if (res.error) {
+				onError(res.error);
+			} else {
+				onError(res.message);
+
 				navigate("/classifieds");
-			})
-			.catch((err) => {
-				onError(err.error);
-			});
+			}
+		});
 	};
 
 	const acordeonHandler = (e) => {

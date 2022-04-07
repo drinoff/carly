@@ -4,7 +4,6 @@ const userServices = require("./../services/userServices");
 const validate = require("../middlewares/validation/validate");
 const schemas = require("../middlewares/validation/schemas");
 const { isAdmin, isAuthorized } = require("../middlewares/guards");
-const { mapErrors } = require("../utils/mapper");
 
 const register = async (req, res) => {
 	try {
@@ -12,8 +11,7 @@ const register = async (req, res) => {
 
 		res.status(201).json({ message: "Thank You for registering", result });
 	} catch (err) {
-		const error = mapErrors(err);
-		res.status(400).json({ message: error });
+		res.status(400).json({ message: err });
 	}
 };
 
@@ -22,8 +20,7 @@ const login = async (req, res) => {
 		const result = await userServices.login(req.body);
 		res.status(200).json({ message: "Successfully logged in", result });
 	} catch (err) {
-		const error = mapErrors(err);
-		res.status(400).json({ message: error });
+		res.status(400).json({ message: err });
 	}
 };
 const logout = async (req, res) => {
@@ -31,8 +28,7 @@ const logout = async (req, res) => {
 		const result = await userServices.logout(req.body.token);
 		res.status(200).json({ message: "Successfully logged out" });
 	} catch (err) {
-		const error = mapErrors(err);
-		res.status(400).json({ message: error });
+		res.status(400).json({ message: err });
 	}
 };
 const getAllUsers = async (req, res) => {
@@ -40,8 +36,7 @@ const getAllUsers = async (req, res) => {
 		const result = await userServices.getAllUsers();
 		res.status(200).json(result);
 	} catch (err) {
-		const error = mapErrors(err);
-		res.status(400).json({ message: error });
+		res.status(400).json({ message: err });
 	}
 };
 
@@ -50,8 +45,7 @@ const updateUserRole = async (req, res) => {
 		const result = await userServices.updateUserRole(req.body);
 		res.status(200).json({ message: "Successfully edited user role", result });
 	} catch (err) {
-		const error = mapErrors(err);
-		res.status(400).json({ message: error });
+		res.status(400).json({ message: err });
 	}
 };
 

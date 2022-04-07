@@ -10,7 +10,7 @@ import ClassifiedAdminButtons from "./ClassifiedAdminButtons/ClassifiedAdminButt
 import { sliderWidth } from "../../../constants";
 import "./DetailedClassified.css";
 
-const DetailedClassified = () => {
+const DetailedClassified = ({ onError }) => {
 	const location = useLocation();
 	const isAuthenticated = useSelector(isAuthenticatedSelector);
 	const { classified } = location.state;
@@ -66,7 +66,7 @@ const DetailedClassified = () => {
 						))}
 					</div>
 				</Box>
-				{isAuthenticated && <ClassifiedAdminButtons classified={classified} />}
+				{isAuthenticated && <ClassifiedAdminButtons classified={classified} onError={onError} />}
 			</div>
 		</div>
 	);

@@ -23,15 +23,22 @@ import EditClassified from "../components/Classified/EditClassified/EditClassifi
 import AddClassified from "../components/Classified/AddClassified/AddClassified";
 import UserPanel from "../components/UserPanel/UserPanel";
 import AdminPanel from "../components/AdminPanel/AdminPanel";
+import BasicModal from "../components/BasicModal/BasicModal";
 
 import "./App.css";
 const Blog = React.lazy(() => import("../features/review/Review"));
 
 function App() {
-	const [error, setError] = useState(null);
+	const [error, setError] = useState();
+	const [open, setOpen] = useState(false);
 
 	const onError = (error) => {
+		console.log(error);
 		setError(error);
+		setOpen(true);
+		setTimeout(() => {
+			setOpen(false);
+		}, 5000);
 	};
 
 	return (
@@ -42,8 +49,8 @@ function App() {
 					<Route path="*" element={<NotFound />} />
 					<Route path="/" element={<Home />} />
 					<Route path="cars" element={<Cars />} />
-					<Route path="cars/:brand" element={<BrandDetails />} />
-					<Route path="cars/:brand/:model" element={<ModelDetails />} />
+					<Route path="cars/:brand" element={<BrandDetails onError={onError} />} />
+					<Route path="cars/:brand/:model" element={<ModelDetails onError={onError} />} />
 
 					<Route
 						path="cars/:brand/edit"
@@ -80,7 +87,7 @@ function App() {
 						}
 					/>
 
-					<Route path="blog" element={<Blog />} />
+					<Route path="blog" element={<Blog onError={onError} />} />
 
 					<Route
 						path="blog/add"
@@ -102,7 +109,7 @@ function App() {
 					<Route path="login" element={<Login onError={onError} />} />
 					<Route path="logout" element={<Logout />} />
 					<Route path="classifieds" element={<Classifieds />} />
-					<Route path="classifieds/:id" element={<DetailedClassified />} />
+					<Route path="classifieds/:id" element={<DetailedClassified onError={onError} />} />
 					<Route
 						path="classifieds/add"
 						element={
@@ -137,6 +144,7 @@ function App() {
 					/>
 				</Routes>
 			</Suspense>
+			<BasicModal openModal={open} error={error} />
 		</div>
 	);
 }

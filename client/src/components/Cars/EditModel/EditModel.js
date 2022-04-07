@@ -17,14 +17,10 @@ const EditModel = ({ onError }) => {
 	const modelId = currentModel._id;
 
 	useEffect(() => {
-		carServices
-			.getModelById(modelId)
-			.then((res) => {
-				setModel(res);
-			})
-			.catch((err) => {
-				console.log(err);
-			});
+		carServices.getModelById(modelId).then((res) => {
+			setModel(res);
+			onError(res.message);
+		});
 	}, [modelId]);
 
 	const onEditModelFormSubmitHandler = (e) => {
@@ -46,14 +42,14 @@ const EditModel = ({ onError }) => {
 			brandId: model.brandId,
 		};
 
-		carServices
-			.updateModel(modelId, modelData)
-			.then((res) => {
-				console.log(res);
-			})
-			.catch((err) => {
-				onError(err.error);
-			});
+		carServices.updateModel(modelId, modelData).then((res) => {
+			if (res.error) {
+				onError(res.message);
+			} else {
+				onError(res.message);
+			}
+		});
+
 		navigate(`/cars`);
 	};
 	return (

@@ -30,14 +30,14 @@ const AddModel = ({ onError }) => {
 			brandId: carBrandId,
 		};
 		car.models.push(modelData);
-		carServices
-			.addModel(modelData)
-			.then((res) => {
-				console.log(res);
-			})
-			.catch((err) => {
-				onError(err.error);
-			});
+		carServices.addModel(modelData).then((res) => {
+			if (res.error) {
+				onError(res.error);
+			} else {
+				onError(res.message);
+			}
+		});
+
 		navigate(`/cars`, { state: { car } });
 	};
 	return (

@@ -19,14 +19,16 @@ const AddCar = ({ onError }) => {
 			brandHistory,
 		};
 
-		carServices
-			.addCar(car)
-			.then((res) => {
+		carServices.addCar(car).then((res) => {
+			if (res.error) {
+				console.log(res);
+				onError(res.error);
+			} else {
+				onError(res.message);
+
 				navigate("/cars");
-			})
-			.catch((err) => {
-				onError(err.error);
-			});
+			}
+		});
 	};
 	return (
 		<Box

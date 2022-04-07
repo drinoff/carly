@@ -3,7 +3,6 @@ const { isAuthorized, isAdmin, isReviewer, isOwner } = require("../middlewares/g
 const validate = require("../middlewares/validation/validate");
 const schemas = require("../middlewares/validation/schemas");
 const classifiedServices = require("../services/classifiedServices");
-const mapErrors = require("../utils/mapper");
 
 const getAllClassifieds = (req, res) => {
 	classifiedServices
@@ -12,8 +11,7 @@ const getAllClassifieds = (req, res) => {
 			res.json(classifieds);
 		})
 		.catch((err) => {
-			const error = mapErrors(err);
-			res.status(400).json({ message: error });
+			res.status(400).json({ message: err });
 		});
 };
 
@@ -25,8 +23,7 @@ const addClassified = (req, res) => {
 			res.status(201).json({ message: "Succesffully created", classified });
 		})
 		.catch((err) => {
-			const error = mapErrors(err);
-			res.status(400).json({ message: error });
+			res.status(400).json({ message: err });
 		});
 };
 
@@ -39,8 +36,7 @@ const updateClassified = (req, res) => {
 			res.json({ message: "Succesffully updated", classified });
 		})
 		.catch((err) => {
-			const error = mapErrors(err);
-			res.status(400).json({ message: error });
+			res.status(400).json({ message: err });
 		});
 };
 
@@ -52,8 +48,7 @@ const deleteClassified = (req, res) => {
 			res.json({ message: "Successfully deleted" });
 		})
 		.catch((err) => {
-			const error = mapErrors(err);
-			res.status(400).json({ message: error });
+			res.status(400).json({ message: err });
 		});
 };
 

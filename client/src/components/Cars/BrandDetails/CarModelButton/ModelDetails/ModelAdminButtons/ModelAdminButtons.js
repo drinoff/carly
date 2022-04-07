@@ -4,7 +4,7 @@ import { isAuthenticatedSelector, userSelector } from "../../../../../../feature
 import carServices from "../../../../../../services/carServices";
 import "./ModelAdminButtons.css";
 
-const ModelAdminButtons = ({ model, brand }) => {
+const ModelAdminButtons = ({ model, brand, onError }) => {
 	const navigate = useNavigate();
 	const user = useSelector(userSelector);
 	const isAuthenticated = useSelector(isAuthenticatedSelector);
@@ -14,14 +14,14 @@ const ModelAdminButtons = ({ model, brand }) => {
 	};
 
 	const onModelDeleteCLickHandler = () => {
-		carServices
-			.deleteModel(model._id)
-			.then(() => {
+		carServices.deleteModel(model._id).then((res) => {
+			if (res.error) {
+				onError(res.error);
+			} else {
+				onError(res.message);
 				navigate(`/cars`);
-			})
-			.catch((err) => {
-				console.log(err);
-			});
+			}
+		});
 	};
 
 	return (

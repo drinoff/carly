@@ -18,16 +18,19 @@ const addCar = async (car) => {
 		},
 		body: JSON.stringify(car),
 	})
-		.then((res) => res.json())
+		.then((res) => {
+			return res.json(res.error);
+		})
 		.catch((err) => {
-			return err.message;
+			console.log(err);
+			return err;
 		});
 };
 
 const getCarById = (carId) => {
 	return fetch(`${BASE_URL}/cars/${carId}`).then((res) =>
 		res.json().catch((err) => {
-			return err.message;
+			return err;
 		})
 	);
 };
@@ -43,7 +46,7 @@ const updateCar = (carId, carData) => {
 	})
 		.then((res) => res.json())
 		.catch((err) => {
-			return err.message;
+			return err;
 		});
 };
 
@@ -57,7 +60,7 @@ const deleteCar = (carId) => {
 	})
 		.then((res) => res.json())
 		.catch((err) => {
-			return err.message;
+			return err;
 		});
 };
 
@@ -72,14 +75,14 @@ const addModel = (model) => {
 	})
 		.then((res) => res.json())
 		.catch((err) => {
-			return err.message;
+			return err;
 		});
 };
 
 const getModelById = (modelId) => {
 	return fetch(`${BASE_URL}/models/${modelId}`).then((res) =>
 		res.json().catch((err) => {
-			return err.message;
+			return err;
 		})
 	);
 };
@@ -95,7 +98,7 @@ const updateModel = (modelId, modelData) => {
 	})
 		.then((res) => res.json())
 		.catch((err) => {
-			return err.message;
+			return err;
 		});
 };
 
@@ -107,9 +110,9 @@ const deleteModel = (modelId) => {
 			"x-authorization": getAccessToken(),
 		},
 	})
-		.then((res) => res.json())
+		.then((res) => res.json(res))
 		.catch((err) => {
-			return err.message;
+			return err;
 		});
 };
 
