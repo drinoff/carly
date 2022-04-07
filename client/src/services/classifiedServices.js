@@ -23,7 +23,6 @@ const addClassified = (classified) => {
 };
 
 const updateClassified = (classified) => {
-	console.log(classified);
 	return fetch(`${BASE_URL}/classifieds/${classified._id}`, {
 		method: "PUT",
 		headers: {

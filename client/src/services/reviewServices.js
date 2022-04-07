@@ -18,7 +18,7 @@ const addReview = (review) => {
 		},
 		body: JSON.stringify(review),
 	})
-		.then((res) => res.json())
+		.then((res) => res.json(res))
 		.catch((err) => err.message);
 };
 
@@ -31,7 +31,7 @@ const updateReview = (reviewId, review) => {
 		},
 		body: JSON.stringify(review),
 	})
-		.then((res) => res.json())
+		.then((res) => res.json(res))
 		.catch((err) => err.message);
 };
 

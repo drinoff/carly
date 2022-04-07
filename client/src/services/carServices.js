@@ -17,7 +17,11 @@ const addCar = async (car) => {
 			"x-authorization": getAccessToken(),
 		},
 		body: JSON.stringify(car),
-	}).then((res) => res.json());
+	})
+		.then((res) => res.json())
+		.catch((err) => {
+			return err.message;
+		});
 };
 
 const getCarById = (carId) => {
@@ -38,7 +42,9 @@ const updateCar = (carId, carData) => {
 		body: JSON.stringify(carData),
 	})
 		.then((res) => res.json())
-		.catch((err) => err.message);
+		.catch((err) => {
+			return err.message;
+		});
 };
 
 const deleteCar = (carId) => {
