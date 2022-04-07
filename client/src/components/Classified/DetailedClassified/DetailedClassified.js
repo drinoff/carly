@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
-
+import { useSelector } from "react-redux";
+import { isAuthenticatedSelector } from "../../../features/auth/authSlice";
 import { Box } from "@mui/material";
 import TechnicalData from "./TechnicalData/TechnicalData";
 import Slider from "../Slider/Slider";
@@ -11,6 +12,7 @@ import "./DetailedClassified.css";
 
 const DetailedClassified = () => {
 	const location = useLocation();
+	const isAuthenticated = useSelector(isAuthenticatedSelector);
 	const { classified } = location.state;
 
 	return (
@@ -64,8 +66,8 @@ const DetailedClassified = () => {
 						))}
 					</div>
 				</Box>
+				{isAuthenticated && <ClassifiedAdminButtons classified={classified} />}
 			</div>
-			<ClassifiedAdminButtons classified={classified} />
 		</div>
 	);
 };

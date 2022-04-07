@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 
 import "./EditArticle.css";
 
-const EditArticle = () => {
+const EditArticle = ({ onError }) => {
 	const location = useLocation();
 	const review = location.state.review;
 	const navigate = useNavigate();
@@ -44,7 +44,7 @@ const EditArticle = () => {
 				navigate(`/blog`);
 			})
 			.catch((err) => {
-				console.log(err);
+				onError(err.error);
 			});
 	};
 

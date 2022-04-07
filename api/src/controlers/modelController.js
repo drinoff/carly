@@ -3,6 +3,7 @@ const { isAuthorized, isAdmin } = require("../middlewares/guards");
 const validate = require("../middlewares/validation/validate");
 const schemas = require("../middlewares/validation/schemas");
 const carServices = require("../services/carServices");
+const mapErrors = require("../utils/mapper");
 
 const addModel = (req, res) => {
 	const { brandId } = req.body;
@@ -12,10 +13,11 @@ const addModel = (req, res) => {
 	return carServices
 		.addModel(model, brandId)
 		.then((res) => {
-			res.status(201).json(res);
+			res.status(201).json({ message: "Successfully added", res });
 		})
 		.catch((err) => {
-			console.log(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
@@ -27,7 +29,8 @@ const getModelById = (req, res) => {
 			res.json(model);
 		})
 		.catch((err) => {
-			console.log(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
@@ -37,10 +40,11 @@ const updateModel = (req, res) => {
 	return carServices
 		.updateModel(modelId, model)
 		.then((model) => {
-			res.json(model);
+			res.json({ message: "Successfully updated", model });
 		})
 		.catch((err) => {
-			console.log(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
@@ -49,11 +53,12 @@ const deleteModel = (req, res) => {
 
 	return carServices
 		.deleteModel(modelId)
-		.then((model) => {
-			res.json(model);
+		.then(() => {
+			res.status(204).json({ message: "Successfully deleted" });
 		})
 		.catch((err) => {
-			console.log(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 

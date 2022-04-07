@@ -3,6 +3,7 @@ const reviewServices = require("../services/reviewServices");
 const { isAuthorized, isReviewer } = require("../middlewares/guards");
 const validate = require("../middlewares/validation/validate");
 const schemas = require("../middlewares/validation/schemas");
+const { mapErrors } = require("../utils/mapper");
 
 const getAllReviews = (req, res) => {
 	reviewServices
@@ -11,7 +12,8 @@ const getAllReviews = (req, res) => {
 			res.json(reviews);
 		})
 		.catch((err) => {
-			res.json(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
@@ -19,10 +21,11 @@ const addReview = (req, res) => {
 	reviewServices
 		.addReview(req.body)
 		.then((review) => {
-			res.json(review);
+			res.status(201).json({ message: "Review Added Successfully", review });
 		})
 		.catch((err) => {
-			res.json(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
@@ -36,21 +39,20 @@ const updateReview = (req, res) => {
 			});
 		})
 		.catch((err) => {
-			res.json({
-				message: "Error updating review",
-				error: err,
-			});
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
 const deleteReview = (req, res) => {
 	reviewServices
 		.deleteReview(req.params.reviewId)
-		.then((review) => {
-			res.json(review);
+		.then(() => {
+			res.status(204).json({ message: "Review deleted successfully" });
 		})
 		.catch((err) => {
-			res.json(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
@@ -59,16 +61,14 @@ const addComment = (req, res) => {
 		.addComment(req.params.reviewId, req.body)
 
 		.then((updatedReview) => {
-			res.json({
+			res.status(201).json({
 				message: "Comment added successfully",
 				updatedReview,
 			});
 		})
 		.catch((err) => {
-			res.json({
-				message: "Error adding comment",
-				error: err,
-			});
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 

@@ -3,10 +3,11 @@ const carServices = require("../services/carServices");
 const validate = require("../middlewares/validation/validate");
 const schemas = require("../middlewares/validation/schemas");
 const { isAuthorized, isAdmin } = require("../middlewares/guards");
+const { mapErrors } = require("../utils/mapper");
 
 const getAllCars = (req, res) => {
 	carServices.getAllCars().then((cars) => {
-		res.json(cars);
+		res.status(200).json(cars);
 	});
 };
 
@@ -14,34 +15,41 @@ const addCar = (req, res) => {
 	carServices
 		.addCar(req.body)
 		.then((car) => {
-			res.json(car);
+			res.status(200).json({ message: "Successfully added", car });
 		})
 		.catch((err) => {
-			res.json(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
 const getCarById = (req, res) => {
 	carServices.getCarById(req.params.id).then((car) => {
-		res.json(car);
+		res.status(200).json(car);
 	});
 };
 
 const updateCar = (req, res) => {
 	const carId = req.params.id;
-	carServices.updateCar(carId, req.body).then((car) => {
-		res.json(car);
-	});
+	carServices
+		.updateCar(carId, req.body)
+		.then((car) => {
+			res.status(200).json({ message: "Successfully updated", car });
+		})
+		.catch((err) => {
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
+		});
 };
 
 const deleteCar = (req, res) => {
 	carServices
 		.deleteCar(req.params.id)
-		.then((car) => {
-			res.json(car);
+		.then(() => {
+			res.status(204).json({ message: "Successfully deleted" });
 		})
 		.catch((err) => {
-			res.json(err);
+			res.status(400).json({ message: err.message });
 		});
 };
 

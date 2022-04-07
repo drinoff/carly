@@ -1,0 +1,149 @@
+.selected {
+    background-color: #242A38 !important;
+    color: #10B981 !important;
+}
+
+.userTimeContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #161D2C;
+    font-size: 14px;
+    font-family: 500;
+}
+
+.sidePanel {
+    border-radius: 10px;
+
+}
+
+.adminClassifiedMap {
+    padding: 5px;
+    border-radius: 12px;
+    background-color: #7582EB;
+    color: #161D2C;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    transition: 0.2s ease-in-out;
+    width: 70%;
+}
+
+.adminMainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #10B981;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 16px;
+    transition: 0.2s ease-in-out;
+    margin-top: 30px;
+    overflow-y: scroll;
+}
+
+.adminMainContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.adminClassifiedMap:hover {
+    background-color: #161D2C;
+    color: #75FAC8;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.adjustMainFrameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.infoContainers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+
+.adminPanelReviewsItemAction {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.adminPanelReviewsItemAction p {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.editAdminReview {
+    width: 20px;
+    height: 20px;
+    filter: invert(84%) sepia(35%) saturate(3534%) hue-rotate(338deg) brightness(101%) contrast(102%);
+    margin-left: 50px;
+    transition: 0.2s ease-in-out;
+
+
+}
+
+.deleteAdminReview {
+    margin-left: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.deleteAdminReview:hover,
+.editAdminReview:hover {
+    cursor: pointer;
+    transform: scale3d(1.2, 1.2, 1.2);
+    transition: 0.2s ease-in-out;
+}
+
+.carModifications {
+    width: 30%;
+    text-align: center;
+}
+
+.positionSticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.userRoles {
+    margin-left: 30px;
+    background: transparent;
+    border: 1px solid #2D3748;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    resize: none;
+}
+
+.adminUserRole {
+    margin-left: 35px;
+    margin-right: 35px
+}
+
+.adminPanelReviewsItemAction .userPanelAdmin {
+    width: 50%;
+}
+
+option {
+    color: #161D2C;
+}

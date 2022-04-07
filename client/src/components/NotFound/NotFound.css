@@ -3,6 +3,32 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 200px;
+}
+
+.NotFound-Container img {
+    width: 500px;
+
+}
+
+#force {
+    color: #ff00c8;
+    font-weight: 500;
+}
+
+#navigation {
+    color: #FFB020;
+    font-weight: 500;
+}
+
+#strong {
+    color: #8860D0;
+    font-weight: 500;
+}
+
+#shady {
+    color: #10B981;
+    font-weight: 500;
 }
 
 
@@ -11,8 +37,8 @@
     height: 50px;
     border: none;
     outline: none;
-    color: #55210C;
-    background: #e3e3e3;
+    color: #48ff00;
+    background: #111827;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -57,7 +83,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #EF9A63;
+    background: #111827;
     left: 0;
     top: 0;
     border-radius: 10px;

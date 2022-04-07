@@ -4,7 +4,7 @@ import carServices from "../../../../services/carServices";
 
 import "./AddModel.css";
 
-const AddModel = () => {
+const AddModel = ({ onError }) => {
 	const navigate = useNavigate();
 	const location = useLocation();
 	const car = location.state?.car;
@@ -36,7 +36,7 @@ const AddModel = () => {
 				console.log(res);
 			})
 			.catch((err) => {
-				console.log(err);
+				onError(err.error);
 			});
 		navigate(`/cars`, { state: { car } });
 	};

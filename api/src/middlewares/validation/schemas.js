@@ -58,12 +58,20 @@ const reviewSchema = yup.object().shape({
 	verdict: yup.string().min(10).required("Verdict field cannot be empty"),
 });
 
+const classifiedSchema = yup.object().shape({
+	title: yup.string().min(6).required("Title field cannot be empty"),
+	brand: yup.string().min(2).required("Brand field cannot be empty"),
+	model: yup.string().min(1).required("Model field cannot be empty"),
+	price: yup.string().required("Price field cannot be empty"),
+});
+
 const yupSchemas = {
 	registerSchema,
 	loginSchema,
 	addCarSchema,
 	addModelSchema,
 	reviewSchema,
+	classifiedSchema,
 };
 
 module.exports = yupSchemas;

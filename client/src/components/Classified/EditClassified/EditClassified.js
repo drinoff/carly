@@ -7,7 +7,7 @@ import ExtrasCheckboxes from "../AddClassified/ExtrasCheckboxes";
 import Location from "../AddClassified/Location";
 import classifiedServices from "../../../services/classifiedServices";
 
-const EditClassified = () => {
+const EditClassified = ({ onError }) => {
 	const navigate = useNavigate();
 	const initialLocation = useLocation();
 	const initialClassified = initialLocation.state.classified;
@@ -18,7 +18,7 @@ const EditClassified = () => {
 	const [location, setLocation] = useState(initialClassified.location);
 
 	const [classified, setClassified] = useState(initialClassified);
-	console.log(initialClassified);
+
 	const onEditClassifiedFormSubmitHandler = (event) => {
 		event.preventDefault();
 		const classifiedData = {
@@ -36,7 +36,7 @@ const EditClassified = () => {
 				navigate("/classifieds");
 			})
 			.catch((err) => {
-				console.log("Error updating classified: ", err);
+				onError(err.error);
 			});
 	};
 

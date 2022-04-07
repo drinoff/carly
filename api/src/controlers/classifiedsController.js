@@ -1,5 +1,9 @@
 const router = require("express").Router();
+const { isAuthorized, isAdmin, isReviewer, isOwner } = require("../middlewares/guards");
+const validate = require("../middlewares/validation/validate");
+const schemas = require("../middlewares/validation/schemas");
 const classifiedServices = require("../services/classifiedServices");
+const mapErrors = require("../utils/mapper");
 
 const getAllClassifieds = (req, res) => {
 	classifiedServices
@@ -8,7 +12,8 @@ const getAllClassifieds = (req, res) => {
 			res.json(classifieds);
 		})
 		.catch((err) => {
-			res.json(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
@@ -17,10 +22,11 @@ const addClassified = (req, res) => {
 	classifiedServices
 		.addClassified(classified)
 		.then((classified) => {
-			res.json(classified);
+			res.status(201).json({ message: "Succesffully created", classified });
 		})
 		.catch((err) => {
-			res.json(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
@@ -30,10 +36,11 @@ const updateClassified = (req, res) => {
 	classifiedServices
 		.updateClassified(classifiedId, classified)
 		.then((classified) => {
-			res.json(classified);
+			res.json({ message: "Succesffully updated", classified });
 		})
 		.catch((err) => {
-			res.json(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
@@ -41,17 +48,18 @@ const deleteClassified = (req, res) => {
 	const id = req.params.id;
 	classifiedServices
 		.deleteClassified(id)
-		.then((classified) => {
-			res.json(classified);
+		.then(() => {
+			res.json({ message: "Successfully deleted" });
 		})
 		.catch((err) => {
-			res.json(err);
+			const error = mapErrors(err);
+			res.status(400).json({ message: error });
 		});
 };
 
 router.get("/", getAllClassifieds);
-router.post("/", addClassified);
-router.delete("/:id", deleteClassified);
-router.put("/:id", updateClassified);
+router.post("/", isAuthorized(), validate(schemas.classifiedSchema), addClassified);
+router.delete("/:id", isAuthorized(), isOwner(), isAdmin(), deleteClassified);
+router.put("/:id", isAuthorized(), isOwner(), isAdmin(), validate(schemas.classifiedSchema), updateClassified);
 
 module.exports = router;

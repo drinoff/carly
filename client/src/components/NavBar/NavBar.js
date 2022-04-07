@@ -33,10 +33,10 @@ const NavBar = ({ isAuthenticated }) => {
 				</NavLink>
 			) : (
 				<>
-					<NavLink to="login" className="login li">
+					<NavLink to="login" style={ACTIVE} className="login li">
 						Login
 					</NavLink>
-					<NavLink to="register" className="register li">
+					<NavLink to="register" style={ACTIVE} className="register li">
 						Register
 					</NavLink>{" "}
 				</>

@@ -12,7 +12,7 @@ import classifiedServices from "../../../services/classifiedServices";
 
 import "./AddClassified.css";
 
-const AddClassified = () => {
+const AddClassified = ({ onError }) => {
 	const navigate = useNavigate();
 	const [pictures, setPictures] = useState(["", "", "", "", ""]);
 	const [techData, setTechData] = useState(TECH_DATA_INITIAL_STATE);
@@ -36,11 +36,11 @@ const AddClassified = () => {
 		classifiedServices
 			.addClassified(classifiedData)
 			.then((res) => {
-				console.log("Classified added successfully: ", res);
+				console.log(res);
 				navigate("/classifieds");
 			})
 			.catch((err) => {
-				console.log("Error adding classified: ", err);
+				onError(err.error);
 			});
 	};
 
@@ -69,7 +69,7 @@ const AddClassified = () => {
 	const locationCallBack = (data) => {
 		setLocation(data);
 	};
-	console.log(techData);
+
 	return (
 		<div className="classifiedContainer">
 			<Box

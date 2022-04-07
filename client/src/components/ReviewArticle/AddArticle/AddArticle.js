@@ -5,7 +5,7 @@ import { userSelector } from "../../../features/auth/authSlice";
 import reviewServices from "../../../services/reviewServices";
 import "./AddArticle.css";
 
-const AddArticle = () => {
+const AddArticle = ({ onError }) => {
 	const user = useSelector(userSelector);
 	const navigate = useNavigate();
 
@@ -41,7 +41,7 @@ const AddArticle = () => {
 				navigate("/blog");
 			})
 			.catch((err) => {
-				console.log(err);
+				onError(err.error);
 			});
 	};
 

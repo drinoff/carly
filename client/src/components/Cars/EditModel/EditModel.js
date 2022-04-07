@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
 import carServices from "../../../services/carServices";
 
-const EditModel = () => {
+const EditModel = ({ onError }) => {
 	const [model, setModel] = useState({
 		model: "",
 		avgPrice: "",
@@ -52,7 +52,7 @@ const EditModel = () => {
 				console.log(res);
 			})
 			.catch((err) => {
-				console.log(err);
+				onError(err.error);
 			});
 		navigate(`/cars`);
 	};

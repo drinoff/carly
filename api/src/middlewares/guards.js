@@ -1,5 +1,6 @@
 const { verifySession } = require("../services/userServices");
 const User = require("../models/User");
+const Classified = require("../models/Classified");
 
 function isAuthorized() {
 	return (req, res, next) => {
@@ -13,7 +14,7 @@ function isAuthorized() {
 			next();
 		} catch (err) {
 			res.status(498).json({
-				message: "Invalid access token. Please sign in",
+				message: "Please log in",
 			});
 		}
 	};
@@ -49,8 +50,25 @@ function isReviewer() {
 	};
 }
 
+function isOwner() {
+	return async (req, res, next) => {
+		const userEmail = req.user.email;
+		const itemId = req.params.id;
+		const existing = await User.findOne({ email: userEmail });
+		const item = await Classified.find({ itemId });
+		if (existing._id === item.ownerId || existing.role === "admin") {
+			next();
+		} else {
+			res.status(403).json({
+				message: "You are not authorized to perform this action",
+			});
+		}
+	};
+}
+
 module.exports = {
 	isAuthorized,
 	isAdmin,
 	isReviewer,
+	isOwner,
 };
