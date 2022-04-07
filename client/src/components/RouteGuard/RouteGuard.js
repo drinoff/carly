@@ -29,6 +29,27 @@ const RouteGuard = ({ children }) => {
 			} else {
 				return children;
 			}
+		} else if (children.type.name === "AddClassified" || children.type.name === "EditClassified") {
+			if (!user) {
+				onError("Please login to add classifieds");
+				return <Navigate to="/login" />;
+			} else {
+				return children;
+			}
+		} else if (children.type.name === "UserPanel") {
+			if (!user) {
+				onError("Please login to view user panel");
+				return <Navigate to="/login" />;
+			} else {
+				return children;
+			}
+		} else if (children.type.name === "AdminPanel") {
+			if (user.role !== "admin") {
+				onError("You are not authorized to view admin panel");
+				return <Navigate to="/" />;
+			} else {
+				return children;
+			}
 		}
 	}
 	return result();
