@@ -9,7 +9,7 @@ const registerSchema = yup.object().shape({
 			/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
 			"Password must contain at least one lowercase letter, one uppercase letter, one number and one special character"
 		)
-		.required("Test error validation"),
+		.required("Password Cannot be empty"),
 	rePass: yup.string().oneOf([yup.ref("password"), null], "Passwords must match"),
 });
 
@@ -19,7 +19,7 @@ const loginSchema = yup.object().shape({
 });
 
 const addCarSchema = yup.object().shape({
-	brand: yup.string().min(2).required("Brand field cannot be empty"),
+	brand: yup.string().min(2, "Brand should be longer than 2 characters").required("Brand field cannot be empty"),
 	logo: yup
 		.string()
 		.matches(
@@ -27,11 +27,14 @@ const addCarSchema = yup.object().shape({
 			"Please enter a valid logo URL"
 		)
 		.required("Logo field cannot be empty"),
-	brandHistory: yup.string().min(100).required("Brand History field cannot be empty"),
+	brandHistory: yup
+		.string()
+		.min(100, "Brand History should be minimum 100 characters")
+		.required("Brand History field cannot be empty"),
 });
 
 const addModelSchema = yup.object().shape({
-	model: yup.string().min(2).required("Model Name field cannot be empty"),
+	model: yup.string().min(2, "Model should be longer than 2 characters").required("Model Name field cannot be empty"),
 	avgPrice: yup.number().required("Average Price field cannot be empty"),
 	description: yup.string().min(100).required("Description field cannot be empty"),
 	pictures: yup

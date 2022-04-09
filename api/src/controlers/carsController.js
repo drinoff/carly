@@ -43,7 +43,7 @@ const deleteCar = (req, res) => {
 	carServices
 		.deleteCar(req.params.id)
 		.then(() => {
-			res.status(204).json({ message: "Successfully deleted" });
+			res.status(200).json({ message: "Successfully deleted" });
 		})
 		.catch((err) => {
 			res.status(400).json({ message: err });

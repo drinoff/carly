@@ -19,13 +19,11 @@ app.use(routes);
 app.use(express.json());
 
 initDB(config.DB_CONNECTION_STRING)
-    .then(() => {
-        app.listen(config.PORT, () => {
-            console.log(
-                `Application is running on http://localhost:${config.PORT}`
-            );
-        });
-    })
-    .catch((err) => {
-        console.log(err);
-    });
+	.then(() => {
+		app.listen(config.PORT, () => {
+			console.log(`Application is running on http://localhost:${config.PORT}`);
+		});
+	})
+	.catch((err) => {
+		console.log(err);
+	});

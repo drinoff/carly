@@ -21,17 +21,22 @@ const register = async (userData) => {
 };
 
 const login = async (userData) => {
-	const { email, password } = userData;
-	const user = await User.findOne({ email: email.trim().toLowerCase() });
-	if (!user) {
-		throw new Error("User does not exist");
+	try {
+		const { email, password } = userData;
+		const user = await User.findOne({ email: email.trim().toLowerCase() });
+		if (!user) {
+			throw new Error("User does not exist");
+		}
+		const isPasswordValid = await bcrypt.compare(password, user.password);
+		if (!isPasswordValid) {
+			throw new Error("Email or Password is incorrect");
+		}
+		return createSession(user);
+	} catch (error) {
+		return error.message;
 	}
-	const isPasswordValid = await bcrypt.compare(password, user.password);
-	if (!isPasswordValid) {
-		throw new Error("Email or Password is incorrect");
-	}
-	return createSession(user);
 };
+
 const logout = async (token) => {
 	blacklist.push(token);
 	return { message: "Logout successful" };

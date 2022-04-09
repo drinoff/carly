@@ -100,6 +100,9 @@ const classifiedSchema = new mongoose.Schema({
 		type: Date,
 		default: Date.now,
 	},
+	contact: {
+		type: String,
+	},
 });
 
 const Classified = mongoose.model("Classified", classifiedSchema);

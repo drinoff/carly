@@ -57,6 +57,7 @@ const deleteCar = (carId) => {
 const addModel = (model, brandId) => {
 	return Model.create(model)
 		.then((model) => {
+			console.log(model);
 			return Car.findByIdAndUpdate(brandId, {
 				$push: {
 					models: model._id,
@@ -69,7 +70,7 @@ const addModel = (model, brandId) => {
 			return res;
 		})
 		.catch((err) => {
-			throw err;
+			return err;
 		});
 };
 

@@ -8,11 +8,10 @@ const addModel = (req, res) => {
 	const { brandId } = req.body;
 	delete req.body.brandId;
 	const model = req.body;
-
 	return carServices
 		.addModel(model, brandId)
 		.then((res) => {
-			res.status(201).json({ message: "Successfully added", res });
+			res.status(200).json({ message: "Successfully added", res });
 		})
 		.catch((err) => {
 			res.status(400).json({ message: err });
@@ -50,7 +49,7 @@ const deleteModel = (req, res) => {
 	return carServices
 		.deleteModel(modelId)
 		.then(() => {
-			res.status(204).json({ message: "Successfully deleted" });
+			res.status(200).json({ message: "Successfully deleted" });
 		})
 		.catch((err) => {
 			res.status(400).json({ message: err });

@@ -43,16 +43,11 @@ const deleteReview = (reviewId) => {
 };
 
 const addComment = async (reviewId, comment) => {
-	return Review.updateOne(
-		{ _id: reviewId },
-		{ $push: { comments: { owner: comment.owner, comment: comment.comment } } }
-	)
-		.then((updatedReview) => {
-			return updatedReview;
-		})
-		.catch((err) => {
-			throw err;
-		});
+	return (currentReview = await Review.findById(reviewId).then((review) => {
+		review.comments.push(comment);
+		console.log(review);
+		return review.save();
+	}));
 };
 
 const reviewServices = {

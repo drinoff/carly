@@ -18,7 +18,7 @@ const register = async (req, res) => {
 const login = async (req, res) => {
 	try {
 		const result = await userServices.login(req.body);
-		res.status(200).json({ message: "Successfully logged in", result });
+		res.status(200).json(result);
 	} catch (err) {
 		res.status(400).json({ message: err });
 	}
