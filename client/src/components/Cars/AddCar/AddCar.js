@@ -38,7 +38,7 @@ const AddCar = ({ onError }) => {
 				width: "70%",
 			}}
 		>
-			<h1 className="addCarHeading">Add Car</h1>
+			<h1 className="addCarHeading">Add Brand</h1>
 			<form id="addCar-form" action="POST" className="addCar-form" onSubmit={onAddCarFormSubmitHandler}>
 				<div className="brandContainer">
 					<label htmlFor="brand">Brand</label>
