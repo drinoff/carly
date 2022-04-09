@@ -8,6 +8,7 @@ const TechnicalData = ({ classified }) => {
 			<div className="TechnicalData-Price">
 				<p>{classified.price} €</p>
 			</div>
+			<p className="contactWrapper">Contact: {classified.contact}</p>
 			<div>
 				<span>
 					HP: <span>{techData.hp}</span>

@@ -130,6 +130,18 @@ const EditClassified = ({ onError }) => {
 							onChange={(e) => setClassified({ ...classified, price: e.target.value })}
 						/>
 					</div>
+					<div className="titleContainer">
+						<label htmlFor="contact">Contact</label>
+						<input
+							autoComplete="off"
+							id="contact"
+							type="text"
+							name="contact"
+							className="formInputStyle"
+							value={classified.contact}
+							onChange={(e) => setClassified({ ...classified, contact: e.target.value })}
+						/>
+					</div>
 					<div className="articleDescriptionContainer">
 						<label htmlFor="rePass">Description</label>
 						<textarea

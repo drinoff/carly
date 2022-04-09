@@ -21,7 +21,6 @@ const AddCar = ({ onError }) => {
 
 		carServices.addCar(car).then((res) => {
 			if (res.error) {
-				console.log(res);
 				onError(res.error);
 			} else {
 				onError(res.message);

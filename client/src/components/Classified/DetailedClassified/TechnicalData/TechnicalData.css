@@ -49,7 +49,7 @@
     font-size: 14px;
     font-weight: 700;
     color: #FFB023;
-    margin: 20px 15px 20px 15px;
+    margin: 12px 15px 12px 15px;
     border: 2px solid #7582EB;
     padding: 5px;
     border-radius: 15px;
@@ -72,4 +72,10 @@
 .TechnicalData-container div .TechnicalData-location {
     border: 2px solid #9820E7;
 
+}
+
+.contactWrapper {
+    font-size: 16px;
+    font-weight: 700;
+    color: #9820E7;
 }

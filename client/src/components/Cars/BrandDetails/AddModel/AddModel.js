@@ -31,6 +31,7 @@ const AddModel = ({ onError }) => {
 		};
 		car.models.push(modelData);
 		carServices.addModel(modelData).then((res) => {
+			console.log(res);
 			if (res.error) {
 				onError(res.error);
 			} else {

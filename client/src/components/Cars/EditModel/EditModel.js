@@ -19,7 +19,6 @@ const EditModel = ({ onError }) => {
 	useEffect(() => {
 		carServices.getModelById(modelId).then((res) => {
 			setModel(res);
-			onError(res.message);
 		});
 	}, [modelId]);
 
