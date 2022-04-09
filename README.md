@@ -90,16 +90,16 @@ npm start
 
 <h2 id="appShots">Screenshots</h2>
 
-## Home View
+### Home View
 ![Home View](/appScreens/home.png)
 
-## Classifieds view
+### Classifieds view
 ![Classifieds View](/appScreens/classifieds.png)
 
-## Add Brand View
+### Add Brand View
 ![Add Brand](/appScreens/addBrand.png)
 
-## Admin Panel View
+### Admin Panel View
 ![Admin Panel](/appScreens/admin.png)
 
 <h2 id="license">License</h2>
