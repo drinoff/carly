@@ -1,7 +1,19 @@
+import { useNavigate } from "react-router-dom";
 import "./TechnicalData.css";
+import { useSelector } from "react-redux";
+import { userSelector } from "../../../../features/auth/authSlice";
 
 const TechnicalData = ({ classified }) => {
+	const navigate = useNavigate();
+	const user = useSelector(userSelector);
 	const techData = classified.techData;
+	const handleMessageClickIcon = () => {
+		const userId = user._id;
+		const classifiedTitle = classified.title;
+
+		navigate("sendMessage", { userId, classifiedTitle });
+	};
+
 	return (
 		<div className="TechnicalData-container">
 			<h2>{classified.title}</h2>
@@ -9,6 +21,12 @@ const TechnicalData = ({ classified }) => {
 				<p>{classified.price} €</p>
 			</div>
 			<p className="contactWrapper">Contact: {classified.contact}</p>
+			<img
+				className="messagesIcon"
+				src="/images/message.svg"
+				alt="messageIcon"
+				onClick={handleMessageClickIcon}
+			/>
 			<div>
 				<span>
 					HP: <span>{techData.hp}</span>

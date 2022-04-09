@@ -79,3 +79,15 @@
     font-weight: 700;
     color: #9820E7;
 }
+
+.messagesIcon {
+    width: 20px;
+    height: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.messagesIcon:hover {
+    transform: scale3d(1.2, 1.2, 1.2);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
