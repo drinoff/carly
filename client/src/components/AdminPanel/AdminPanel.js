@@ -40,6 +40,7 @@ const AdminPanel = () => {
 	const [cars, setCars] = useState([]);
 	const [flag, setFlag] = useState(false);
 	const [users, setUsers] = useState([]);
+
 	const user = useSelector(userSelector);
 	const allClassifieds = useSelector(selectAllClassifieds);
 	const allReviews = useSelector(selectAllReviews);

@@ -25,6 +25,7 @@ import UserPanel from "../components/UserPanel/UserPanel";
 import AdminPanel from "../components/AdminPanel/AdminPanel";
 import BasicModal from "../components/BasicModal/BasicModal";
 import Contact from "../components/Contact/Contact";
+import SendMessage from "../components/Classified/SendMessage/SendMessage";
 
 import "./App.css";
 const Blog = React.lazy(() => import("../features/review/Review"));
@@ -143,6 +144,7 @@ function App() {
 						}
 					/>
 					<Route path="contact" element={<Contact onError={onError} />} />
+					<Route path="classifieds/:id/sendMessage" element={<SendMessage onError={onError} />} />
 				</Routes>
 			</Suspense>
 			<BasicModal openModal={open} error={error} />

@@ -124,3 +124,18 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.userPanelMessageIcon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 120px;
+    right: 150px;
+    transition: 0.2s ease-in-out;
+}
+
+.userPanelMessageIcon:hover {
+    cursor: pointer;
+    transform: scale3d(1.2, 1.2, 1.2);
+    transition: 0.2s ease-in-out;
+}

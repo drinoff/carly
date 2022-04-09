@@ -60,12 +60,25 @@ const addComment = (reviewId, review) => {
 		.catch((err) => err.message);
 };
 
+const deleteComment = (reviewId, commentId) => {
+	return fetch(`${BASE_URL}/reviews/${reviewId}/${commentId}`, {
+		method: "DELETE",
+		headers: {
+			"Content-Type": "application/json",
+			"x-authorization": getAccessToken(),
+		},
+	})
+		.then((res) => res.json())
+		.catch((err) => err.message);
+};
+
 const blogServices = {
 	getAllReviews,
 	addReview,
 	updateReview,
 	deleteReview,
 	addComment,
+	deleteComment,
 };
 
 export default blogServices;

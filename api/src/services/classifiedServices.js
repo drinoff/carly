@@ -2,7 +2,7 @@ const Classified = require("../models/Classified");
 
 const getAllClassifieds = () => {
 	return Classified.find({})
-		.populate("ownerId", "email")
+		.populate()
 		.lean()
 		.then((classifieds) => {
 			return classifieds;

@@ -53,7 +53,8 @@ function createSession(user) {
 				email: user.email,
 				_id: user._id,
 			},
-			JWT_SECRET
+			JWT_SECRET,
+			{ expiresIn: "1h" }
 		),
 	};
 }

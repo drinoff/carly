@@ -55,23 +55,15 @@ const deleteCar = (carId) => {
 };
 
 const addModel = (model, brandId) => {
-	return Model.create(model)
-		.then((model) => {
-			console.log(model);
-			return Car.findByIdAndUpdate(brandId, {
-				$push: {
-					models: model._id,
-				},
-			}).then((car) => {
-				return car;
-			});
-		})
-		.then((res) => {
-			return res;
-		})
-		.catch((err) => {
-			return err;
+	return Model.create(model).then((model) => {
+		return Car.findByIdAndUpdate(brandId, {
+			$push: {
+				models: model._id,
+			},
+		}).then((car) => {
+			return car;
 		});
+	});
 };
 
 const getModelById = (modelId) => {

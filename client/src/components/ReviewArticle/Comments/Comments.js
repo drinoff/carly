@@ -15,15 +15,20 @@ const Comments = ({ review }) => {
 			comment,
 			owner: user.email.slice(0, user.email.indexOf("@")),
 		};
-		const updatedReview = Object.assign({}, review, { comments: [...review.comments, commentData] });
+		// const updatedReview = Object.assign({}, review, { comments: [...review.comments, commentData] });
 		reviewServices
 			.addComment(review._id, commentData)
 			.then((res) => {
 				setComments(res.updatedReview.comments);
+				setComment("");
 			})
-			.catch((err) => {
-				console.log(err);
-			});
+			.catch((err) => {});
+	};
+
+	const commentsDeleteButtonClickHandler = (e) => {
+		reviewServices.deleteComment(review._id, e.target.id).then((res) => {
+			setComments(res.updatedReview.comments);
+		});
 	};
 	const acordeonHandler = (e) => {
 		const target = e.target;
@@ -43,8 +48,17 @@ const Comments = ({ review }) => {
 			<div className="panel">
 				{comments?.map((comment) => (
 					<div key={`${Date.now()}+${Math.random()}`}>
-						<p className="commentOwner">{comment.owner}</p>
-						<p className="commentMessage">{comment.comment}</p>
+						<div className="commentsContainer">
+							<p className="commentOwner">{comment.owner} :</p>
+							<p className="commentMessage">{comment.comment}</p>
+							<img
+								id={comment._id}
+								className="deleteCommentReview"
+								onClick={commentsDeleteButtonClickHandler}
+								alt="deleteCommentReview"
+								src="/images/delete.svg"
+							/>
+						</div>
 					</div>
 				))}
 

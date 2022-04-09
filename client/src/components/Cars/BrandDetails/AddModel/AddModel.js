@@ -36,10 +36,9 @@ const AddModel = ({ onError }) => {
 				onError(res.error);
 			} else {
 				onError(res.message);
+				navigate(`/cars`, { state: { car } });
 			}
 		});
-
-		navigate(`/cars`, { state: { car } });
 	};
 	return (
 		<Box
@@ -50,7 +49,7 @@ const AddModel = ({ onError }) => {
 				width: "70%",
 			}}
 		>
-			<h1 className="addModelHeading">Add Car</h1>
+			<h1 className="addModelHeading">Add Model</h1>
 			<form id="addModel-form" action="POST" className="addModel-form" onSubmit={onAddModelFormSubmitHandler}>
 				<div className="modelNameContainer">
 					<label htmlFor="modelName">Model Name</label>

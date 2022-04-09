@@ -7,11 +7,13 @@ const TechnicalData = ({ classified }) => {
 	const navigate = useNavigate();
 	const user = useSelector(userSelector);
 	const techData = classified.techData;
+
 	const handleMessageClickIcon = () => {
-		const userId = user._id;
+		const userId = user.id;
+
 		const classifiedTitle = classified.title;
 
-		navigate("sendMessage", { userId, classifiedTitle });
+		navigate("sendMessage", { state: { userId, classifiedTitle, classified } });
 	};
 
 	return (

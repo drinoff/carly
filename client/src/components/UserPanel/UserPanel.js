@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { fetchClassifieds } from "../../features/classifieds/classifiedSlice";
 import { fetchReviews } from "../../features/review/reviewSlice";
 import { Chart } from "./Chart";
+import messageServices from "../../services/messageServices";
 
 import { Box } from "@mui/material";
 
@@ -18,6 +19,7 @@ const UserPanel = () => {
 	const allReviews = useSelector(selectAllReviews);
 	const [reviews, setReviews] = useState([]);
 	const [classifieds, setClassifieds] = useState([]);
+	const [userMessages, setUserMessages] = useState([]);
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
@@ -28,8 +30,18 @@ const UserPanel = () => {
 		dispatch(fetchReviews()).then(() => {
 			setReviews(allReviews.filter((review) => review.ownerId?._id === loggedUser.id));
 		});
+
+		messageServices.getUserMessages(loggedUser.id).then((res) => {
+			if (res.name) {
+				setUserMessages([]);
+			} else {
+				setUserMessages(res);
+			}
+		});
 	}, [dispatch]);
 
+	// const messagesIconClickHandler = () => {};
+	// console.log(userMessages);
 	const chartData = {
 		labels: ["classifieds", "Reviews"],
 		datasets: [
@@ -58,6 +70,12 @@ const UserPanel = () => {
 							<span>Role: </span>
 							<span>{loggedUser.role}</span>
 						</p>
+						{/* <img
+							className="userPanelMessageIcon"
+							src="/images/message.svg"
+							alt="userMessagesIcon"
+							onClick={messagesIconClickHandler}
+						/> */}
 					</Box>
 					<div className="myStuff">
 						<Box

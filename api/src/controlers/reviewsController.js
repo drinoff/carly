@@ -66,10 +66,25 @@ const addComment = (req, res) => {
 		});
 };
 
+const deleteComment = (req, res) => {
+	reviewServices
+		.deleteComment(req.params.reviewId, req.params.commentId)
+		.then((updatedReview) => {
+			res.status(201).json({
+				message: "Comment deleted successfully",
+				updatedReview,
+			});
+		})
+		.catch((err) => {
+			res.status(400).json({ message: err });
+		});
+};
+
 router.get("/", getAllReviews);
 router.post("/", isAuthorized(), isReviewer(), validate(schemas.reviewSchema), addReview);
 router.put("/:reviewId", isAuthorized(), isReviewer(), validate(schemas.reviewSchema), updateReview);
 router.delete("/:reviewId", isAuthorized(), isReviewer(), deleteReview);
 router.patch("/:reviewId", isAuthorized(), addComment);
+router.delete("/:reviewId/:commentId", isAuthorized(), deleteComment);
 
 module.exports = router;

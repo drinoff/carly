@@ -34,12 +34,9 @@
 
 .panel .commentOwner {
     border: 1px solid #FF4F87;
-    background: #FF4F87;
-    width: 22%;
+    width: 15%;
     text-align: center;
     border-radius: 10px;
-    margin-bottom: 2px;
-    padding: 3px 3px 3px 3px;
     font-weight: 500;
     text-indent: 0px;
 
@@ -47,11 +44,11 @@
 
 .commentMessage {
     border: 1px solid #7582EB;
-    background: #7582EB;
-    margin-top: 0px;
+    text-align: center;
     border-radius: 10px;
     font-weight: 500;
-    padding: 3px 3px 3px 3px;
+    margin-left: 20px;
+    width: 60%;
 }
 
 .addComment {
@@ -97,4 +94,20 @@
     cursor: pointer;
     color: #2D3748;
     transition: 0.2s;
+}
+
+.commentsContainer {
+    display: flex;
+    width: 100%;
+
+}
+
+.deleteCommentReview {
+
+    margin-left: 10px;
+
+}
+
+.deleteCommentReview:hover {
+    cursor: pointer;
 }

@@ -10,8 +10,8 @@ const addModel = (req, res) => {
 	const model = req.body;
 	return carServices
 		.addModel(model, brandId)
-		.then((res) => {
-			res.status(200).json({ message: "Successfully added", res });
+		.then((response) => {
+			res.status(200).json({ message: "Successfully added", response });
 		})
 		.catch((err) => {
 			res.status(400).json({ message: err });

@@ -50,12 +50,20 @@ const addComment = async (reviewId, comment) => {
 	}));
 };
 
+const deleteComment = async (reviewId, commentId) => {
+	return (currentReview = await Review.findById(reviewId).then((review) => {
+		review.comments.id(commentId).remove();
+		return review.save();
+	}));
+};
+
 const reviewServices = {
 	getAllReviews,
 	addReview,
 	updateReview,
 	deleteReview,
 	addComment,
+	deleteComment,
 };
 
 module.exports = reviewServices;

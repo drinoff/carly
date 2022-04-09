@@ -22,7 +22,6 @@ const Login = ({ onError }) => {
 			if (response.payload === "Email or Password is incorrect") {
 				onError([response.payload]);
 			} else {
-				console.log(response.payload);
 				onError("Login Successful");
 				navigate("/");
 			}
