@@ -64,6 +64,7 @@ Carly is a web application for Car Buying/Selling. It has the following function
 - nodemon
 
 <h2 id="appConfig">Application Configurations</h2>
+
 ![Carly Flow Diagram](https://firebasestorage.googleapis.com/v0/b/ssg-build.appspot.com/o/Carly%20Diagram.png?alt=media&token=92806fbf-bd85-415b-ad24-b477c8b0b144)
  
 
