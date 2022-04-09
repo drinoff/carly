@@ -21,7 +21,7 @@ export default function BasicModal({ openModal, error }) {
 		}, 5000);
 	}
 	const handleClose = () => setOpen(false);
-	console.log(error);
+
 	return (
 		<div>
 			<Modal
