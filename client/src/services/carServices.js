@@ -73,7 +73,9 @@ const addModel = (model) => {
 		},
 		body: JSON.stringify(model),
 	})
-		.then((res) => res.json())
+		.then((res) => {
+			return res.json(res.error);
+		})
 		.catch((err) => {
 			return err;
 		});

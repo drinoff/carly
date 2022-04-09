@@ -24,8 +24,7 @@ const Classifieds = () => {
 		navigate("/classifieds/" + classified._id, { state: { classified } });
 	};
 	return (
-		<div>
-			<h1>Classifieds</h1>
+		<div className="classifiedsMainContainer">
 			{classifieds.map((classified) => (
 				<Classified
 					key={classified.title}

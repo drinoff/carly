@@ -6,20 +6,20 @@ import reviewServices from "../../../services/reviewServices";
 import "./Comments.css";
 
 const Comments = ({ review }) => {
-	const [message, setMessage] = useState("");
+	const [comment, setComment] = useState("");
+	const [comments, setComments] = useState(review.comments);
 	const user = useSelector(userSelector);
 
 	const onSendCommentCLickHandler = (e) => {
 		const commentData = {
-			message,
+			comment,
 			owner: user.email.slice(0, user.email.indexOf("@")),
 		};
 		const updatedReview = Object.assign({}, review, { comments: [...review.comments, commentData] });
-
 		reviewServices
 			.addComment(review._id, commentData)
 			.then((res) => {
-				console.log(res);
+				setComments(res.updatedReview.comments);
 			})
 			.catch((err) => {
 				console.log(err);
@@ -34,13 +34,14 @@ const Comments = ({ review }) => {
 			panel.style.maxHeight = panel.scrollHeight + "px";
 		}
 	};
+
 	return (
 		<>
 			<button className="accordion" onClick={acordeonHandler}>
 				Comments
 			</button>
 			<div className="panel">
-				{review?.comments?.map((comment) => (
+				{comments?.map((comment) => (
 					<div key={`${Date.now()}+${Math.random()}`}>
 						<p className="commentOwner">{comment.owner}</p>
 						<p className="commentMessage">{comment.comment}</p>
@@ -51,8 +52,8 @@ const Comments = ({ review }) => {
 					type="text"
 					className="addComment"
 					placeholder="Write something...."
-					value={message}
-					onChange={(e) => setMessage(e.target.value)}
+					value={comment}
+					onChange={(e) => setComment(e.target.value)}
 				/>
 				<button className="sendComment" onClick={onSendCommentCLickHandler}>
 					Add Comment

@@ -19,10 +19,11 @@ const Login = ({ onError }) => {
 			password,
 		};
 		dispatch(authenticateUser(userData)).then((response) => {
-			if (response.error) {
-				onError(response.error);
+			if (response.payload === "Email or Password is incorrect") {
+				onError([response.payload]);
 			} else {
-				onError(response.message);
+				console.log(response.payload);
+				onError("Login Successful");
 				navigate("/");
 			}
 		});
