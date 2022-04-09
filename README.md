@@ -65,7 +65,7 @@ Carly is a web application for Car Buying/Selling. It has the following function
 
 <h2 id="appConfig">Application Configurations</h2>
 
-![Carly Flow Diagram](https://firebasestorage.googleapis.com/v0/b/ssg-build.appspot.com/o/Carly%20Diagram.png?alt=media&token=92806fbf-bd85-415b-ad24-b477c8b0b144)
+![Carly Flow Diagram](/appScreens/carlyDiagram.png)
  
 
 ### Available Scripts
@@ -91,16 +91,16 @@ npm start
 <h2 id="appShots">Screenshots</h2>
 
 ## Home View
-![Home View](https://firebasestorage.googleapis.com/v0/b/ssg-build.appspot.com/o/home.png?alt=media&token=15600ee0-15ce-4df3-997e-fbb881d514ca)
+![Home View](/appScreens/home.png)
 
 ## Classifieds view
-![Classifieds View](https://firebasestorage.googleapis.com/v0/b/ssg-build.appspot.com/o/classifieds.png?alt=media&token=813909cf-d0f1-4dde-a048-4924fe482333)
+![Classifieds View](/appScreens/classifieds.png)
 
 ## Add Brand View
-![Add Brand](https://firebasestorage.googleapis.com/v0/b/ssg-build.appspot.com/o/addBrand.png?alt=media&token=156c8c8a-fe8d-46bf-b8f6-19f132b19064)
+![Add Brand](/appScreens/addBrand.png)
 
 ## Admin Panel View
-![Admin Panel](https://firebasestorage.googleapis.com/v0/b/ssg-build.appspot.com/o/admin.png?alt=media&token=3bf75b52-e721-4a67-9d61-042b33239a06)
+![Admin Panel](/appScreens/admin.png)
 
 <h2 id="license">License</h2>
 
