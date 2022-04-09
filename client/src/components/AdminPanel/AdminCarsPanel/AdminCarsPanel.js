@@ -81,6 +81,7 @@ const AdminCarsPanel = ({ cars, adminPanelCarClickHandler, onCarDeleteHandler })
 			<>
 				<div className="myStuff">
 					<Box className="adminMainContainer" sx={{ bgcolor: "#111827", minHeight: "50vh", width: "45%" }}>
+						<p className="Classifieds">Cars</p>
 						{cars.map((car) => (
 							<div key={car._id} className="adminPanelReviewsItemAction">
 								<p
@@ -111,6 +112,7 @@ const AdminCarsPanel = ({ cars, adminPanelCarClickHandler, onCarDeleteHandler })
 						className="adminMainContainer positionSticky"
 						sx={{ bgcolor: "#111827", minHeight: "50vh", width: "45%" }}
 					>
+						<p className="Classifieds">Models</p>
 						{models
 							? models.map((model) => (
 									<div key={model._id} className="adminPanelReviewsItemAction">

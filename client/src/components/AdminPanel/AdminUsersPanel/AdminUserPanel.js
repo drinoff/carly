@@ -48,6 +48,7 @@ const AdminUsersPanel = ({ users, adminPanelClickHandler, onItemDeleteHandler })
 			<>
 				<div className="myStuff">
 					<Box className="adminMainContainer" sx={{ bgcolor: "#111827", minHeight: "50vh", width: "45%" }}>
+						<p className="Classifieds">Users</p>
 						{users.map((user) => (
 							<div className="adminPanelReviewsItemAction" key={user._id}>
 								<p

@@ -32,6 +32,7 @@ const AdminClassifiedsPanel = ({
 			<>
 				<div className="myStuff">
 					<Box className="adminMainContainer" sx={{ bgcolor: "#111827", minHeight: "50vh", width: "45%" }}>
+						<p className="Classifieds">My Classifieds</p>
 						{classifieds.map((classified) => (
 							<div className="adminPanelReviewsItemAction" key={classified._id}>
 								<p

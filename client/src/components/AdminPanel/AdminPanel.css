@@ -147,3 +147,9 @@
 option {
     color: #161D2C;
 }
+
+.Classifieds {
+    color: #10B981;
+    text-transform: uppercase;
+    font-weight: 700;
+}

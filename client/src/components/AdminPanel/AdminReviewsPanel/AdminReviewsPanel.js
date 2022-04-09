@@ -27,6 +27,7 @@ const AdminRevviewsPanel = ({ reviews, review, adminPanelClickHandler, onItemDel
 			<>
 				<div key={review._id} className="myStuff">
 					<Box className="adminMainContainer" sx={{ bgcolor: "#111827", minHeight: "50vh", width: "45%" }}>
+						<p className="Classifieds">Reviews</p>
 						{reviews.map((review) => (
 							<div className="adminPanelReviewsItemAction" key={review._id}>
 								<p id={review._id} className="adminClassifiedMap" onClick={adminPanelClickHandler}>
