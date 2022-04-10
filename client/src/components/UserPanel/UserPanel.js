@@ -14,7 +14,7 @@ import { Box } from "@mui/material";
 import "./UserPanel.css";
 
 const UserPanel = () => {
-	const loggedUser = useSelector(userSelector);
+	const loggedUser = JSON.parse(localStorage.getItem("user"));
 	const allClassifieds = useSelector(selectAllClassifieds);
 	const allReviews = useSelector(selectAllReviews);
 	const [reviews, setReviews] = useState([]);
@@ -25,13 +25,13 @@ const UserPanel = () => {
 
 	useEffect(() => {
 		dispatch(fetchClassifieds()).then(() => {
-			setClassifieds(allClassifieds.filter((classified) => classified.ownerId?._id === loggedUser.id));
+			setClassifieds(allClassifieds.filter((classified) => classified.ownerId?._id === loggedUser._id));
 		});
 		dispatch(fetchReviews()).then(() => {
 			setReviews(allReviews.filter((review) => review.ownerId?._id === loggedUser.id));
 		});
 
-		messageServices.getUserMessages(loggedUser.id).then((res) => {
+		messageServices.getUserMessages(loggedUser._id).then((res) => {
 			if (res.name) {
 				setUserMessages([]);
 			} else {
@@ -39,14 +39,14 @@ const UserPanel = () => {
 			}
 		});
 	}, [dispatch]);
-
+	console.log(userMessages);
 	const messagesIconClickHandler = () => {
 		window.scrollTo({
 			top: 1000,
 			behavior: "smooth",
 		});
 	};
-	console.log(userMessages);
+
 	const chartData = {
 		labels: ["classifieds", "Reviews"],
 		datasets: [
@@ -88,7 +88,8 @@ const UserPanel = () => {
 								className="userClassifiedContainer"
 								sx={{ bgcolor: "#111827", height: "50vh", width: "30%" }}
 							>
-								<div>
+								<div className="userPanelClassifiedContainer">
+									<p className="Classifieds">My Classifieds</p>
 									{classifieds.length > 0 ? (
 										classifieds.map((classified) => (
 											<p
@@ -109,7 +110,8 @@ const UserPanel = () => {
 								className="userReviewContainer"
 								sx={{ bgcolor: "#111827", height: "50vh", width: "30%" }}
 							>
-								<div>
+								<div className="userPanelClassifiedContainer">
+									<p className="Classifieds">My Reviews</p>
 									{reviews.length > 0 ? (
 										reviews.map((review) => (
 											<p key={review._id} id={review._id} className="userReviewMap">

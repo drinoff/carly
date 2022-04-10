@@ -56,12 +56,10 @@ function isOwner() {
 		const itemId = req.params.id;
 		const existing = await User.findOne({ email: userEmail });
 		const item = await Classified.findOne({ _id: itemId });
-		console.log(existing._id);
-		console.log(item.ownerId);
+
 		if (existing._id.toString() === item.ownerId.toString() || existing.role === "admin") {
 			next();
 		} else {
-			console.log("error");
 			res.status(403).json({
 				message: "You are not authorized to perform this action",
 			});

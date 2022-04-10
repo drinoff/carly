@@ -49,10 +49,20 @@ const updateUserRole = async (req, res) => {
 	}
 };
 
+const deleteUser = async (req, res) => {
+	try {
+		const result = await userServices.deleteUser(req.params.id);
+		res.status(200).json({ message: "Successfully deleted user", result });
+	} catch (err) {
+		res.status(400).json({ message: err });
+	}
+};
+
 router.get("/", isAuthorized(), isAdmin(), getAllUsers);
 router.post("/register", validate(schemas.registerSchema), register);
 router.post("/login", validate(schemas.loginSchema), login);
 router.put("/:id", isAuthorized(), isAdmin(), updateUserRole);
 router.post("/logout", logout);
+router.delete("/:id", isAuthorized(), isAdmin(), deleteUser);
 
 module.exports = router;

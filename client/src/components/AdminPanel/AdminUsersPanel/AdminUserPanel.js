@@ -7,10 +7,13 @@ import { Chart } from "../../UserPanel/Chart";
 
 const AdminUsersPanel = ({ users, adminPanelClickHandler, onItemDeleteHandler }) => {
 	const [flag, setFlag] = useState(false);
-	const loggedUser = useSelector(userSelector);
+	const loggedUser = JSON.parse(localStorage.getItem("user"));
 	const [selectedUser, setSelectedUser] = useState(null);
 
-	const onDeleteButtonClickHandler = (e) => {};
+	const onDeleteButtonClickHandler = (e) => {
+		userServices.deleteUser(e.target.id);
+		setFlag(!flag);
+	};
 
 	const onUserRoleChangeHandler = (e) => {
 		const user = users.find((user) => user._id === e.target.id);
@@ -62,7 +65,7 @@ const AdminUsersPanel = ({ users, adminPanelClickHandler, onItemDeleteHandler })
 									<select
 										name="userRoles"
 										className="userRoles"
-										id={user._id}
+										id={user.id}
 										onChange={onUserRoleChangeHandler}
 										defaultValue={user.role}
 									>
@@ -75,6 +78,7 @@ const AdminUsersPanel = ({ users, adminPanelClickHandler, onItemDeleteHandler })
 								)}
 								{user.role !== "admin" ? (
 									<img
+										id={user._id}
 										className="deleteAdminReview"
 										src="/images/delete.svg"
 										alt="DeleteSvg"

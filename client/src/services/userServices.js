@@ -62,6 +62,17 @@ const updateUserRole = (userId, userData) => {
 		return response.json();
 	});
 };
+const deleteUser = (userId) => {
+	return fetch(BASE_URL + "/user/" + userId, {
+		method: "DELETE",
+		headers: {
+			"Content-Type": "application/json",
+			"x-authorization": getAccessToken(),
+		},
+	}).then((response) => {
+		return response.json();
+	});
+};
 
 const userServices = {
 	register,
@@ -69,6 +80,7 @@ const userServices = {
 	logout,
 	getAllUsers,
 	updateUserRole,
+	deleteUser,
 };
 
 export default userServices;

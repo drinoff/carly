@@ -97,6 +97,15 @@ const updateUserRole = async (userData) => {
 	}));
 };
 
+const deleteUser = async (userId) => {
+	const user = await User.findById(userId);
+	if (!user) {
+		throw new Error("User does not exist");
+	}
+	await user.remove();
+	return { message: "User deleted successfully" };
+};
+
 const userServices = {
 	register,
 	login,
@@ -104,6 +113,7 @@ const userServices = {
 	verifySession,
 	getAllUsers,
 	updateUserRole,
+	deleteUser,
 };
 
 module.exports = userServices;
