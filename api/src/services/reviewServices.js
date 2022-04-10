@@ -45,7 +45,6 @@ const deleteReview = (reviewId) => {
 const addComment = async (reviewId, comment) => {
 	return (currentReview = await Review.findById(reviewId).then((review) => {
 		review.comments.push(comment);
-		console.log(review);
 		return review.save();
 	}));
 };

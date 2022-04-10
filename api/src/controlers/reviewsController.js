@@ -44,7 +44,7 @@ const deleteReview = (req, res) => {
 	reviewServices
 		.deleteReview(req.params.reviewId)
 		.then(() => {
-			res.status(204).json({ message: "Review deleted successfully" });
+			res.status(200).json({ message: "Review deleted successfully" });
 		})
 		.catch((err) => {
 			res.status(400).json({ message: err });

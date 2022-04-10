@@ -26,6 +26,7 @@ const SendMessage = ({ onError }) => {
 			.sendMessage(senderId, messageObj)
 			.then((res) => {
 				setMessage("");
+				navigate(`/classifieds/${classified._id}`, { state: { classified } });
 
 				onError(res.error || "Successfully sent message");
 			})

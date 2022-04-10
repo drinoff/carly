@@ -6,7 +6,7 @@ import reviewServices from "../../../services/reviewServices";
 import "./AddArticle.css";
 
 const AddArticle = ({ onError }) => {
-	const user = useSelector(userSelector);
+	const user = JSON.parse(localStorage.getItem("user"));
 	const navigate = useNavigate();
 
 	const onAddArticleFormSubmitHandler = (e) => {
@@ -31,7 +31,7 @@ const AddArticle = ({ onError }) => {
 			highs,
 			lows,
 			verdict,
-			ownerId: user.id,
+			ownerId: user._id,
 			regDate: Date.now(),
 			comments: [],
 		};

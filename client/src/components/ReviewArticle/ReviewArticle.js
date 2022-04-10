@@ -6,7 +6,7 @@ import Comments from "./Comments/Comments";
 import "./ReviewArticle.css";
 
 const BlogArticle = ({ review, onError }) => {
-	const user = useSelector(userSelector);
+	const user = JSON.parse(localStorage.getItem("user"));
 	const isAuthenticated = useSelector(isAuthenticatedSelector);
 	return (
 		<div className="Blog-blogArticle">
@@ -36,13 +36,12 @@ const BlogArticle = ({ review, onError }) => {
 			</div>
 			<p className="ReviewArticle-description">{review.description}</p>
 			<div className="RevieArticle-owner">
-				<p>{review.ownerId.email}</p>
 				<p>{review.regDate?.replace("T", " ").replace(".", "").slice(0, 19)}</p>
 			</div>
 
 			<Comments review={review} />
 			{isAuthenticated ? (
-				user.id === review.ownerId._id ? (
+				user._id === review.ownerId._id ? (
 					<ReviewAdminButtons review={review} onError={onError} />
 				) : user.role === "admin" ? (
 					<ReviewAdminButtons review={review} onError={onError} />

@@ -8,7 +8,6 @@ const getAllClassifieds = () => {
 			return classifieds;
 		})
 		.catch((err) => {
-			console.log(err);
 			throw err;
 		});
 };
