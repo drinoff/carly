@@ -40,6 +40,7 @@ export const INITIAL_CLASSIFIED_STATE = {
 	price: "",
 	description: "",
 	category: "",
+	contact: "",
 };
 
 export const TECH_DATA_INITIAL_STATE = {

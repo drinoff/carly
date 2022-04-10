@@ -54,7 +54,7 @@ const deleteClassified = (req, res) => {
 
 router.get("/", getAllClassifieds);
 router.post("/", isAuthorized(), validate(schemas.classifiedSchema), addClassified);
-router.delete("/:id", isAuthorized(), isOwner(), isAdmin(), deleteClassified);
-router.put("/:id", isAuthorized(), isOwner(), isAdmin(), validate(schemas.classifiedSchema), updateClassified);
+router.delete("/:id", isAuthorized(), isOwner(), deleteClassified);
+router.put("/:id", isAuthorized(), isOwner(), validate(schemas.classifiedSchema), updateClassified);
 
 module.exports = router;

@@ -27,7 +27,7 @@ const EditClassified = ({ onError }) => {
 			location: location,
 			extras: extras,
 			images: pictures,
-			ownerId: initialClassified._id,
+			ownerId: initialClassified.ownerId,
 		};
 		classifiedServices.updateClassified(classifiedData).then((res) => {
 			if (res.error) {

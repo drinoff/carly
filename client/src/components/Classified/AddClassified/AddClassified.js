@@ -21,7 +21,7 @@ const AddClassified = ({ onError }) => {
 
 	const [classified, setClassified] = useState(INITIAL_CLASSIFIED_STATE);
 
-	const user = useSelector(userSelector);
+	const user = JSON.parse(localStorage.getItem("user"));
 
 	const onAddClassifiedFormSubmitHandler = (event) => {
 		event.preventDefault();
@@ -31,11 +31,11 @@ const AddClassified = ({ onError }) => {
 			location: location,
 			extras: extras,
 			images: pictures,
-			ownerId: user.id,
+			ownerId: user._id,
 		};
 		classifiedServices.addClassified(classifiedData).then((res) => {
 			if (res.error) {
-				onError(res.error);
+				//onError(res.error);
 			} else {
 				onError(res.message);
 

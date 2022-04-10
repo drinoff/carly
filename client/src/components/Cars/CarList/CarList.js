@@ -14,7 +14,7 @@ const CarList = ({ cars, carClickHandler }) => {
 			{cars.map((car) => (
 				<Car key={car.brand} car={car} carClickHandler={carClickHandler} />
 			))}
-			{isAuthenticated ? user.role === "admin" ? <AddCarButton /> : null : null}
+			{isAuthenticated && user.role === "admin" ? <AddCarButton /> : null}
 		</div>
 	);
 };

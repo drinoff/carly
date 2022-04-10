@@ -1,5 +1,8 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
+import { userSelector, isAuthenticatedSelector } from "../../../features/auth/authSlice";
+
 import { Box } from "@mui/material";
 import CarModelButton from "./CarModelButton/CarModelButton";
 import AddModelButton from "../BrandDetails/CarModelButton/AddModelButton/AddModelButton";
@@ -14,6 +17,8 @@ const BrandDetails = ({ onError }) => {
 	const location = useLocation();
 	const carId = location.state.carId;
 	const carModels = location.state.carModels;
+	const user = useSelector(userSelector);
+	const isAuthenticated = useSelector(isAuthenticatedSelector);
 
 	useEffect(() => {
 		carServices
@@ -57,7 +62,7 @@ const BrandDetails = ({ onError }) => {
 						onCarModelClickHandler={onCarModelClickHandler}
 					/>
 				))}
-				<AddModelButton car={car} />
+				{isAuthenticated && user.role === "admin" ? <AddModelButton car={car} /> : null}
 			</div>
 			<h2>Brief History</h2>
 			<p className="BrandDetails-description">{car?.brandHistory}</p>

@@ -14,7 +14,7 @@ const Register = ({ onError }) => {
 		const password = formData.get("password");
 		const rePass = formData.get("rePass");
 		const userData = {
-			email,
+			email: email.toLowerCase(),
 			password,
 			rePass,
 		};

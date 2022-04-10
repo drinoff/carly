@@ -39,6 +39,7 @@ const BlogArticle = ({ review, onError }) => {
 				<p>{review.ownerId.email}</p>
 				<p>{review.regDate?.replace("T", " ").replace(".", "").slice(0, 19)}</p>
 			</div>
+
 			<Comments review={review} />
 			{isAuthenticated ? (
 				user.id === review.ownerId._id ? (

@@ -3,7 +3,6 @@ import { Chart } from "../../UserPanel/Chart";
 
 const AdminDBPanel = ({ users, reviews, classifieds, cars }) => {
 	const models = cars.map((car) => car.models.length).reduce((a, b) => a + b);
-	console.log(reviews);
 
 	const chartData = {
 		labels: ["Users", "Reviews", "Classifieds", "Cars", "Models"],

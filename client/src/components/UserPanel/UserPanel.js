@@ -40,8 +40,13 @@ const UserPanel = () => {
 		});
 	}, [dispatch]);
 
-	// const messagesIconClickHandler = () => {};
-	// console.log(userMessages);
+	const messagesIconClickHandler = () => {
+		window.scrollTo({
+			top: 1000,
+			behavior: "smooth",
+		});
+	};
+	console.log(userMessages);
 	const chartData = {
 		labels: ["classifieds", "Reviews"],
 		datasets: [
@@ -60,68 +65,87 @@ const UserPanel = () => {
 		});
 	};
 	return (
-		<div className="userPanelContainer">
-			<Box sx={{ bgcolor: "#0B0F19", height: "100vh", width: "87%" }}>
-				<div className="infoContainer">
-					<Box className="mainContainer" sx={{ bgcolor: "#7582EB", height: "20vh", width: "95%" }}>
-						<h1>{loggedUser.email}</h1>
-						<p>Wellcome to your User Panel</p>
-						<p className="userRoleContainer">
-							<span>Role: </span>
-							<span>{loggedUser.role}</span>
-						</p>
-						{/* <img
-							className="userPanelMessageIcon"
-							src="/images/message.svg"
-							alt="userMessagesIcon"
-							onClick={messagesIconClickHandler}
-						/> */}
-					</Box>
-					<div className="myStuff">
-						<Box
-							className="userClassifiedContainer"
-							sx={{ bgcolor: "#111827", height: "50vh", width: "30%" }}
-						>
-							<div>
-								{classifieds.length > 0 ? (
-									classifieds.map((classified) => (
-										<p
-											key={classified._id}
-											id={classified._id}
-											className="userClassifiedMap"
-											onClick={userPanelClassifiedClickHandler}
-										>
-											{classified.title}
-										</p>
-									))
-								) : (
-									<p className="userClassifiedMap">You don't have any classifieds</p>
-								)}
-							</div>
+		<>
+			<div className="userPanelContainer">
+				<Box sx={{ bgcolor: "#0B0F19", height: "100vh", width: "87%" }}>
+					<div className="infoContainer">
+						<Box className="mainContainer" sx={{ bgcolor: "#7582EB", height: "20vh", width: "95%" }}>
+							<h1>{loggedUser.email}</h1>
+							<p>Wellcome to your User Panel</p>
+							<p className="userRoleContainer">
+								<span>Role: </span>
+								<span>{loggedUser.role}</span>
+							</p>
+							<img
+								className="userPanelMessageIcon"
+								src="/images/message.svg"
+								alt="userMessagesIcon"
+								onClick={messagesIconClickHandler}
+							/>
 						</Box>
-						<Box className="userReviewContainer" sx={{ bgcolor: "#111827", height: "50vh", width: "30%" }}>
-							<div>
-								{reviews.length > 0 ? (
-									reviews.map((review) => (
-										<p key={review._id} id={review._id} className="userReviewMap">
-											{review.title}
-										</p>
-									))
-								) : (
-									<p className="userReviewMap">You don't have any reviews</p>
-								)}
-							</div>
-						</Box>
-						<Box
-							className="userChartContainer"
-							sx={{ bgcolor: "#111827", minHeight: "50vh", width: "30%" }}
-						>
-							<Chart className="positionChart" data={chartData} />
-						</Box>
+						<div className="myStuff">
+							<Box
+								className="userClassifiedContainer"
+								sx={{ bgcolor: "#111827", height: "50vh", width: "30%" }}
+							>
+								<div>
+									{classifieds.length > 0 ? (
+										classifieds.map((classified) => (
+											<p
+												key={classified._id}
+												id={classified._id}
+												className="userClassifiedMap"
+												onClick={userPanelClassifiedClickHandler}
+											>
+												{classified.title}
+											</p>
+										))
+									) : (
+										<p className="userClassifiedMap">You don't have any classifieds</p>
+									)}
+								</div>
+							</Box>
+							<Box
+								className="userReviewContainer"
+								sx={{ bgcolor: "#111827", height: "50vh", width: "30%" }}
+							>
+								<div>
+									{reviews.length > 0 ? (
+										reviews.map((review) => (
+											<p key={review._id} id={review._id} className="userReviewMap">
+												{review.title}
+											</p>
+										))
+									) : (
+										<p className="userReviewMap">You don't have any reviews</p>
+									)}
+								</div>
+							</Box>
+							<Box
+								className="userChartContainer"
+								sx={{ bgcolor: "#111827", minHeight: "50vh", width: "30%" }}
+							>
+								<Chart className="positionChart" data={chartData} />
+							</Box>
+						</div>
 					</div>
-				</div>
+				</Box>
+			</div>
+			<Box className="bottomMessageContainer" sx={{ bgcolor: "#111827", height: "80vh", width: "85%" }}>
+				<h2>Message Box</h2>
+				{userMessages.length > 0 ? (
+					userMessages.map((message) => (
+						<div key={message._id}>
+							<p>{message.sender.email}</p>
+							<p>Message: {message.message}</p>
+							<p>{message.date.slice(0, 16).replace("T", " ")}</p>
+						</div>
+					))
+				) : (
+					<p>You don't have any messages</p>
+				)}
 			</Box>
-		</div>
+		</>
 	);
 };
 

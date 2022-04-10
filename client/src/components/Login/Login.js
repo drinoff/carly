@@ -15,7 +15,7 @@ const Login = ({ onError }) => {
 		const email = formData.get("email");
 		const password = formData.get("password");
 		const userData = {
-			email,
+			email: email.toLowerCase(),
 			password,
 		};
 		dispatch(authenticateUser(userData)).then((response) => {

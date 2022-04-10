@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { userSelector } from "../../../features/auth/authSlice";
+import { userSelector, isAuthenticatedSelector } from "../../../features/auth/authSlice";
 import reviewServices from "../../../services/reviewServices";
 
 import "./Comments.css";
@@ -9,6 +9,7 @@ const Comments = ({ review }) => {
 	const [comment, setComment] = useState("");
 	const [comments, setComments] = useState(review.comments);
 	const user = useSelector(userSelector);
+	const isAuthenticated = useSelector(isAuthenticatedSelector);
 
 	const onSendCommentCLickHandler = (e) => {
 		const commentData = {
@@ -51,27 +52,44 @@ const Comments = ({ review }) => {
 						<div className="commentsContainer">
 							<p className="commentOwner">{comment.owner} :</p>
 							<p className="commentMessage">{comment.comment}</p>
-							<img
-								id={comment._id}
-								className="deleteCommentReview"
-								onClick={commentsDeleteButtonClickHandler}
-								alt="deleteCommentReview"
-								src="/images/delete.svg"
-							/>
+							{isAuthenticated && user.role === "admin" ? (
+								<img
+									id={comment._id}
+									className="deleteCommentReview"
+									onClick={commentsDeleteButtonClickHandler}
+									alt="deleteCommentReview"
+									src="/images/delete.svg"
+								/>
+							) : isAuthenticated &&
+							  user.email?.charAt(0).toLowerCase() +
+									user.email?.slice(1, user.email?.indexOf("@")).toString() ===
+									comment.owner ? (
+								<img
+									id={comment._id}
+									className="deleteCommentReview"
+									onClick={commentsDeleteButtonClickHandler}
+									alt="deleteCommentReview"
+									src="/images/delete.svg"
+								/>
+							) : null}
 						</div>
 					</div>
 				))}
+				{isAuthenticated ? (
+					<>
+						<input
+							type="text"
+							className="addComment"
+							placeholder="Write something...."
+							value={comment}
+							onChange={(e) => setComment(e.target.value)}
+						/>
 
-				<input
-					type="text"
-					className="addComment"
-					placeholder="Write something...."
-					value={comment}
-					onChange={(e) => setComment(e.target.value)}
-				/>
-				<button className="sendComment" onClick={onSendCommentCLickHandler}>
-					Add Comment
-				</button>
+						<button className="sendComment" onClick={onSendCommentCLickHandler}>
+							Add Comment
+						</button>
+					</>
+				) : null}
 			</div>
 		</>
 	);

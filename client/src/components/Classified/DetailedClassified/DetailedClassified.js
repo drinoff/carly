@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { isAuthenticatedSelector } from "../../../features/auth/authSlice";
+import { isAuthenticatedSelector, userSelector } from "../../../features/auth/authSlice";
 import { Box } from "@mui/material";
 import TechnicalData from "./TechnicalData/TechnicalData";
 import Slider from "../Slider/Slider";
@@ -13,6 +13,7 @@ import "./DetailedClassified.css";
 const DetailedClassified = ({ onError }) => {
 	const location = useLocation();
 	const isAuthenticated = useSelector(isAuthenticatedSelector);
+	const user = JSON.parse(localStorage.getItem("user"));
 	const { classified } = location.state;
 
 	return (
@@ -66,7 +67,11 @@ const DetailedClassified = ({ onError }) => {
 						))}
 					</div>
 				</Box>
-				{isAuthenticated && <ClassifiedAdminButtons classified={classified} onError={onError} />}
+				{isAuthenticated && user.role === "admin" ? (
+					<ClassifiedAdminButtons classified={classified} onError={onError} />
+				) : isAuthenticated && user._id.toString() === classified.ownerId.toString() ? (
+					<ClassifiedAdminButtons classified={classified} onError={onError} />
+				) : null}
 			</div>
 		</div>
 	);

@@ -73,13 +73,14 @@ const AdminUsersPanel = ({ users, adminPanelClickHandler, onItemDeleteHandler })
 								) : (
 									<span className="adminUserRole">admin</span>
 								)}
-
-								<img
-									className="deleteAdminReview"
-									src="/images/delete.svg"
-									alt="DeleteSvg"
-									onClick={onDeleteButtonClickHandler}
-								/>
+								{user.role !== "admin" ? (
+									<img
+										className="deleteAdminReview"
+										src="/images/delete.svg"
+										alt="DeleteSvg"
+										onClick={onDeleteButtonClickHandler}
+									/>
+								) : null}
 							</div>
 						))}
 					</Box>
